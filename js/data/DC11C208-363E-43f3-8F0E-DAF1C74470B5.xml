@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("0.1.1.4.1.1", "1", "Fase A: Visión de la Arquitectura", "EARoot/EA1/EA1/EA4/EA1/EA1/EA308.htm", "4.png", "", "", "{005F1170-C30F-4abc-AC38-1A4A626F3529}", "Package");
+tocTab[tocTab.length] = new Array("0.1.1.4.1.2", "1", "Fase B: Arquitectura de Negocios", "EARoot/EA1/EA1/EA4/EA1/EA2/EA464.htm", "4.png", "", "", "{8BBE156C-DD03-4b71-BC45-0397A8939CCC}", "Package");
+tocTab[tocTab.length] = new Array("0.1.1.4.1.3", "1", "Fase C: Arquitectura de Sistema de Información", "EARoot/EA1/EA1/EA4/EA1/EA3/EA608.htm", "4.png", "", "", "{05666596-2BBD-47fa-B29F-74C634056596}", "Package");
+tocTab[tocTab.length] = new Array("0.1.1.4.1.4", "1", "Fase D: Arquitectura Tecnológica", "EARoot/EA1/EA1/EA4/EA1/EA4/EA892.htm", "4.png", "", "", "{C7841447-6EF0-428f-80F2-F2E867E16488}", "Package");
+tocTab[tocTab.length] = new Array("0.1.1.4.1.5", "1", "Fase de Gestión de Requisitos", "EARoot/EA1/EA1/EA4/EA1/EA5/EA1050.htm", "4.png", "", "", "{F70F0590-0554-4914-9150-9C0238ED8832}", "Package");
+tocTab[tocTab.length] = new Array("0.1.1.4.1.6", "1", "Fase Prelimilar", "EARoot/EA1/EA1/EA4/EA1/EA6/EA1135.htm", "4.png", "", "", "{A3E6AAFA-A203-4486-94AF-8D5568953451}", "Package");

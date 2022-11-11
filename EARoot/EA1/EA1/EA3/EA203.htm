@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Modelado de Objetos del Negocio::Adaptación del ADM  </title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Modelado de Objetos del Negocio::Adaptación del ADM   </h1>
+			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../index.htm">Adaptacion BMM</a> / <a href="../../EA1.htm">ADM_TOGAF</a> / <a href="../EA3.htm">Modelado de elementos del negocio</a> / <a href="EA103.htm">Modelado de Objetos del Negocio</a> / <a href="EA203.htm">Adaptación del ADM  </a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA103.htm">Modelado de Objetos del Negocio</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Adaptación del ADM    : Public  &lt;&lt;recurso: Apoyo en los pasos&gt;&gt; Class</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">17/10/2022 13:16:51</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">17/10/2022 19:06:12</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Wanda Mayrena</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{FAB340AF-0CA4-4966-AA99-EA2926B883A8}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;ul&gt;<br />&lt;li&gt;Adaptación del ADM (&lt;i&gt;Parte II &lt;/i&gt;&lt;font color=&quot;#263238&quot;&gt;&lt;i&gt; 4.3 Adaptación del ADM.)&lt;/i&gt;&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;El ADM es un método genérico para el desarrollo de arquitectura, que está diseñado para hacer frente a la mayoría de los requisitos del sistema y de la organización. Sin embargo, a menudo será necesario modificar o ampliar el ADM para satisfacer necesidades específicas. Una de las tareas antes de aplicar el ADM es revisar su aplicabilidad de los componentes y luego adaptarlos según corresponda a las circunstancias de la empresa individual. Esta actividad bien puede producir un ADM &quot;específico de la empresa&quot;.&lt;br/&gt;&lt;br/&gt;Una razón para querer adaptar el ADM, que es importante destacar, es que el orden de las fases en el ADM depende en cierta medida de la madurez de la disciplina de arquitectura dentro de la empresa. Por ejemplo, si el caso de negocio para hacer arquitectura no es bien reconocido, entonces crear una Visión de Arquitectura es casi siempre esencial; y una Arquitectura de Negocios detallada a menudo debe venir a continuación, con el fin de apuntalar la Visión de Arquitectura, detallar el caso de negocio para el trabajo de arquitectura restante y asegurar la participación activa de las partes interesadas clave en ese trabajo. En otros casos, se puede preferir un orden ligeramente diferente; por ejemplo, se puede hacer un inventario detallado del entorno de referencia antes de emprender la Arquitectura de Negocio.&lt;br/&gt;&lt;br/&gt;El orden de las fases también puede estar definido por los Principios de Arquitectura y los principios de negocio de una empresa. Por ejemplo, los principios comerciales pueden dictar que la empresa esté preparada para ajustar sus procesos comerciales para satisfacer las necesidades de una solución empaquetada, de modo que pueda implementarse rápidamente para permitir una respuesta rápida a los cambios del mercado. En tal caso, la Arquitectura de Negocios (o al menos la finalización de la misma) bien puede seguir a la finalización de la Arquitectura de Sistemas de Información o la Arquitectura de Tecnología.&lt;br/&gt;&lt;br/&gt;Otra razón para querer adaptar el ADM es si el marco TOGAF se va a integrar con otro marco empresarial (como se explica en la &lt;i&gt;Parte I, 2.10 Uso del estándar TOGAF con otros marcos&lt;/i&gt;). Por ejemplo, una empresa puede desear utilizar el marco TOGAF y su ADM genérico junto con el Marco Zachman, u otro marco de Arquitectura Empresarial que tenga un conjunto definido de entregables específicos para un sector vertical en particular: Gobierno, Defensa, Comercio electrónico, Telecomunicaciones, etc. El ADM ha sido diseñado específicamente con esta posible integración en mente.&lt;br/&gt;&lt;br/&gt;Otras posibles razones para querer adaptar el ADM incluyen:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;El ADM es uno de los muchos procesos corporativos que conforman el modelo de gobierno corporativo&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Es complementario y apoya otros procesos estándar de gestión de programas, como los de autorización, gestión de riesgos, planificación y presupuestación de negocios, planificación de desarrollo, desarrollo de sistemas y adquisiciones.&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;El ADM está siendo ordenado para su uso por un contratista principal o principal en una situación de subcontratación, y debe adaptarse para lograr un compromiso adecuado entre las prácticas existentes del contratista y los requisitos de la empresa contratante.&lt;/li&gt;&lt;li&gt;La empresa es una pequeña y mediana empresa, y desea utilizar un método de &quot;reducción&quot; más en sintonía con el nivel reducido de recursos y la complejidad del sistema típico de un entorno de este tipo.&lt;/li&gt;&lt;li&gt;La empresa es muy grande y compleja, que comprende muchas &quot;empresas&quot; separadas pero interrelacionadas dentro de un marco comercial colaborativo general, y el método de arquitectura debe adaptarse para reconocer esto.&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;En tales casos, se pueden utilizar diferentes enfoques de planificación e integración, incluidos los siguientes (posiblemente en combinación):&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Planificación y desarrollo de arriba hacia abajo: diseño de toda la metaempresa interconectada como una sola entidad (un ejercicio que generalmente estira los límites de la practicidad)&lt;/li&gt;&lt;li&gt;Desarrollo de una arquitectura &quot;genérica&quot; o &quot;de referencia&quot;, típica de las empresas dentro de la organización, pero que no representa a ninguna empresa específica, que se espera que las empresas individuales adapten para producir una &quot;instancia&quot; de arquitectura adecuada para la empresa en cuestión.&lt;/li&gt;&lt;li&gt;Replicación: desarrollar una arquitectura específica para una empresa, implementarla como una prueba de concepto y luego tomarla como una &quot;arquitectura de referencia&quot; para clonarla en otras empresas.&lt;/li&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;En un entorno de proveedor o producción, una arquitectura genérica para una familia de productos relacionados a menudo se denomina &quot;Arquitectura de línea de productos&quot;, y el proceso análogo al descrito anteriormente se denomina &quot;Ingeniería de línea de productos (basada en la arquitectura)&quot;. El ADM está dirigido principalmente a arquitectos en empresas de usuarios de TI, pero una organización de proveedores cuyos productos están basados en TI bien podría desear adaptarlo como un método genérico para un desarrollo de arquitectura de línea de productos.&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;Fase Premilinar&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;#263238&quot;&gt;La Fase Preliminar implica hacer cualquier trabajo necesario para iniciar y adaptar el ADM para definir un marco específico de la organización. Los problemas relacionados con la adaptación del ADM a un contexto organizacional específico se discuten en detalle en &lt;i&gt;4.3 Adaptación del ADM&lt;/i&gt; .&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#263238&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#263238&quot;&gt;El nivel de detalle abordado en la Fase Preliminar dependerá del alcance y los objetivos del esfuerzo general de arquitectura.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#263238&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#263238&quot;&gt;- Este recurso forma parte del estándar TOGAF 9.2 y es requerido en los pasos de la fase ADM, sin embargo no pertenece a formalmente a las entradas y/o salidas de la fase actual.-&lt;/font&gt;&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA252.htm">«recurso» Otros Recursos</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2/EA6/EA1293.htm">«Fase ADM» Preliminar</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

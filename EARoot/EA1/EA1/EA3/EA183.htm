@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Modelado de Objetos del Negocio::Enfoque Fase A: Visión de la arquitectura</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Modelado de Objetos del Negocio::Enfoque Fase A: Visión de la arquitectura </h1>
+			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../index.htm">Adaptacion BMM</a> / <a href="../../EA1.htm">ADM_TOGAF</a> / <a href="../EA3.htm">Modelado de elementos del negocio</a> / <a href="EA103.htm">Modelado de Objetos del Negocio</a> / <a href="EA183.htm">Enfoque Fase A: Visión de la arquitectura</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA103.htm">Modelado de Objetos del Negocio</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Enfoque Fase A: Visión de la arquitectura  : Public  &lt;&lt;proceso interno ADM&gt;&gt; Class</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">10/11/2022 4:09:58</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">10/11/2022 4:14:00</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Wanda Mayrena</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{62860B9C-FC17-4841-B9F4-B66198A25D1D}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA4/EA2/EA1/EA1222.htm">Fase A: Visión de la Arquitectura</a>, <a href="../EA4/EA2/EA2/EA1234.htm">Fase B: Arquitectura de Negocios</a>, <a href="EA101.htm">Modelado de Objetos del Negocio</a>, <a href="../EA4/EA1/EA2/EA462.htm">Fase B: Arquitectura de Negocios</a>, <a href="../EA4/EA1/EA1/EA306.htm">Fase A: Visión de la Arquitectura</a>, <a href="./EA5/EA288.htm">Fase A: Visión de la arquitectura</a>, <a href="./EA1/EA266.htm">Fase B: Arquitectura del negocio</a>, <a href="../EA4/EA1/EA2/EA1/EA517.htm">Sub-proceso "1. Seleccionar modelos de referencia,  puntos de vista y herramientas"</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;b&gt;Enfoque Fase A: Visi&#243;n de la arquitectura&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;&lt;u&gt;1 Generalidades&lt;/u&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;La Fase A comienza con la recepci&#243;n de una Solicitud de Trabajo de Arquitectura de la organizaci&#243;n patrocinadora a la organizaci&#243;n de arquitectura.&lt;br/&gt;&lt;br/&gt;Las cuestiones relacionadas con garantizar el reconocimiento y el respaldo adecuados de la administraci&#243;n corporativa, y el apoyo y el compromiso de la administraci&#243;n de l&#237;nea, se discuten en la &lt;i&gt;Parte VI, 44.1.4 Gobierno de TI&lt;/i&gt;.&lt;br/&gt;&lt;br/&gt;La fase A tambi&#233;n define lo que est&#225; dentro y fuera del alcance del esfuerzo de arquitectura y las restricciones que deben abordarse. Las decisiones de alcance deben tomarse sobre la base de una evaluaci&#243;n pr&#225;ctica de la disponibilidad de recursos y competencias, y el valor que se puede esperar de manera realista que se acumule para la empresa del alcance elegido del trabajo de arquitectura. Los problemas involucrados en esto se discuten en &lt;i&gt;4.5 Alcance de la arquitectura&lt;/i&gt;. Los problemas de alcance abordados en la fase de Visi&#243;n de Arquitectura se restringir&#225;n a los objetivos espec&#237;ficos para este ciclo de ADM y se limitar&#225;n dentro de la definici&#243;n general del alcance para la actividad de arquitectura seg&#250;n lo establecido en la Fase Preliminar e incorporado dentro del marco de arquitectura.&lt;br/&gt;&lt;br/&gt;En situaciones en las que el marco de arquitectura existente no es apropiado para lograr la visi&#243;n de arquitectura deseada, revise la fase preliminar y ampl&#237;e el marco de arquitectura general para la empresa.&lt;br/&gt;&lt;br/&gt;Las restricciones normalmente ser&#225;n informadas por los principios de negocio y los principios de arquitectura, desarrollados como parte de la Fase Preliminar (&lt;i&gt;ver Fase preliminar&lt;/i&gt;).&lt;br/&gt;&lt;br/&gt;Normalmente, los principios de negocio, los objetivos de negocio y los impulsores estrat&#233;gicos de la organizaci&#243;n ya est&#225;n definidos en otras partes de la empresa. Si es as&#237;, la actividad en la Fase A est&#225; involucrada en asegurar que las definiciones existentes est&#233;n actualizadas y aclarar cualquier &#225;rea de ambig&#252;edad. De lo contrario, implica definir estos elementos esenciales por primera vez.&lt;br/&gt;&lt;br/&gt;Del mismo modo, los Principios de Arquitectura que forman parte de las restricciones al trabajo de arquitectura normalmente se habr&#225;n definido en la Fase Preliminar &lt;i&gt;(ver Fase preliminar&lt;/i&gt;). La actividad de la Fase A se ocupa de garantizar que las definiciones de principios existentes est&#233;n actualizadas y aclarar cualquier &#225;rea de ambig&#252;edad. De lo contrario, implica definir los Principios de Arquitectura por primera vez, como se explica en la &lt;i&gt;Parte III, 20. Principios de Arquitectura&lt;/i&gt;.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;&lt;u&gt;2. Creaci&#243;n de la visi&#243;n de la arquitectura&lt;/u&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;La Visi&#243;n de la Arquitectura proporciona al patrocinador una herramienta clave para vender los beneficios de la capacidad propuesta a las partes interesadas y los responsables de la toma de decisiones dentro de la empresa. La Visi&#243;n de la Arquitectura describe c&#243;mo la nueva capacidad cumplir&#225; con las metas de negocios y los objetivos estrat&#233;gicos y abordar&#225; las preocupaciones de las partes interesadas cuando se implemente.&lt;br/&gt;&lt;br/&gt;Parte integral de la Visi&#243;n de la Arquitectura es una comprensi&#243;n de las tecnolog&#237;as emergentes y su impacto potencial en las industrias y empresas, sin el cual se pueden perder muchas oportunidades de negocio.&lt;br/&gt;&lt;br/&gt;Aclarar y acordar el prop&#243;sito del esfuerzo de arquitectura es una de las partes clave de esta actividad, y el prop&#243;sito debe reflejarse claramente en la visi&#243;n que se crea. Los proyectos de arquitectura a menudo se llevan a cabo con un prop&#243;sito espec&#237;fico en mente: un conjunto espec&#237;fico de impulsores de negocios que representan el retorno de la inversi&#243;n para las partes interesadas en el desarrollo de la arquitectura. Aclarar ese prop&#243;sito, y demostrar c&#243;mo se lograr&#225; mediante el desarrollo de la arquitectura propuesta, es el objetivo de la Visi&#243;n de la Arquitectura.&lt;br/&gt;&lt;br/&gt;Normalmente, los elementos clave de la Visi&#243;n de la Arquitectura, como la misi&#243;n, la visi&#243;n, la estrategia y los objetivos de la empresa, se han documentado como parte de una estrategia de negocios m&#225;s amplia o una actividad de planificaci&#243;n empresarial que tiene su propio ciclo de vida dentro de la empresa. En tales casos, la actividad en la Fase A se ocupa de verificar y comprender la estrategia y los objetivos de negocios documentados, y posiblemente tender un puente entre la estrategia y los objetivos de la empresa, por un lado, y la estrategia y los objetivos impl&#237;citos en la realidad de la arquitectura actual.&lt;br/&gt;&lt;br/&gt;Los modelos de negocio son artefactos estrat&#233;gicos clave que pueden proporcionar dicha perspectiva, al mostrar c&#243;mo la organizaci&#243;n tiene la intenci&#243;n de ofrecer valor a sus clientes y partes interesadas. &lt;i&gt;En el paso 4 de esta Fase A: Evaluar capacidades&lt;/i&gt; introduce la aplicaci&#243;n de modelos de negocio como un paso en el desarrollo de la Visi&#243;n de arquitectura.&lt;br/&gt;&lt;br/&gt;En otros casos, se puede haber realizado poco o ning&#250;n trabajo de Arquitectura de Negocios hasta la fecha. En tales casos, ser&#225; necesario que el equipo de arquitectura investigue, verifique y obtenga la aceptaci&#243;n de los objetivos y procesos de negocios clave que la arquitectura debe respaldar. Esto se puede hacer como un ejercicio independiente, ya sea antes del desarrollo de la arquitectura o como parte de la fase de inicio de ADM (&lt;i&gt;Fase Preliminar&lt;/i&gt;).&lt;br/&gt;&lt;br/&gt;Este ejercicio debe examinar y buscar materiales existentes sobre conceptos fundamentales de Arquitectura de Negocios, tales como:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Capacidades de negocios,&lt;/b&gt; que representan una habilidad o capacidad particular que un negocio puede poseer o intercambiar para lograr un prop&#243;sito o resultado espec&#237;fico.&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;En esta fase, el arquitecto debe determinar si existe un marco en la organizaci&#243;n para representar las capacidades de negocios. Si no existe uno, el arquitecto debe considerar si el desarrollo de un marco est&#225; dentro del alcance del proyecto. Para obtener una introducci&#243;n a las capacidades de negocios, consulte La &lt;i&gt;Gu&#237;a The Open Group sobre capacidades de negocios.&lt;/i&gt;&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Flujos de valor&lt;/b&gt;, que representan una colecci&#243;n integral de actividades de valor agregado que crean un resultado general para un cliente, parte interesada o usuario final&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;Para obtener una introducci&#243;n a los flujos de valor, consulte la &lt;i&gt;Gu&#237;a de la serie TOGAF&#174;: Flujos de valor.&lt;/i&gt;&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Mapas de organizaci&#243;n&lt;/b&gt;, que representan las relaciones entre las entidades principales que componen la empresa, sus socios y partes interesadas&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;Como los organigramas tradicionales a menudo carecen de los detalles necesarios para reflejar el alcance completo de las actividades de la empresa, el arquitecto puede ayudar a identificar y comprender la compleja red de relaciones entre las entidades de negocios, as&#237; como d&#243;nde se utilizan las capacidades de negocios y la conexi&#243;n con las etapas de flujo de valor. Estos se refinan y ampl&#237;an en fases posteriores.&lt;br/&gt;&lt;br/&gt;Adem&#225;s, la Visi&#243;n de la Arquitectura explora otros dominios que son apropiados para la arquitectura empresarial en cuesti&#243;n. Estos dominios pueden incluir elementos de los dominios b&#225;sicos, pero sirven para un prop&#243;sito adicional para las partes interesadas. Los dominios de ejemplo pueden incluir:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Informaci&#243;n&lt;/li&gt;&lt;li&gt;Seguridad&lt;/li&gt;&lt;li&gt;Digital&lt;/li&gt;&lt;li&gt;Gesti&#243;n de redes&lt;/li&gt;&lt;li&gt;Conocimiento&lt;/li&gt;&lt;li&gt;Espec&#237;fico de la industria&lt;/li&gt;&lt;li&gt;Servicios&lt;/li&gt;&lt;li&gt;Asociaci&#243;n&lt;/li&gt;&lt;li&gt;Ciberseguridad&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;Estos dominios pueden ser independientes o estar vinculados con otros dominios para proporcionar vistas de toda la empresa de la visi&#243;n y la estructura de la organizaci&#243;n.&lt;br/&gt;&lt;br/&gt;La fase de Visi&#243;n de Arquitectura incluye la realizaci&#243;n de una evaluaci&#243;n empresarial (utilizando, por ejemplo, escenarios de negocio) donde se documentan factores cr&#237;ticos y se eval&#250;an varios cursos de acci&#243;n. Las ventajas y desventajas de alto nivel, incluidos los riesgos y las oportunidades, se documentan y se selecciona el mejor curso de acci&#243;n para que sirva de base para la Visi&#243;n de la Arquitectura.&lt;br/&gt;&lt;br/&gt;La Visi&#243;n de la Arquitectura proporciona una descripci&#243;n de primer corte y alto nivel de las arquitecturas de l&#237;nea base y destino, que cubre los dominios de negocio, datos, aplicaciones y tecnolog&#237;a. Estas descripciones generales se desarrollan en fases posteriores.&lt;br/&gt;&lt;br/&gt;Una vez que una Visi&#243;n de Arquitectura se define y documenta en la &lt;i&gt;Declaraci&#243;n de Trabajo de Arquitectura&lt;/i&gt;, es fundamental usarla para construir un consenso, como se describe en la &lt;i&gt;Parte VI, 44.1.4 Gobierno de TI.&lt;/i&gt; Sin este consenso es muy poco probable que la arquitectura final sea aceptada por la organizaci&#243;n en su conjunto. El consenso est&#225; representado por la organizaci&#243;n patrocinadora que firma la &lt;i&gt;Declaraci&#243;n de Trabajo de Arquitectura&lt;/i&gt;.&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA247.htm">Objetos del negocios de la Fase A: Visión de la Arquitectura</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink127" /></button>Details:
+							<div id="detailsDIVLink127" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA252.htm">«recurso» Otros Recursos</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA1/EA363.htm">«Activity» 4. Evaluar capacidades</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA2/EA1/EA524.htm">«Activity» 1.1 Determinar el proceso general de modelado</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2/EA2/EA1242.htm">«Fase ADM» B: Arquitectura de Negocios</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2/EA1/EA1232.htm">«Fase ADM» A: Visión de la Arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA2/EA477.htm">«Activity» 1. Seleccionar modelos de referencia, puntos de vista y herramientas</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

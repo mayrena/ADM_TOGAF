@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Sub-proceso "Proceso para desarrollar una Arquitectura Tecnológica"</title>
+<link href="../../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Sub-proceso "Proceso para desarrollar una Arquitectura Tecnológica" </h1>
+			<!-- <img class="header_image" src="../../../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../../../../index.htm">Adaptacion BMM</a> / <a href="../../../../../EA1.htm">ADM_TOGAF</a> / <a href="../../../../EA3.htm">Modelado de elementos del negocio</a> / <a href="../../../EA295.htm">Modelado de Procesos del Negocio</a> / <a href="../../EA299.htm">Diagrama de Actividades</a> / <a href="../EA892.htm">Fase D: Arquitectura Tecnológica</a> / <a href="EA940.htm">Sub-proceso "1. Seleccionar modelos de referencia, puntos de vista y herramientas"</a> / <a href="./EA1/EA984.htm">Sub-proceso "Proceso para desarrollar una Arquitectura Tecnológica"</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../../../../../images/189.png" alt="Diagram"/> <a href="./EA1/EA982.htm">Sub-proceso "Proceso para desarrollar una Arquitectura Tecnológica"</a></li>
+<li><img src="../../../../../../../images/21.png" alt="Activity"/> <a href="./EA1/EA1001.htm">¿La tecnología implementada es adecuada para cumplir con los nuevos requisitos (es decir, cumple con los requisitos funcionales y no funcionales)?</a></li>
+<li><img src="../../../../../../../images/21.png" alt="Activity"/> <a href="./EA1/EA985.htm">Definir una taxonomía de servicios tecnológicos y componentes de tecnología lógica (incluidos estándares)</a></li>
+<li><img src="../../../../../../../images/21.png" alt="Activity"/> <a href="./EA1/EA986.htm">Determinar el impacto</a></li>
+<li><img src="../../../../../../../images/21.png" alt="Activity"/> <a href="./EA1/EA987.htm">Determinar la configuración de la tecnología seleccionada</a></li>
+<li><img src="../../../../../../../images/21.png" alt="Activity"/> <a href="./EA1/EA989.htm">Identificar ubicaciones relevantes donde se implementa la tecnología</a></li>
+<li><img src="../../../../../../../images/21.png" alt="Activity"/> <a href="./EA1/EA992.htm">Llevar a cabo un inventario físico de la tecnología desplegada y abstraerla para encajar en la taxonomía</a></li>
+<li><img src="../../../../../../../images/21.png" alt="Activity"/> <a href="./EA1/EA993.htm">Observar los requisitos del negocio y de aplicación para la tecnología</a></li>
+<li><img src="../../../../../../../images/24.png" alt="Event"/> <a href="./EA1/EA988.htm">fin</a></li>
+<li><img src="../../../../../../../images/24.png" alt="Event"/> <a href="./EA1/EA991.htm">inicio</a></li>
+<li><img src="../../../../../../../images/82.png" alt="Artifact"/> <a href="./EA1/EA990.htm">Informe de impactos</a></li>
+<li><img src="../../../../../../../images/82.png" alt="Artifact"/> <a href="./EA1/EA998.htm">Proyecto de Documento de definición de arquitectura</a></li>
+<li><img src="../../../../../../../images/82.png" alt="Artifact"/> <a href="./EA1/EA999.htm">Taxonomía de servicios y componentes tecnológicos</a></li>
+<li><img src="../../../../../../../images/82.png" alt="Artifact"/> <a href="./EA1/EA1000.htm">Taxonomía refinada</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Sub-proceso "Proceso para desarrollar una Arquitectura Tecnológica"  : Public   Package</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">03/11/2022 22:33:33</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">03/11/2022 22:33:33</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Wanda Mayrena</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{AE611F68-EBA4-4282-BB20-A6FDF9F3E955}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+	</table>
+	
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

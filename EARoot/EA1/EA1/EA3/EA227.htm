@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Modelado de Objetos del Negocio::Gestión de las partes interesadas</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Modelado de Objetos del Negocio::Gestión de las partes interesadas </h1>
+			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../index.htm">Adaptacion BMM</a> / <a href="../../EA1.htm">ADM_TOGAF</a> / <a href="../EA3.htm">Modelado de elementos del negocio</a> / <a href="EA103.htm">Modelado de Objetos del Negocio</a> / <a href="EA227.htm">Gestión de las partes interesadas</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA103.htm">Modelado de Objetos del Negocio</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Gestión de las partes interesadas  : Public  &lt;&lt;recurso: Apoyo en los pasos&gt;&gt; Class</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">19/10/2022 1:51:35</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">19/10/2022 4:27:39</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Wanda Mayrena</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{7FA04ED4-BB4F-4855-8610-94D60D8E3EA4}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA4/EA1/EA1/EA4/EA1/EA431.htm">Sub-proceso 2.1 "Identifique a las partes interesadas clave y sus preocupaciones / objetivos"</a>, <a href="../EA4/EA2/EA1/EA1222.htm">Fase A: Visión de la Arquitectura</a>, <a href="EA101.htm">Modelado de Objetos del Negocio</a>, <a href="../EA4/EA1/EA1/EA4/EA2/EA451.htm">Sub-proceso 2.2 "Obtener un mapa de las partes interesadas para el compromiso"</a>, <a href="../EA4/EA1/EA1/EA306.htm">Fase A: Visión de la Arquitectura</a>, <a href="../EA4/EA1/EA1/EA4/EA415.htm">Sub-proceso"2. Identificar las partes interesadas y los requisitos"</a>, <a href="./EA5/EA288.htm">Fase A: Visión de la arquitectura</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;ul&gt;<br />&lt;li&gt;Gestión de las partes interesadas (&lt;i&gt;Parte III: Guías y técnicas de ADM, 21. Gestión de partes interesadas&lt;/i&gt;)&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;La gestión de las partes interesadas es una disciplina importante que los profesionales de la arquitectura exitosos pueden usar para ganar el apoyo de otros. Les ayuda a garantizar que sus proyectos tengan éxito donde otros fracasan.&lt;br/&gt;&lt;br/&gt;Los beneficios de una gestión exitosa de las partes interesadas son que:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Las partes interesadas más poderosas se pueden identificar temprano y sus aportes se pueden utilizar para dar forma a la arquitectura; Esto asegura su soporte y mejora la calidad de los modelos producidos&lt;/li&gt;&lt;li&gt;El apoyo de las partes interesadas más poderosas ayudará al compromiso a ganar más recursos, lo que hará que el compromiso de la arquitectura tenga más probabilidades de tener éxito.&lt;/li&gt;&lt;li&gt;Al comunicarse con las partes interesadas de manera temprana y frecuente, el equipo de arquitectura puede asegurarse de que comprenden completamente el proceso de arquitectura y los beneficios de la arquitectura empresarial; Esto significa que pueden dar soporte al equipo de arquitectura de forma más activa cuando sea necesario&lt;/li&gt;&lt;li&gt;El equipo de arquitectura puede anticipar de manera más efectiva las reacciones probables a los modelos e informes de arquitectura, y puede incorporar en el plan las acciones que se necesitarán para capitalizar la reacción positiva mientras evita o aborda cualquier reacción negativa.&lt;/li&gt;&lt;li&gt;El equipo de arquitectura puede identificar objetivos conflictivos o en competencia entre las partes interesadas de manera temprana y desarrollar una estrategia para resolver los problemas que surgen de ellos.&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;Es esencial en cualquier iniciativa identificar a los individuos y grupos dentro de la organización que contribuirán al desarrollo de la arquitectura, identificar aquellos que ganarán y aquellos que perderán con su introducción, y luego desarrollar una estrategia para lidiar con ellos.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;21.2 Enfoque de la gestión de las partes interesadas&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;El análisis de las partes interesadas debe utilizarse durante la Fase A (Visión de la Arquitectura) para identificar a los actores clave en el compromiso, y también actualizarse a lo largo de cada fase; se pueden descubrir diferentes partes interesadas a medida que avanza el compromiso en Oportunidades y soluciones, Planificación de la migración y Gestión del cambio de arquitectura.&lt;br/&gt;&lt;br/&gt;Las arquitecturas complejas son extremadamente difíciles de gestionar, no solo en términos del proceso de desarrollo de la arquitectura en sí, sino también en términos de obtener el acuerdo del gran número de partes interesadas afectadas por él.&lt;br/&gt;&lt;br/&gt;Por ejemplo, así como un arquitecto de edificios creará diagramas de cableado, planos de planta y elevaciones para describir diferentes facetas de un edificio a sus diferentes partes interesadas (electricistas, propietarios, funcionarios de planificación), un arquitecto empresarial debe crear diferentes vistas de arquitectura del negocio, los sistemas de información y la arquitectura tecnológica para las partes interesadas que tienen inquietudes relacionadas con estos aspectos.&lt;br/&gt;&lt;br/&gt;El estándar TOGAF identifica específicamente este problema en todo el ADM a través de los siguientes conceptos (consulte&lt;i&gt; 31.1 Conceptos básicos&lt;/i&gt;):&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Vista de arquitectura&lt;/li&gt;&lt;li&gt;Punto de vista de la arquitectura&lt;/li&gt;&lt;li&gt;Preocupación&lt;/li&gt;&lt;li&gt;Interesado&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;&lt;b&gt;21.3 Pasos en el proceso de gestión de las partes interesadas&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Las siguientes secciones detallan la actividad de gestión de las partes interesadas recomendada.&lt;br/&gt;&lt;br/&gt;&lt;i&gt;&lt;u&gt;21.3.1 Identificar a las partes interesadas&lt;/u&gt;&lt;/i&gt;&lt;br/&gt;&lt;br/&gt;Identificar las partes interesadas clave de la arquitectura empresarial.&lt;br/&gt;&lt;br/&gt;La primera tarea es hacer una lluvia de ideas sobre quiénes son las principales partes interesadas de la arquitectura empresarial. Como parte de esto, piense en todas las personas que se ven afectadas por ella, que tienen influencia o poder sobre ella, o que tienen interés en su conclusión exitosa o no exitosa.&lt;br/&gt;&lt;br/&gt;Puede incluir altos ejecutivos, roles de organización de proyectos, roles de organización de clientes, desarrolladores de sistemas, socios de alianzas, proveedores, operaciones de TI, clientes, etc.&lt;br/&gt;&lt;br/&gt;Al identificar a las partes interesadas, existe el peligro de concentrarse demasiado en la estructura formal de una organización como base para la identificación. Los grupos informales de partes interesadas pueden ser tan poderosos e influyentes como los formales.&lt;br/&gt;&lt;br/&gt;La mayoría de los individuos pertenecerán a más de un grupo de partes interesadas, y estos grupos tienden a surgir como resultado de eventos específicos.&lt;br/&gt;Mira quién se ve afectado por el proyecto de Arquitectura Empresarial:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;¿Quién gana y quién pierde con este cambio?&lt;/li&gt;&lt;li&gt;¿Quién controla la gestión del cambio de los procesos?&lt;/li&gt;&lt;li&gt;¿Quién diseña los nuevos sistemas?&lt;/li&gt;&lt;li&gt;¿Quién tomará las decisiones?&lt;/li&gt;&lt;li&gt;¿Quién adquiere sistemas de TI y quién decide qué comprar?&lt;/li&gt;&lt;li&gt;¿Quién controla los recursos?&lt;/li&gt;&lt;li&gt;¿Quién tiene habilidades especializadas que el proyecto necesita?&lt;/li&gt;&lt;li&gt;¿Quién tiene influencia?&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;En particular, los influencers deben ser identificados. Estos serán muy respetados y ascenderán, participarán en reuniones y comités importantes (miren las actas de las reuniones), sabrán lo que está sucediendo en la empresa, serán valorados por sus pares y superiores, y no necesariamente estarán en ninguna posición formal de poder.&lt;br/&gt;&lt;br/&gt;Aunque las partes interesadas pueden ser tanto organizaciones como personas, en última instancia, el equipo de Arquitectura Empresarial tendrá que comunicarse con las personas. Son las partes interesadas individuales correctas dentro de una organización de partes interesadas las que deben identificarse formalmente.&lt;br/&gt;&lt;br/&gt;En la sección &lt;i&gt;21. Gestión de partes interesadas&lt;/i&gt;, se ofrece mayor información de manera gráfica para clasificar las posiciones de las partes interesadas, determinar el enfoque, ejemplo de análisis y plantillas.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;Fase A: Visión de la arquitectura&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;Recurso de Apoyo, requerido en los pasos de la documentación.&lt;br/&gt;&lt;br/&gt;Para identificar a las partes interesadas, las preocupaciones y los requisitos de negocio, consulte la &lt;i&gt;Parte III, 21.3 Pasos en el proceso de gestión de partes interesadas,&lt;/i&gt; donde se detalla la actividad de gestión de las partes interesadas recomendada.&lt;br/&gt;&lt;br/&gt;El principal producto resultante de identificar a las partes interesadas, las preocupaciones y los requisitos de negocio, es un mapa de partes interesadas para el compromiso, que muestra qué partes interesadas están involucradas con el compromiso, su nivel de participación y sus preocupaciones clave (consulte la &lt;i&gt;Parte III, 21.3 Pasos en el proceso de gestión de partes interesadas y 21.4 Plantilla de mapa de partes interesadas&lt;/i&gt;). &lt;br/&gt;&lt;br/&gt;El mapa de partes interesadas se utiliza para respaldar varios resultados de la fase de Visión de arquitectura.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;-Este recurso forma parte del estándar TOGAF 9.2 y es requerido en los pasos de la fase ADM, sin embargo no pertenece a formalmente a las entradas y/o salidas de la fase actual-&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA247.htm">Objetos del negocios de la Fase A: Visión de la Arquitectura</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink207" /></button>Details:
+							<div id="detailsDIVLink207" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA238.htm">«artefacto» Matriz de mapa de partes interesadas</a><br />
+						Artifact &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink208" /></button>Details:
+							<div id="detailsDIVLink208" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA238.htm">«artefacto» Matriz de mapa de partes interesadas</a></td>
+					<td width="10%" class="TableRow" valign="top">Artifact</td>
+					<td width="10%" class="TableRow" valign="top">Weak</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA1/EA4/EA1/EA449.htm">«Activity» Identificar los límites de alcance candidatos para el compromiso para limitar el alcance de la investigación arquitectónica requerida</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA1/EA361.htm">«Activity» 2. Identificar a las partes interesadas, las preocupaciones y los requisitos comerciales</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA1/EA4/EA426.htm">«Activity» Identificar a las partes interesadas clave y sus preocupaciones / objetivos, y defina los requisitos clave del negocio que se abordarán en el compromiso de la arquitectura.</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA1/EA4/EA1/EA447.htm">«Activity» Identificar las preocupaciones, problemas y factores culturales de las partes interesadas que determinarán cómo se presenta y se comunica la arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2/EA1/EA1232.htm">«Fase ADM» A: Visión de la Arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA252.htm">«recurso» Otros Recursos</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA1/EA4/EA2/EA459.htm">«Activity» Identificar las partes interesadas que participan en el proyecto y estabalecer el plan de comunicaciones</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA1/EA4/EA2/EA460.htm">«Activity» Identificar las preocupaciones y puntos de vista que son relevantes para este proyecto</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA1/EA4/EA423.htm">«Activity» Comprender qué partes interesadas, visón de arquitectura y qué puntos de vista deben desarrollarse para establecer el alcance del compromiso.</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA1/EA4/EA2/EA458.htm">«Activity» Identificar Las funciones y responsabilidades clave dentro del proyecto e incluirlas en la Declaración de Trabajo de Arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA1/EA4/EA428.htm">«Activity» Obtener un mapa de las partes interesadas para el compromiso, que muestre qué partes interesadas están involucradas con el compromiso, su nivel de participación y sus preocupaciones claves.</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA1/EA4/EA1/EA448.htm">«Activity» Identificar los componentes y requisitos de visión candidatos a ser probados a medida que se desarrolla la visión de arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

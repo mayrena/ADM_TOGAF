@@ -1,0 +1,2 @@
+tocTab[tocTab.length] = new Array("0.1.1.3.2.1", "1", "Fase C: Arquitectura SI - Arquitectura de Aplicaciones", "EARoot/EA1/EA1/EA3/EA2/EA1/EA275.htm", "4.png", "", "", "{32B49363-7FD9-45f6-9438-3B7C911408FE}", "Package");
+tocTab[tocTab.length] = new Array("0.1.1.3.2.2", "1", "Fase C: Arquitectura SI - Arquitectura de Datos", "EARoot/EA1/EA1/EA3/EA2/EA2/EA279.htm", "4.png", "", "", "{D24FE0CC-14FA-4242-BB81-3F4849841C95}", "Package");

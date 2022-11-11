@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Modelado de Objetos del Negocio::Enfoque Fase B: Arquitectura del Negocio</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Modelado de Objetos del Negocio::Enfoque Fase B: Arquitectura del Negocio </h1>
+			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../index.htm">Adaptacion BMM</a> / <a href="../../EA1.htm">ADM_TOGAF</a> / <a href="../EA3.htm">Modelado de elementos del negocio</a> / <a href="EA103.htm">Modelado de Objetos del Negocio</a> / <a href="EA184.htm">Enfoque Fase B: Arquitectura del Negocio</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA103.htm">Modelado de Objetos del Negocio</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Enfoque Fase B: Arquitectura del Negocio  : Public  &lt;&lt;proceso interno ADM&gt;&gt; Class</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">10/11/2022 4:17:24</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">10/11/2022 4:53:07</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Wanda Mayrena</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{92BA05B8-A93B-43cf-AD55-C2F3A8605420}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA4/EA2/EA2/EA1234.htm">Fase B: Arquitectura de Negocios</a>, <a href="EA101.htm">Modelado de Objetos del Negocio</a>, <a href="../EA4/EA1/EA2/EA462.htm">Fase B: Arquitectura de Negocios</a>, <a href="./EA1/EA266.htm">Fase B: Arquitectura del negocio</a>, <a href="../EA4/EA1/EA2/EA1/EA517.htm">Sub-proceso "1. Seleccionar modelos de referencia,  puntos de vista y herramientas"</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;b&gt;7.5 Enfoque Fase B: Arquitectura del Negocio&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;La arquitectura del negocio es una representaci&#243;n de puntos de vista empresariales hol&#237;sticos y multidimensionales de: capacidades, entrega de valor de extremo a extremo, informaci&#243;n y estructura organizativa; y las relaciones entre estos puntos de vista y estrategias comerciales, productos, pol&#237;ticas, iniciativas y partes interesadas.&lt;br/&gt;&lt;br/&gt;La arquitectura del negocio relaciona los elementos del negocio con los objetivos del negocio y elementos de otros dominios.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;u&gt;7.5.1 Generalidades&lt;/u&gt;&lt;/b&gt;&lt;br/&gt;El conocimiento de la Arquitectura del negocio es un requisito previo para el trabajo de arquitectura en cualquier otro dominio (Datos, Aplicaci&#243;n, Tecnolog&#237;a), y por lo tanto es la primera actividad de arquitectura que debe emprenderse, si no se atiende ya en otros procesos organizativos (planificaci&#243;n empresarial, planificaci&#243;n estrat&#233;gica de negocios, reingenier&#237;a de procesos del negocio, etc.).&lt;br/&gt;&lt;br/&gt;En t&#233;rminos pr&#225;cticos, la arquitectura del negocio tambi&#233;n es a menudo necesaria como un medio para demostrar el valor comercial del trabajo de arquitectura posterior a las partes interesadas clave, y el retorno de la inversi&#243;n para esas partes interesadas al apoyar y participar en el trabajo posterior.&lt;br/&gt;&lt;br/&gt;El alcance del trabajo en la Fase B est&#225; determinado principalmente por la Visi&#243;n de Arquitectura establecida en la Fase A. La estrategia del negocio define los objetivos, los impulsores y las m&#233;tricas para el &#233;xito, pero no necesariamente c&#243;mo llegar all&#237;. Ese es el papel de la Arquitectura de Negocios, definido en detalle en la Fase B.&lt;br/&gt;&lt;br/&gt;Esto depender&#225; en gran medida del entorno empresarial. En algunos casos, los elementos clave de la Arquitectura de Negocios pueden hacerse en otras actividades; Por ejemplo, la misi&#243;n, la visi&#243;n, la estrategia y los objetivos de la empresa pueden documentarse como parte de alguna estrategia del m&#225;s amplia o actividad de planificaci&#243;n empresarial que tenga su propio ciclo de vida dentro de la empresa.&lt;br/&gt;&lt;br/&gt;En tales casos, puede ser necesario verificar y actualizar la estrategia y los planes del negocio actualmente documentados, y / o tender un puente entre los impulsores del negocio de alto nivel, la estrategia del negocio y los objetivos, por un lado, y los requisitos del negocio espec&#237;ficos que son relevantes para este esfuerzo de desarrollo de arquitectura. La estrategia del negocio generalmente define qu&#233; lograr, los objetivos y los impulsores, y las m&#233;tricas para el &#233;xito, pero no c&#243;mo llegar all&#237;. Ese es el papel de la Arquitectura del negocio.&lt;br/&gt;&lt;br/&gt;En otros casos, es posible que se haya realizado poco o ning&#250;n trabajo de Arquitectura de Negocios hasta la fecha. En tales casos, ser&#225; necesario que el equipo de arquitectura investigue, verifique y obtenga la aceptaci&#243;n de los objetivos y procesos del negocio clave que la arquitectura debe soportar. Esto se puede hacer como un ejercicio independiente, ya sea antes del desarrollo de la arquitectura o como parte de la Fase A.&lt;br/&gt;&lt;br/&gt;En ambos casos, se puede utilizar la t&#233;cnica de escenarios empresariales (&lt;i&gt;consulte la Gu&#237;a de la serie TOGAF&#174;: Escenarios del negocio&lt;/i&gt;) o cualquier otro m&#233;todo que ilumine los requisitos del negocio clave e indique los requisitos t&#233;cnicos impl&#237;citos para la arquitectura de TI.&lt;br/&gt;&lt;br/&gt;Un objetivo clave es reutilizar el material existente tanto como sea posible. En entornos arquitect&#243;nicamente m&#225;s maduros, habr&#225; definiciones de arquitectura existentes, que (con suerte) se habr&#225;n mantenido desde el &#250;ltimo ciclo de desarrollo de arquitectura. Cuando existan descripciones de arquitectura, &#233;stas pueden utilizarse como punto de partida, y verificarse y actualizarse si es necesario; &lt;i&gt;v&#233;ase Parte V, 35.4.1&#160;&#160;Continuum de Arquitectura&lt;/i&gt; .&lt;br/&gt;&lt;br/&gt;Re&#250;na y analice solo aquella informaci&#243;n que permita tomar decisiones informadas relevantes para el alcance de este esfuerzo de arquitectura. Si este esfuerzo se centra en la definici&#243;n de procesos de negocio (posiblemente nuevos), entonces la Fase B implicar&#225; necesariamente mucho trabajo detallado. Si el enfoque est&#225; m&#225;s en las arquitecturas de destino en otros dominios (datos / informaci&#243;n, sistemas de aplicaciones, infraestructura) para soportar una arquitectura del negocio esencialmente existente, entonces es importante construir una imagen completa en la Fase B sin entrar en detalles innecesarios.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;u&gt;7.5.2 Desarrollo de la descripci&#243;n de referencia&lt;/u&gt;&lt;/b&gt;&lt;br/&gt;Si una empresa tiene descripciones de arquitectura existentes, deben utilizarse como base para la descripci&#243;n de l&#237;nea base. Es posible que esta informaci&#243;n ya se haya utilizado en la Fase A para desarrollar la Visi&#243;n de Arquitectura, como el mapa de capacidades del negocio o un conjunto b&#225;sico de flujos de valor como se introdujo en el &lt;i&gt;Enfoque de la Fase A: 6.5.2 Creaci&#243;n de la Visi&#243;n de Arquitectura&lt;/i&gt;, y puede ser suficiente en s&#237; mismo para esta l&#237;nea de base.&lt;br/&gt;&lt;br/&gt;Las razones para actualizar estos materiales incluyen tener una capacidad del negocio faltante, un nuevo flujo de valor o una unidad organizativa modificada que no se ha evaluado previamente dentro del alcance del proyecto de Arquitectura empresarial. Del enfoque de esta fase B: &lt;i&gt;7.5.3 Aplicaci&#243;n de las capacidades del negocio&lt;/i&gt; a &lt;i&gt;7.5.5 La aplicaci&#243;n del mapa de la organizaci&#243;n&lt;/i&gt; aborda el uso de m&#233;todos b&#225;sicos de arquitectura del negocio para modelar la arquitectura del negocio impulsada por el alcance de la estrategia de la fase A. Tenga en cuenta que poner estos m&#233;todos en acci&#243;n para impulsar un enfoque y un estado objetivo para el trabajo de arquitectura posterior no significa los marcos fundamentales de la Fase A, como un mapa de capacidad del negocio com&#250;n a la empresa, necesariamente cambian, sino que se aplican de una manera impulsada por el alcance y las necesidades del proyecto espec&#237;fico de arquitectura empresarial.&lt;br/&gt;&lt;br/&gt;Si no existen descripciones de arquitectura, se debe recopilar informaci&#243;n y desarrollar modelos de arquitectura del negocio.&lt;br/&gt;&lt;br/&gt;Cualquiera que sea el alcance del proyecto espec&#237;fico, es importante determinar si es la visi&#243;n fundamental del negocio la que est&#225; cambiando o el uso de esas vistas para determinar el alcance, las prioridades y las relaciones para el proyecto espec&#237;fico en relaci&#243;n con el resto de la empresa.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;u&gt;7.5.3 Aplicaci&#243;n de las capacidades empresariales&lt;/u&gt;&lt;/b&gt;&lt;br/&gt;El mapa de capacidad empresarial encontrado o desarrollado en la fase de Visi&#243;n de arquitectura proporciona una visi&#243;n aut&#243;noma del negocio que es independiente de la estructura organizativa actual, los procesos de negocio, los sistemas de informaci&#243;n y las aplicaciones, y el resto de la cartera de productos o servicios. Esas capacidades empresariales deben asignarse a las unidades organizativas, flujos de valor, sistemas de informaci&#243;n y planes estrat&#233;gicos dentro del alcance del proyecto de arquitectura empresarial. Este mapeo de relaciones proporciona una mayor comprensi&#243;n de la alineaci&#243;n y optimizaci&#243;n de cada uno de esos dominios (consulte Mapeo de relaciones en The Open Group Guide to Business Capabilities).&lt;br/&gt;&lt;br/&gt;Otra t&#233;cnica de an&#225;lisis com&#250;n implica el mapeo de calor, que se puede utilizar para mostrar una gama de diferentes perspectivas sobre el mismo conjunto de capacidades comerciales principales. Estos incluyen madurez, efectividad, rendimiento y el valor o costo de cada capacidad para el negocio. Diferentes atributos determinan los colores de cada capacidad en el mapa de capacidades empresariales (consulte Asignaci&#243;n de calor en The Open Group Guide to Business Capabilities).&lt;br/&gt;&lt;br/&gt;Por ejemplo, un mapa de calor de madurez de capacidad empresarial muestra la madurez deseada como verde para una capacidad espec&#237;fica, un nivel hacia abajo como amarillo y dos o m&#225;s niveles hacia abajo como rojo. Otros colores pueden indicar estado, como el p&#250;rpura que denota una capacidad que a&#250;n no existe en la empresa pero que se desea, o tal vez como una capacidad que est&#225; sobrefinanciada y tiene m&#225;s recursos de los necesarios. Este an&#225;lisis de brechas est&#225; directamente relacionado con el proyecto de Arquitectura Empresarial en curso; Una brecha solo es relevante en el contexto de la necesidad del negocio y proporciona un enfoque para m&#225;s mapeo en esta fase o prioridades para fases posteriores de arquitectura.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;u&gt;7.5.4 Aplicaci&#243;n de flujos de valor&lt;/u&gt;&lt;/b&gt;&lt;br/&gt;Los flujos de valor proporcionan un valioso contexto de las partes interesadas sobre por qu&#233; la organizaci&#243;n necesita capacidades comerciales, mientras que las capacidades comerciales proporcionan lo que la organizaci&#243;n necesita para que una etapa de valor particular tenga &#233;xito.&lt;br/&gt;&lt;br/&gt;Comience con el conjunto inicial de modelos de flujo de valor para el negocio documentados en la fase de Visi&#243;n de arquitectura. Dentro del alcance del proyecto espec&#237;fico de Arquitectura Empresarial, si es suficientemente grande en amplitud, puede haber una necesidad de nuevos flujos de valor que a&#250;n no est&#225;n en el repositorio.&lt;br/&gt;&lt;br/&gt;Un flujo de valor nuevo o existente se puede analizar dentro del alcance del proyecto a trav&#233;s de un mapeo de calor (por etapa de flujo de valor) o desarrollando casos de uso en torno a una definici&#243;n completa del flujo de valor (consulte el Ejemplo de l&#237;nea base en la Gu&#237;a de la serie TOGAF&#174;: Flujos de valor). Un proyecto puede centrarse en partes interesadas espec&#237;ficas, un elemento de valor comercial o enfatizar algunas etapas sobre otras para desarrollar mejores requisitos para soluciones en fases posteriores.&lt;br/&gt;&lt;br/&gt;Los beneficios m&#225;s sustanciales provienen del mapeo de las relaciones entre las etapas de un flujo de valor y las capacidades comerciales, y luego realizar un an&#225;lisis de brechas para las capacidades (como el mapeo de calor) en el contexto del valor comercial alcanzado por el flujo de valor para una parte interesada espec&#237;fica (consulte Mapeo de flujos de valor a capacidades comerciales en la Gu&#237;a de la serie TOGAF&#174;: flujos de valor).&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;u&gt;7.5.5 Aplicaci&#243;n del mapa organizativo&lt;/u&gt;&lt;/b&gt;&lt;br/&gt;Un mapa de la organizaci&#243;n muestra las unidades organizativas clave, los socios y los grupos de partes interesadas que conforman el ecosistema empresarial. El mapa tambi&#233;n debe representar la relaci&#243;n de trabajo entre esas entidades, a diferencia de un organigrama que solo muestra relaciones jer&#225;rquicas de informes. El mapa se representa t&#237;picamente como una red o red de relaciones e interacciones entre las diversas entidades comerciales (ver Organigraphs: Drawing How Companies Really Work, por Mintzberg y Van der Heyden, 1999).&lt;br/&gt;&lt;br/&gt;La unidad de negocio es el concepto principal utilizado para establecer mapas de organizaci&#243;n. De acuerdo con la visi&#243;n relativamente sin restricciones de lo que constituye una empresa, la empresa puede ser una unidad de negocio para el proyecto en curso, puede incluir todas las unidades de negocio, o tambi&#233;n incluir terceros u otros grupos de partes interesadas. La interpretaci&#243;n depende del alcance del esfuerzo de arquitectura.&lt;br/&gt;&lt;br/&gt;Este mapa es un elemento clave de la arquitectura empresarial porque proporciona el contexto organizativo para todo el esfuerzo de arquitectura empresarial. Mientras que el mapeo de capacidades expone lo que hace un negocio y el mapeo de flujo de valor expone c&#243;mo entrega valor a partes interesadas espec&#237;ficas, el mapeo de la organizaci&#243;n identifica las unidades de negocio o terceros que poseen o usan esas capacidades y que participan en los flujos de valor.&lt;br/&gt;&lt;br/&gt;Junto con los m&#233;todos de 7.5.3 Aplicaci&#243;n de capacidades empresariales, 7.5.4 Aplicaci&#243;n de flujos de valor y las gu&#237;as asociadas, el mapa de la organizaci&#243;n proporciona una comprensi&#243;n de qu&#233; unidades de negocio involucrar en el esfuerzo de arquitectura, qui&#233;n y cu&#225;ndo hablar sobre un requisito determinado, y c&#243;mo medir el impacto de varias decisiones.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;u&gt;7.5.6 Aplicaci&#243;n de t&#233;cnicas de modelado&lt;/u&gt;&lt;/b&gt;&lt;br/&gt;Las t&#233;cnicas de modelado y mapeo proporcionadas aqu&#237; son extensiones que implementan las capacidades comerciales, los flujos de valor y los mapas de organizaci&#243;n descritos anteriormente en la Fase B en las pr&#225;cticas del negocio. Ampl&#237;an el modelo operativo, que es una representaci&#243;n de c&#243;mo opera una organizaci&#243;n en una variedad de dominios para cumplir su funci&#243;n (ver A Method for Identifying Process Re-Use Opportunities to Enhance the Operating Model, M. de Vries et al.).&lt;br/&gt;&lt;br/&gt;Adem&#225;s de las t&#233;cnicas descritas anteriormente (mapas de capacidad, flujos de valor y mapas de organizaci&#243;n), se puede emplear una variedad de otras t&#233;cnicas de modelado, si se considera apropiado. Por ejemplo:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Los modelos de actividad &lt;/b&gt;(tambi&#233;n llamados &lt;b&gt;modelos de procesos de negocio&lt;/b&gt;) describen las funciones asociadas con las actividades comerciales de la empresa, los datos y / o informaci&#243;n intercambiada entre actividades (intercambios internos) y los datos y / o informaci&#243;n intercambiados con otras actividades que est&#225;n fuera del alcance del modelo (intercambios externos)&lt;/li&gt;&lt;/ul&gt;<br />Los modelos de actividad son de naturaleza jer&#225;rquica. Capturan las actividades realizadas en un proceso de negocio y los ICOM (entradas, controles, salidas y mecanismos/recursos utilizados) de esas actividades. Los modelos de actividad pueden anotarse con declaraciones expl&#237;citas de reglas de negocio, que representan las relaciones entre los ICOM. Por ejemplo, una regla de negocio puede especificar qui&#233;n puede hacer qu&#233; en condiciones especificadas, la combinaci&#243;n de entradas y controles necesarios y los resultados resultantes. Una t&#233;cnica para crear modelos de actividad es la t&#233;cnica de modelado IDEF (Integrated Computer Aided Manufacturing (ICAM) DEFinition).&lt;br/&gt;&lt;br/&gt;El &lt;i&gt;Object Management Group &lt;/i&gt;(OMG) ha desarrollado &lt;i&gt;Business Process Modeling Notation TM (BPMNTM)&lt;/i&gt;, un est&#225;ndar para el modelado de procesos de negocio que incluye un lenguaje con el que especificar los procesos de negocio, sus tareas/pasos y los documentos producidos.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Los modelos de casos de uso &lt;/b&gt;pueden describir procesos de negocio o funciones de sistemas, dependiendo del enfoque del esfuerzo de modelado.&lt;/li&gt;&lt;/ul&gt;<br />Un modelo de caso de uso describe los procesos de negocio de una empresa en t&#233;rminos de casos de uso y actores correspondientes a los procesos de negocio y participantes de la organizaci&#243;n (personas, organizaciones, etc.). El modelo de caso de uso se describe en diagramas de casos de uso y especificaciones de casos de uso.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Los modelos de clases &lt;/b&gt;son similares a los modelos de datos l&#243;gicos&lt;/li&gt;&lt;/ul&gt;<br />Un modelo de clase describe la informaci&#243;n est&#225;tica y las relaciones entre la informaci&#243;n. Un modelo de clase tambi&#233;n describe comportamientos informativos. Al igual que muchos de los otros modelos, tambi&#233;n se puede utilizar para modelar varios niveles de granularidad. Dependiendo de la intenci&#243;n del modelo, un modelo de clase puede representar entidades de dominio empresarial o clases de implementaci&#243;n de sistemas. Un modelo de dominio de negocio representa informaci&#243;n empresarial clave (clases de dominio), sus caracter&#237;sticas (atributos), sus comportamientos (m&#233;todos u operaciones) y relaciones (a menudo denominada multiplicidad, que describe cu&#225;ntas clases suelen participar en la relaci&#243;n) y cardinalidad (describe la participaci&#243;n requerida u opcional en la relaci&#243;n). Las especificaciones elaboran y detallan a&#250;n m&#225;s la informaci&#243;n que no se puede representar en el diagrama de clases.&lt;br/&gt;&lt;br/&gt;En la Figura 7-2: Diagrama de clase empresarial UML, del enfoque de la fase B de la documentaci&#243;n de TOGAF, se muestra:&lt;br/&gt;Los tres tipos de modelos anteriores se pueden representar en el lenguaje&#8482; de modelado unificado (UML&#174;), y existe una variedad de herramientas para generar dichos modelos.&lt;br/&gt;&lt;br/&gt;Algunos sectores industriales tienen t&#233;cnicas de modelizaci&#243;n espec&#237;ficas para el sector en cuesti&#243;n. Por ejemplo, el sector Defensa utiliza los siguientes modelos. Estos modelos deben usarse con cuidado, especialmente si la ubicaci&#243;n y la conducta de los procesos comerciales se ver&#225;n alteradas en la Arquitectura Empresarial visionaria.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;El diagrama de conectividad de nodos &lt;/b&gt;describe las ubicaciones de negocios (nodos), las &quot;l&#237;neas de necesidad&quot; entre ellos y las caracter&#237;sticas de la informaci&#243;n intercambiada.&lt;/li&gt;&lt;/ul&gt;<br />La conectividad de nodo se puede describir en tres niveles: conceptual, l&#243;gico y f&#237;sico. Cada l&#237;nea de necesidad indica la necesidad de alg&#250;n tipo de transferencia de informaci&#243;n entre los dos nodos conectados. Un nodo puede representar un rol (por ejemplo, un CIO), una unidad organizativa, una ubicaci&#243;n o instalaci&#243;n empresarial, etc. Una flecha que indica la direcci&#243;n del flujo de informaci&#243;n est&#225; anotada para describir las caracter&#237;sticas de los datos o informaci&#243;n, por ejemplo, su contenido, medios, nivel de seguridad o clasificaci&#243;n, puntualidad y requisitos para la interoperabilidad del sistema de informaci&#243;n.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;La matriz de intercambio de informaci&#243;n&lt;/b&gt; documenta los requisitos de intercambio de informaci&#243;n para una arquitectura empresarial&lt;/li&gt;&lt;/ul&gt;<br />Los requisitos de intercambio de informaci&#243;n expresan las relaciones entre tres entidades b&#225;sicas (actividades, nodos empresariales y sus elementos, y flujo de informaci&#243;n) y se centran en las caracter&#237;sticas del intercambio de informaci&#243;n, como el rendimiento y la seguridad. Identifican qui&#233;n intercambia qu&#233; informaci&#243;n con qui&#233;n, por qu&#233; la informaci&#243;n es necesaria y de qu&#233; manera.&lt;br/&gt;&lt;b&gt;&lt;u&gt;&lt;br/&gt;&lt;/u&gt;&lt;/b&gt;&lt;b&gt;&lt;u&gt;7.5.7 Repositorio de arquitectura&lt;/u&gt;&lt;/b&gt;&lt;br/&gt;Como parte de la Fase B, el equipo de arquitectura deber&#225; considerar qu&#233; recursos relevantes de Arquitectura Empresarial est&#225;n disponibles en el Repositorio de Arquitectura (ver Parte V, 37. Repositorio de arquitectura ), en particular:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Modelos de referencia de la industria relevantes para el sector industrial de la organizaci&#243;n&lt;/li&gt;&lt;/ul&gt;<br />Estas son &quot;arquitecturas de la industria&quot;, en t&#233;rminos del continuo empresarial. Se guardan en la Biblioteca de referencia del Repositorio de arquitectura (v&#233;ase Parte V, Biblioteca de referencia 37.3). Por ejemplo:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;i&gt;The Object Management Group&lt;/i&gt; (OMG) - www.omg.org - tiene una serie de Grupos de Trabajo de Dominio verticales que desarrollan modelos de referencia de la industria relevantes para dominios verticales espec&#237;ficos como Salud, Transporte, Finanzas, etc.&lt;/li&gt;&lt;li&gt;The TM Forum - www.tmforum.org - ha desarrollado modelos de referencia detallados relevantes para la industria de las telecomunicaciones&lt;/li&gt;&lt;li&gt;Los departamentos y agencias gubernamentales en diferentes pa&#237;ses tienen modelos y marcos de referencia obligatorios para su uso, destinados a promover la integraci&#243;n e interoperabilidad interdepartamental.&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />Un ejemplo es el Federal Enterprise Architecture Business Reference Model, que es un marco basado en funciones para describir las operaciones comerciales del Gobierno Federal independientemente de las agencias que las realizan.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;La arquitectura de referencia IT4IT proporciona una cadena de valor de TI de alto nivel que se puede utilizar dentro del segmento de TI de su arquitectura.&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />La arquitectura de referencia de nivel 1 de IT4IT se puede utilizar para guiar la creaci&#243;n de un mapa de capacidades empresariales para el segmento de TI.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Vistas de arquitectura empresarial espec&#237;ficas de la empresa (mapas de capacidad, mapas de flujo de valor, mapas de organizaci&#243;n, etc.)&lt;/li&gt;&lt;li&gt;Bloques de construcci&#243;n espec&#237;ficos de la empresa (componentes de proceso, reglas de negocio, descripciones de trabajo, etc.)&lt;/li&gt;&lt;li&gt;Normas aplicables&lt;/li&gt;&lt;/ul&gt;&lt;p/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA248.htm">Objetos del negocios de la Fase B: Arquitectura de Negocios</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink128" /></button>Details:
+							<div id="detailsDIVLink128" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA252.htm">«recurso» Otros Recursos</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA2/EA477.htm">«Activity» 1. Seleccionar modelos de referencia, puntos de vista y herramientas</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2/EA2/EA1242.htm">«Fase ADM» B: Arquitectura de Negocios</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA2/EA478.htm">«Activity» 2. Desarrollar una descripción de la arquitectura del negocio de línea de base</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA2/EA1/EA524.htm">«Activity» 1.1 Determinar el proceso general de modelado</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

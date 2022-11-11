@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Modelado de Objetos del Negocio::Modelos de madurez de la arquitectura</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Modelado de Objetos del Negocio::Modelos de madurez de la arquitectura </h1>
+			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../index.htm">Adaptacion BMM</a> / <a href="../../EA1.htm">ADM_TOGAF</a> / <a href="../EA3.htm">Modelado de elementos del negocio</a> / <a href="EA103.htm">Modelado de Objetos del Negocio</a> / <a href="EA241.htm">Modelos de madurez de la arquitectura</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA103.htm">Modelado de Objetos del Negocio</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Modelos de madurez de la arquitectura  : Public  &lt;&lt;recurso: Apoyo en los pasos&gt;&gt; Class</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">17/10/2022 19:21:53</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">18/10/2022 15:55:42</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Wanda Mayrena</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{C549B3B6-CC8D-46c0-A04C-EF476FBC420D}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;ul&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Modelos de madurez de la arquitectura (&lt;/font&gt;&lt;a href=&quot;file://file:///E:\Documents\MEGAsync\Debian_Archivos_2020\UE-2021\PreProyecto\Proyecto%20de%20Trabado%20de%20Grado\Togaf%209-2%20inicio\togaf92e-doc_1_paquete%20HTML\togaf92e-doc\arch\pt5.html&quot;&gt;&lt;font color=&quot;#00a6de&quot;&gt;&lt;i&gt;&lt;u&gt;Parte VI&lt;/u&gt;&lt;/i&gt;&lt;/font&gt;&lt;/a&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;i&gt;: Marco de capacidad de arquitectura, &lt;/i&gt;&lt;/font&gt;&lt;a href=&quot;file://file:///E:\Documents\MEGAsync\Debian_Archivos_2020\UE-2021\PreProyecto\Proyecto%20de%20Trabado%20de%20Grado\Togaf%209-2%20inicio\togaf92e-doc_1_paquete%20HTML\togaf92e-doc\arch\chap45.html \l tag_45&quot;&gt;&lt;font color=&quot;#00a6de&quot;&gt;&lt;i&gt;&lt;u&gt;45. Modelos de madurez de la arquitectura&lt;/u&gt;&lt;/i&gt;&lt;/font&gt;&lt;/a&gt;).&lt;/li&gt;&lt;/ul&gt;<br />&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Se proporciona técnicas para evaluar y cuantificar la madurez de una organización en la arquitectura empresarial.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Las organizaciones que pueden gestionar el cambio de manera efectiva son generalmente más exitosas que las que no pueden. Muchas organizaciones saben que necesitan mejorar sus procesos para gestionar con éxito el cambio, pero no saben cómo. Tales organizaciones generalmente gastan muy poco en la mejora de procesos, porque no están seguras de cuál es la mejor manera de proceder; o gastar mucho, en una serie de esfuerzos paralelos y desenfocados, en poco o ningún éxito.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Los modelos de madurez de capacidad (MMC) abordan este problema al proporcionar un método efectivo y probado para que una organización obtenga gradualmente el control y mejore sus procesos de cambio. Tales modelos proporcionan los siguientes beneficios:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Describen las prácticas que cualquier organización debe realizar para mejorar sus procesos.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Proporcionan un criterio contra el cual medir periódicamente la mejora.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Constituyen un marco probado dentro del cual gestionar los esfuerzos de mejora.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Organizan las diversas prácticas en niveles, cada nivel representa una mayor capacidad para controlar y administrar el entorno de desarrollo.&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Una evaluación de las prácticas de la organización frente al modelo, llamada &quot;evaluación&quot;, determina el nivel en el que se encuentra actualmente la organización. Indica la capacidad de la organización para ejecutar en el área en cuestión, y las prácticas en las que la organización necesita enfocarse para ver la mayor mejora y el mayor retorno de la inversión&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;45.2 Antecedentes&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;El Instituto de Ingeniería de Software (SEI), www.sei.cmu.edu operado por la Universidad Carnegie Mellon, desarrolló el CMM (&lt;i&gt;Capability Maturity Model&lt;/i&gt;) original para Software (SWCMM) a principios de la década de 1990, que todavía se usa ampliamente en la actualidad. Esta MMC proporcionó un marco para desarrollar modelos de madurez en una amplia gama de disciplinas.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;El creciente interés en aplicar estas técnicas a otros campos ha dado lugar a una serie de herramientas de plantilla que evalúan:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;El estado de los procesos de arquitectura&lt;/li&gt;&lt;li&gt;La arquitectura&lt;/li&gt;&lt;li&gt;La aceptación de la organización para ambos&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Los principales problemas abordados por estos modelos incluyen:&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Implementación y auditoría de procesos&lt;/li&gt;&lt;li&gt;Mediciones de calidad&lt;/li&gt;&lt;li&gt;Competencias de las personas&lt;/li&gt;&lt;li&gt;Gestión de inversiones&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;Implican el uso de una multiplicidad de modelos, y se centran en particular en la medición de los beneficios empresariales y el retorno de la inversión.&lt;br/&gt;&lt;br/&gt;Un tema estrechamente relacionado es el Marco de Habilidades de Arquitectura (&lt;i&gt;46. Marco de habilidades de arquitectura&lt;/i&gt;), que se puede utilizar para planificar las habilidades y capacidades objetivo requeridas por una organización para desarrollar y utilizar con éxito la arquitectura empresarial, y para determinar las necesidades de capacitación y desarrollo de las personas.&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;45.3 Marco ACMM del DoC de EE. UU.&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;i&gt;45.3.1 Visión general&lt;/i&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Como ejemplo de la tendencia hacia un mayor interés en la aplicación de técnicas de MMC a la arquitectura empresarial, ahora se espera que todas las agencias federales de los Estados Unidos proporcionen modelos de madurez y calificaciones como parte de sus requisitos de gestión y auditoría de inversiones en TI.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;En particular, el Departamento de Comercio de los Estados Unidos (DoC) ha desarrollado un Modelo de Madurez de Capacidad de Arquitectura (ACMM) para ayudar a realizar evaluaciones internas. El ACMM proporciona un marco que representa los componentes clave de un proceso productivo de arquitectura empresarial. El objetivo es mejorar las probabilidades generales de éxito de la arquitectura empresarial mediante la identificación de áreas débiles y proporcionar un camino evolutivo definido para mejorar el proceso general de arquitectura.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;El ACMM consta de tres secciones:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;ol&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;El modelo de madurez de la arquitectura empresarial&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Características de la arquitectura empresarial de los procesos de las unidades operativas en diferentes niveles de madurez&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;El cuadro de mandos de CMM de arquitectura empresarial&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;<br />&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Las dos primeras secciones explican los niveles de madurez de la capacidad de arquitectura y el elemento y las características de la arquitectura empresarial correspondientes para cada nivel de madurez que se utilizarán como medidas en el proceso de evaluación. La tercera sección se utiliza para derivar el nivel de madurez de la capacidad de arquitectura que se debe informar al Director de Información (CIO) del DoC.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;i&gt;45.3.2 Elementos de la ACMM&lt;/i&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;i&gt;&lt;br/&gt;&lt;/i&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;El DoC ACMM consta de seis niveles de madurez y nueve elementos de arquitectura. Los seis niveles son:&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;0&#160;&#160;&#160;&#160;&#160;&#160;Ninguno&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;1&#160;&#160;&#160;&#160;&#160;&#160;Inicial&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;2&#160;&#160;&#160;&#160;&#160;&#160;En desarrollo&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;3&#160;&#160;&#160;&#160;&#160;&#160;Definido&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;4&#160;&#160;&#160;&#160;&#160;&#160;Administrado&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;5&#160;&#160;&#160;&#160;&#160;&#160;Medido&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Los nueve elementos de la arquitectura empresarial son:&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;1&#160;&#160;&#160;&#160;&#160;&#160;Proceso de arquitectura&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;2&#160;&#160;&#160;&#160;&#160;&#160;Desarrollo de arquitectura&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;3&#160;&#160;&#160;&#160;&#160;&#160;Vinculación comercial&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;4&#160;&#160;&#160;&#160;&#160;&#160;Participación de la alta dirección&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;5&#160;&#160;&#160;&#160;&#160;&#160;Participación de la unidad operativa&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;6&#160;&#160;&#160;&#160;&#160;&#160;Comunicación de arquitectura&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;7&#160;&#160;&#160;&#160;&#160;&#160;Seguridad informática&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;8&#160;&#160;&#160;&#160;&#160;&#160;Gobernanza de la arquitectura&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;9&#160;&#160;&#160;&#160;&#160;&#160;Estrategia de inversión y adquisición de TI&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;En el ACMM se utilizan dos métodos complementarios para calcular una calificación de madurez. El primer método obtiene un nivel de madurez de arquitectura empresarial medio ponderado. El segundo método muestra el porcentaje alcanzado en cada nivel de madurez para los nueve elementos de la arquitectura.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;i&gt;45.3.3 Ejemplo: Niveles de madurez del proceso de arquitectura empresarial&lt;/i&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;En el ejemplo siguiente se muestran las características detalladas de los niveles de madurez de la arquitectura empresarial aplicados a cada uno de los nueve elementos. Por ejemplo, Nivel 3: Definido, el punto número 8 (Gobierno documentado explícito de la mayoría de las inversiones en TI) muestra el estado del Nivel de madurez 3 para el Elemento 8 (Gobierno de arquitectura).&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;u&gt;Nivel 0: Ninguno&lt;/u&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;No hay programa de arquitectura empresarial. No hay arquitectura empresarial de la que hablar.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;u&gt;Nivel 1: Inicial&lt;/u&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;u&gt;&lt;br/&gt;&lt;/u&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Proceso informal de arquitectura empresarial en marcha.&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;ol&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Los procesos son ad hoc y localizados. Se definen algunos procesos de arquitectura empresarial. No existe un proceso de arquitectura unificado entre tecnologías o procesos de negocio. El éxito depende de los esfuerzos individuales.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Los procesos, la documentación y los estándares de la arquitectura empresarial se establecen por una variedad de medios ad hoc y son localizados o informales.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Vinculación mínima o implícita con estrategias comerciales o impulsores de negocios.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Conocimiento limitado del equipo de gestión o participación en el proceso de arquitectura.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Aceptación limitada de la unidad operativa del proceso de Arquitectura Empresarial.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;La última versión de la documentación de Arquitectura Empresarial de la unidad operativa está en la web. Existe poca comunicación sobre el proceso de Arquitectura Empresarial y las posibles mejoras del proceso.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Las consideraciones de seguridad de TI son ad hoc y localizadas.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;No hay una gobernanza explícita de los estándares arquitectónicos.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Poca o ninguna participación del personal de planificación estratégica y adquisición en el proceso de Arquitectura Empresarial. Poca o ninguna adherencia a las normas existentes.&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;<br />&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;u&gt;Nivel 2: En desarrollo&lt;/u&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;El proceso de arquitectura empresarial está en desarrollo.&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;ol&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;El proceso básico de arquitectura empresarial se documenta en función de la Circular A-130 de la OMB y la Guía de arquitectura empresarial del Departamento de Comercio. El proceso de arquitectura ha desarrollado roles y responsabilidades claros.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Se identifican la visión de TI, los principios, los vínculos comerciales, la línea de base y la arquitectura de destino. Existen estándares de arquitectura, pero no necesariamente vinculados a Target Architecture. Se establece el Modelo de Referencia Técnica (TRM) y el Marco de Perfil de Estándares.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Vinculación explícita con las estrategias de negocio.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Conciencia de gestión del esfuerzo de arquitectura.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Se asignan responsabilidades y se está trabajando.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Las páginas web del DoC y de la unidad operativa arquitectura empresarial se actualizan periódicamente y se utilizan para documentar entregables de arquitectura.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;La arquitectura de seguridad de TI ha definido roles y responsabilidades claros.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Gobernanza de algunos estándares arquitectónicos y cierta adherencia al Perfil de Estándares existente.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Poca o ninguna gobernanza formal de la inversión en TI y la estrategia de adquisición. La unidad operativa demuestra cierta adherencia al perfil de estándares existente.&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;<br />&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;u&gt;Nivel 3: Definido&lt;/u&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Arquitectura empresarial definida que incluye procedimientos escritos detallados y TRM.&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;ol&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;La arquitectura está bien definida y comunicada al personal de TI y a la administración del negocio con responsabilidades de TI de la unidad operativa. El proceso se sigue en gran medida.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Se completan el análisis de brechas y el Plan de Migración. TRM y Perfil de Estándares completamente desarrollados. Se identifican los objetivos y métodos de TI.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;La arquitectura empresarial está integrada con la planificación de capital y el control de inversiones.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Equipo de alta dirección consciente y solidario del proceso de arquitectura de toda la empresa. La administración apoya activamente los estándares arquitectónicos.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;La mayoría de los elementos de la unidad operativa muestran aceptación o participan activamente en el proceso de Arquitectura Empresarial.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Documentos de arquitectura actualizados regularmente en la página web de DoC Enterprise Architecture.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;La arquitectura de seguridad de TI Standards Profile está completamente desarrollada y está integrada con Enterprise Architecture.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Gobierno documentado explícito de la mayoría de las inversiones en TI.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;La estrategia de adquisición de TI existe e incluye medidas de cumplimiento de la arquitectura empresarial de TI. Los beneficios de costos se consideran al identificar proyectos.&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;<br />&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;u&gt;Nivel 4: Gestionado&lt;/u&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Proceso de Arquitectura Empresarial gestionado y medido.&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;ol&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;El proceso de arquitectura empresarial es parte de la cultura. Se capturan las métricas de calidad asociadas con el proceso de arquitectura.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;La documentación de Arquitectura Empresarial se actualiza en un ciclo regular para reflejar la Arquitectura Empresarial actualizada. Arquitecturas de negocios, datos, aplicaciones y tecnología definidas por estándares apropiados de jure y de facto.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;La planificación de capital y el control de inversiones se ajustan en función de los comentarios recibidos y las lecciones aprendidas de la arquitectura empresarial actualizada. Reexamen periódico de los impulsores del negocio.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Equipo de alta dirección directamente involucrado en el proceso de revisión de la arquitectura.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Toda la unidad operativa acepta y participa activamente en el proceso de Arquitectura Empresarial.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Los documentos de arquitectura se actualizan regularmente y se revisan con frecuencia para conocer los últimos desarrollos / estándares de arquitectura.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Se capturan las métricas de rendimiento asociadas con la arquitectura de seguridad de TI.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Gobierno explícito de todas las inversiones en TI. Los procesos formales para administrar las variaciones se retroalimentan en la arquitectura empresarial.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Todas las adquisiciones y compras de TI planificadas están guiadas y regidas por la Arquitectura Empresarial.&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;<br />&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;u&gt;Nivel 5: Medido&lt;/u&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Mejora continua del proceso de Arquitectura Empresarial.&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;ol&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Esfuerzos concertados para optimizar y mejorar continuamente el proceso de arquitectura.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Se utiliza un proceso de estándares y exenciones para mejorar el proceso de desarrollo de la arquitectura.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Las métricas de procesos de arquitectura se utilizan para optimizar e impulsar los vínculos comerciales. Negocio involucrado en las continuas mejoras de procesos de Arquitectura Empresarial.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Participación de la alta dirección en la optimización de las mejoras de procesos en el desarrollo de la arquitectura y la gobernanza.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;La retroalimentación sobre el proceso de arquitectura de todos los elementos de la unidad operativa se utiliza para impulsar las mejoras del proceso de arquitectura.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Los documentos de arquitectura son utilizados por todos los responsables de la toma de decisiones de la organización para cada decisión empresarial relacionada con TI.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Los comentarios de las métricas de la arquitectura de seguridad de TI se utilizan para impulsar las mejoras en los procesos de arquitectura.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Gobierno explícito de todas las inversiones en TI. Se utiliza un proceso de estándares y exenciones para realizar mejoras en el proceso de gobernanza.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;No hay inversión o actividad de adquisición de TI no planificada.&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;<br />&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;45.4 Integración de modelos de madurez de capacidad (CMMI)&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;i&gt;&lt;br/&gt;&lt;/i&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;i&gt;45.4.1 Introducción&lt;/i&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Los modelos de capacidad que el SEI está involucrado actualmente en el desarrollo, la expansión o el mantenimiento incluyen los siguientes:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;CMMI (Capability Maturity Model Integration)&lt;/li&gt;&lt;li&gt;IPD-CMM® (Integrated Product Development Capability Maturity Model)&lt;/li&gt;&lt;li&gt;P-CMM® (Modelo de Madurez de Capacidad de las Personas)&lt;/li&gt;&lt;li&gt;SA-CMM® (Software Acquisition Capability Maturity Model)&lt;/li&gt;&lt;li&gt;SE-CMM® (Modelo de Madurez de Capacidad de Ingeniería de Sistemas)&lt;/li&gt;&lt;li&gt;SW-CMM® (Capability Maturity Model for Software)&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;Como se explica en este capítulo, en los últimos años la industria ha sido testigo de un crecimiento significativo en el área de los modelos de madurez. La multiplicidad de modelos disponibles ha dado lugar a problemas propios, en términos de cómo integrar todos los diferentes modelos para producir una métrica significativa para la madurez general del proceso.&lt;br/&gt;&lt;br/&gt;En respuesta a esta necesidad, el SEI ha desarrollado un marco llamado &lt;i&gt;Capability Maturity Model Integration&lt;/i&gt; (CMMI), para proporcionar un medio de gestión de la complejidad.&lt;br/&gt;&lt;br/&gt;Según el SEI, el uso de los modelos CMMI mejora las mejores prácticas de los modelos anteriores de muchas maneras importantes, en particular permitiendo a las organizaciones:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Vincular más explícitamente las actividades de gestión e ingeniería con los objetivos comerciales&lt;/li&gt;&lt;li&gt;Ampliar el alcance y la visibilidad del ciclo de vida del producto y las actividades de ingeniería para garantizar que el producto o servicio cumpla con las expectativas del cliente&lt;/li&gt;&lt;li&gt;Incorporar las lecciones aprendidas de áreas adicionales de mejores prácticas (por ejemplo, medición, gestión de riesgos y gestión de proveedores)&lt;/li&gt;&lt;li&gt;Implementar prácticas más sólidas de alta madurez&lt;/li&gt;&lt;li&gt;Abordar funciones organizativas adicionales críticas para sus productos y servicios&lt;/li&gt;&lt;li&gt;Cumplir más plenamente con las normas ISO pertinentes&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;CMMI se está adoptando en todo el mundo.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;i&gt;45.4.2 Método SCAMPI&lt;/i&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;El Método estándar de evaluación de CMMI para la mejora de procesos (SCAMPI®) es el método de evaluación asociado con CMMI. El método de evaluación SCAMPI se utiliza para identificar fortalezas, debilidades y calificaciones en relación con los modelos de referencia CMMI. Incorpora las mejores prácticas que se encuentran exitosas en la comunidad de evaluación y se basa en las características de varios métodos de evaluación heredados. Es aplicable a una amplia gama de modos de uso de evaluación, incluida la mejora interna de procesos y las determinaciones de capacidad externas.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;El documento de definición del método SCAMPI describe los requisitos, actividades y prácticas asociadas con cada uno de los procesos que componen el método SCAMPI.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;45.5 Conclusiones&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Esta sección ha tratado de introducir en el estándar TOGAF el tema de los métodos y técnicas basados en MMC para su uso en relación con la arquitectura empresarial.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Los beneficios de usar MMCs están bien documentados. Las versiones futuras del estándar TOGAF pueden incluir un modelo de madurez para medir la adopción del propio estándar TOGAF.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;&lt;i&gt;Fase Preliminar&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;Recurso de Apoyo, requerido en los pasos de la documentación&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;i&gt;&lt;br/&gt;&lt;/i&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Los modelos de madurez de capacidad son formas útiles de evaluar la capacidad de una empresa para ejercer diferentes capacidades. Es una evaluación que brinda a los ejecutivos una idea de cómo mejorar pragmáticamente una capacidad.&lt;/font&gt;&lt;br/&gt;#lt;f&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2/EA6/EA1293.htm">«Fase ADM» Preliminar</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

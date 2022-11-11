@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Sub-proceso"2. Identificar las partes interesadas y los requisitos"</title>
+<link href="../../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Sub-proceso"2. Identificar las partes interesadas y los requisitos" </h1>
+			<!-- <img class="header_image" src="../../../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../../../../index.htm">Adaptacion BMM</a> / <a href="../../../../../EA1.htm">ADM_TOGAF</a> / <a href="../../../../EA3.htm">Modelado de elementos del negocio</a> / <a href="../../../EA295.htm">Modelado de Procesos del Negocio</a> / <a href="../../EA299.htm">Diagrama de Actividades</a> / <a href="../EA308.htm">Fase A: Visión de la Arquitectura</a> / <a href="EA417.htm">Sub-proceso"2. Identificar las partes interesadas y los requisitos"</a> / <a href="EA415.htm">Sub-proceso"2. Identificar las partes interesadas y los requisitos"</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../../../../../images/4.png" alt="Package"/> <a href="./EA1/EA433.htm">Sub-proceso 2.1 "Identifique a las partes interesadas clave y sus preocupaciones / objetivos"</a></li>
+<li><img src="../../../../../../../images/4.png" alt="Package"/> <a href="./EA2/EA453.htm">Sub-proceso 2.2 "Obtener un mapa de las partes interesadas para el compromiso"</a></li>
+<li><img src="../../../../../../../images/189.png" alt="Diagram"/> <a href="EA415.htm">Sub-proceso"2. Identificar las partes interesadas y los requisitos"</a></li>
+<li><img src="../../../../../../../images/25.png" alt="Object"/> <a href="EA422.htm">:Repositorio de arquitectura</a></li>
+<li><img src="../../../../../../../images/21.png" alt="Activity"/> <a href="EA423.htm">Comprender qué partes interesadas, visón de arquitectura y qué puntos de vista deben desarrollarse para establecer el alcance del compromiso.</a></li>
+<li><img src="../../../../../../../images/21.png" alt="Activity"/> <a href="EA424.htm">Documentar los nuevos requisitos dentro de la Especificación de Requisitos de Arquitectura, y los nuevos requisitos que estén fuera del alcance de los requisitos seleccionados, ingresarlos al Repositorio de Requisitos.</a></li>
+<li><img src="../../../../../../../images/21.png" alt="Activity"/> <a href="EA426.htm">Identificar a las partes interesadas clave y sus preocupaciones / objetivos, y defina los requisitos clave del negocio que se abordarán en el compromiso de la arquitectura.</a></li>
+<li><img src="../../../../../../../images/21.png" alt="Activity"/> <a href="EA428.htm">Obtener un mapa de las partes interesadas para el compromiso, que muestre qué partes interesadas están involucradas con el compromiso, su nivel de participación y sus preocupaciones claves.</a></li>
+<li><img src="../../../../../../../images/24.png" alt="Event"/> <a href="EA425.htm">fin</a></li>
+<li><img src="../../../../../../../images/24.png" alt="Event"/> <a href="EA427.htm">inicio</a></li>
+<li><img src="../../../../../../../images/82.png" alt="Artifact"/> <a href="EA421.htm">Requisitos</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class=diagram_image> 
+<img src="EA416.png" usemap="#EA416" border="0" />
+
+<MAP NAME="EA416">
+<area shape="rect" coords="622,350,711,383" href="EA421.htm" target="_self">
+<area shape="rect" coords="310,340,400,389" href="../../../../EA3/EA265.htm" target="_self">
+<area shape="rect" coords="11,283,101,333" href="./EA1/EA445.htm" target="_self">
+<area shape="rect" coords="326,401,472,458" href="../../../../EA3/EA263.htm" target="_self">
+<area shape="rect" coords="629,270,710,331" href="EA422.htm" target="_self">
+<area shape="rect" coords="752,270,835,331" href="../../../../EA3/EA220.htm" target="_self">
+<area shape="rect" coords="684,10,775,70" href="../../../../EA3/EA262.htm" target="_self">
+<area shape="rect" coords="164,339,264,400" href="../../../../EA3/EA238.htm" target="_self">
+<area shape="rect" coords="372,271,451,330" href="../../../../EA3/EA215.htm" target="_self">
+<area shape="rect" coords="161,270,256,329" href="../../../../EA3/EA213.htm" target="_self">
+<area shape="rect" coords="106,10,208,70" href="../../../../EA3/EA240.htm" target="_self">
+<area shape="rect" coords="263,271,342,328" href="../../../../EA3/EA254.htm" target="_self">
+<area shape="rect" coords="334,10,424,70" href="../../../../EA3/EA227.htm" target="_self">
+<area shape="rect" coords="644,109,823,229" href="EA424.htm" target="_self">
+<area shape="rect" coords="472,109,608,229" href="EA423.htm" target="_self">
+<area shape="rect" coords="271,108,440,230" href="./EA2/EA451.htm" target="_self">
+<area shape="rect" coords="80,108,225,230" href="./EA1/EA431.htm" target="_self">
+<area shape="rect" coords="856,149,886,179" href="EA425.htm" target="_self">
+<area shape="rect" coords="10,154,40,184" href="EA427.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">Sub-proceso"2. Identificar las partes interesadas y los requisitos" : Business Process diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">05/10/2022 0:00:00</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">11/11/2022 4:38:25</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">Wanda Mayrena</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{AA0713C0-29FE-4163-8D80-2334F7CF51FA}</td>
+		</tr>
+	</table>
+	
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

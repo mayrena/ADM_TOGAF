@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Modelado de Objetos del Negocio::Marco de gobernanza de la arquitectura</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Modelado de Objetos del Negocio::Marco de gobernanza de la arquitectura </h1>
+			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../index.htm">Adaptacion BMM</a> / <a href="../../EA1.htm">ADM_TOGAF</a> / <a href="../EA3.htm">Modelado de elementos del negocio</a> / <a href="EA103.htm">Modelado de Objetos del Negocio</a> / <a href="EA236.htm">Marco de gobernanza de la arquitectura</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA103.htm">Modelado de Objetos del Negocio</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Marco de gobernanza de la arquitectura  : Public  &lt;&lt;recurso&gt;&gt; Class</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">17/10/2022 2:56:53</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">25/10/2022 12:25:34</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Wanda Mayrena</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{5A8A6E7F-61D5-4574-875C-F531B54BB8EA}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA4/EA2/EA6/EA1284.htm">Fase Preliminar</a>, <a href="../EA4/EA1/EA6/EA1133.htm">Fase Prelimilar</a>, <a href="EA101.htm">Modelado de Objetos del Negocio</a>, <a href="./EA6/EA292.htm">Fase Preliminar</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;ul&gt;<br />&lt;li&gt;Marco de gobernanza de la arquitectura (&lt;a href=&quot;file://file:///E:\Documents\MEGAsync\Debian_Archivos_2020\UE-2021\PreProyecto\Proyecto%20de%20Trabado%20de%20Grado\Togaf%209-2%20inicio\togaf92e-doc_1_paquete%20HTML\togaf92e-doc\arch\pt5.html&quot;&gt;&lt;font color=&quot;#00a6de&quot;&gt;&lt;i&gt;&lt;u&gt;Parte VI&lt;/u&gt;&lt;/i&gt;&lt;/font&gt;&lt;/a&gt;&lt;i&gt;, &lt;/i&gt;&lt;a href=&quot;file://file:///E:\Documents\MEGAsync\Debian_Archivos_2020\UE-2021\PreProyecto\Proyecto%20de%20Trabado%20de%20Grado\Togaf%209-2%20inicio\togaf92e-doc_1_paquete%20HTML\togaf92e-doc\arch\chap44.html \l tag_44_02&quot;&gt;&lt;font color=&quot;#00a6de&quot;&gt;&lt;i&gt;&lt;u&gt;44.2 Marco de gobernanza de la arquitectura&lt;/u&gt;&lt;/i&gt;&lt;/font&gt;&lt;/a&gt;).&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;En esta sección se describe un marco conceptual y organizativo para el gobierno de la arquitectura&lt;br/&gt;&lt;br/&gt;La Gobernanza de la arquitectura, en la Fase G del ADM de TOGAF (&lt;i&gt;Parte II, 14. Fase G: Gobernanza de implementación&lt;/i&gt;) está dedicada a la gobernanza de implementación, que se ocupa de la realización de la arquitectura a través de proyectos de cambio.&lt;br/&gt;&lt;br/&gt;El gobierno de implementación es solo un aspecto del gobierno de arquitectura, que cubre la gestión y el control de todos los aspectos del desarrollo y la evolución de las arquitecturas empresariales y otras arquitecturas dentro de la empresa.&lt;br/&gt;&lt;br/&gt;La Gobernanza de la Arquitectura debe estar respaldado por un Marco de Gobierno de Arquitectura, que se describe a continuación. El marco de gobernanza descrito es un marco genérico que se puede adaptar al entorno de gobernanza existente de una empresa. Su objetivo es ayudar a identificar procesos y estructuras organizativas efectivas, de modo que las responsabilidades de negocios asociadas con el gobierno de la arquitectura puedan dilucidarse, comunicarse y administrarse de manera efectiva.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;44.2.1 Marco de Gobernanza de la Arquitectura - Estructura Conceptual&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;i&gt;44.2.1.1 Conceptos clave&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;Conceptualmente, la gobernanza de arquitectura es un enfoque, una serie de procesos, una orientación cultural y un conjunto de responsabilidades propias que aseguran la integridad y efectividad de las arquitecturas de la organización.&lt;br/&gt;&lt;br/&gt;La división del proceso, el contenido y el contexto son clave para el apoyo de la iniciativa Gobernanza de la Arquitectura, al permitir la introducción de nuevo material de gobernanza (legal, regulatorio, basado en estándares o legislativo) sin afectar indebidamente los procesos. Este enfoque independiente del contenido garantiza que el marco sea flexible. Los procesos suelen ser independientes del contenido e implementan un enfoque de mejores prácticas comprobado para la gobernanza activa.&lt;br/&gt;&lt;br/&gt;El Marco de Gobierno de la Arquitectura es parte integral del Continuo Empresarial y gestiona todo el contenido relevante tanto para la arquitectura en sí como para los procesos de Gobierno de la Arquitectura.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;i&gt;44.2.1.2 Procesos clave de gobernanza de la arquitectura&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;Se requieren procesos de gobierno para identificar, administrar, auditar y difundir toda la información relacionada con la administración de la arquitectura, los contratos y la implementación. Estos procesos de gobernanza se utilizarán para garantizar que todos los artefactos y contratos de arquitectura, principios y acuerdos de nivel operativo (OLA) se supervisen de forma continua con una auditoría clara de todas las decisiones tomadas.&lt;br/&gt;&lt;br/&gt;&lt;i&gt;&lt;u&gt;Gestión de políticas y asimilación&lt;/u&gt;&lt;/i&gt;&lt;br/&gt;&lt;u&gt;&lt;br/&gt;&lt;/u&gt;Todas las modificaciones de arquitectura, contratos e información de apoyo deben estar bajo gobierno a través de un proceso formal para registrar, validar, ratificar, administrar y publicar contenido nuevo o actualizado. Estos procesos garantizarán la integración ordenada con el contenido de gobernanza existente, de modo que todas las partes relevantes, documentos, contratos e información de apoyo se administren y auditen.&lt;br/&gt;&lt;br/&gt;&lt;i&gt;&lt;u&gt;Conformidad&lt;/u&gt;&lt;/i&gt;&lt;br/&gt;&lt;i&gt;&lt;br/&gt;&lt;/i&gt;Las evaluaciones de cumplimiento de los acuerdos de nivel de servicio (SLA), LOS ACUERDO, las normas y los requisitos reglamentarios se implementarán de forma continua para garantizar la estabilidad, la conformidad y la supervisión del rendimiento. Estas evaluaciones serán revisadas y aceptadas o rechazadas en función de los criterios definidos en el marco de gobernanza.&lt;br/&gt;&lt;br/&gt;&lt;i&gt;&lt;u&gt;Dispensación&lt;/u&gt;&lt;/i&gt;&lt;br/&gt;&lt;u&gt;&lt;br/&gt;&lt;/u&gt;Una evaluación de cumplimiento puede rechazarse cuando el área temática (diseño, operativo, nivel de servicio o tecnología) no cumple. En este caso, el área temática puede:&lt;br/&gt;&lt;br/&gt;&lt;ol&gt;<br />&lt;li&gt;Ajustarse o realinearse para cumplir con los requisitos de cumplimiento&lt;/li&gt;&lt;li&gt;Solicitar una dispensa&lt;/li&gt;&lt;/ol&gt;<br />&lt;br/&gt;Cuando se rechaza una evaluación de cumplimiento, se proporciona una ruta alternativa para cumplir con la conformidad provisional a través de dispensas. Estos se otorgan por un período de tiempo determinado y un conjunto de criterios operativos y de servicio identificados que deben aplicarse durante la vida útil de la dispensación. Las dispensas no se otorgan indefinidamente, sino que se utilizan como un mecanismo para garantizar que se cumplan los niveles de servicio y los niveles operativos, al tiempo que se proporciona un nivel de flexibilidad en su implementación y tiempo. La naturaleza limitada en el tiempo de las dispensaciones garantiza que sean un desencadenante importante en el ciclo de cumplimiento.&lt;br/&gt;&lt;br/&gt;&lt;i&gt;&lt;u&gt;Supervisión y presentación de informes&lt;/u&gt;&lt;/i&gt;&lt;br/&gt;&lt;br/&gt;La gestión del rendimiento es necesaria para garantizar que tanto los elementos operacionales como los de servicio se gestionen con arreglo a un conjunto acordado de criterios. Esto incluirá el monitoreo de los SLA y LOS OLA, la retroalimentación para el ajuste y la presentación de informes.&lt;br/&gt;&lt;br/&gt;La información de gestión interna se considerará en Gestión del medio ambiente.&lt;br/&gt;&lt;br/&gt;&lt;i&gt;&lt;u&gt;Control de Negocio&lt;/u&gt;&lt;/i&gt;&lt;br/&gt;&lt;u&gt;&lt;br/&gt;&lt;/u&gt;El control empresarial se refiere a los procesos invocados para garantizar el cumplimiento de las políticas empresariales de la organización.&lt;br/&gt;&lt;br/&gt;&lt;i&gt;&lt;u&gt;Gestión del medio ambiente&lt;/u&gt;&lt;/i&gt;&lt;br/&gt;&lt;i&gt;&lt;br/&gt;&lt;/i&gt;Esto identifica todos los servicios necesarios para garantizar que el entorno basado en repositorios que sustenta el marco de gobierno sea efectivo y eficiente. Esto incluye la gestión física y lógica de repositorios, el acceso, la comunicación, la capacitación y la acreditación de todos los usuarios.&lt;br/&gt;&lt;br/&gt;Todos los artefactos de arquitectura, acuerdos de servicio, contratos e información de soporte deben estar bajo gobierno a través de un proceso formal para registrar, validar, ratificar, administrar y publicar contenido nuevo o actualizado. Estos procesos garantizarán la integración ordenada con el contenido de gobernanza existente, de modo que todas las partes relevantes, documentos, contratos e información de apoyo se administren y auditen.&lt;br/&gt;&lt;br/&gt;El entorno de gobierno tendrá una serie de procesos administrativos definidos para efectuar un entorno de servicios y procesos gestionados. Estos procesos incluirán la gestión de usuarios, los SLA internos (definidos para controlar sus propios procesos) y los informes de información de gestión.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;44.2.2 Marco de Gobernanza de la Arquitectura - Estructura Organizacional&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;i&gt;44.2.2.1 Visión general&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;La Gobernanza de la Arquitectura es la práctica y la orientación mediante la cual se gestionan y controlan las arquitecturas empresariales y otras arquitecturas. Para garantizar que este control sea efectivo dentro de la organización, es necesario tener las estructuras organizativas correctas establecidas para apoyar todas las actividades de gobierno.&lt;br/&gt;&lt;br/&gt;Una estructura de gobierno de arquitectura para implementar de manera efectiva el enfoque descrito en esta sección generalmente incluirá los siguientes niveles, que en la práctica pueden implicar una combinación de procesos de gobierno de TI existentes, estructuras organizativas y capacidades. Por lo general, incluirán lo siguiente:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Junta de gobernanza global&lt;/li&gt;&lt;li&gt;Junta de gobierno local&lt;/li&gt;&lt;li&gt;Autoridades de diseño&lt;/li&gt;&lt;li&gt;Grupos de trabajo&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;La organización de arquitectura ilustrada en la Figura 44-2 de TOGAF destaca los principales elementos estructurales necesarios para una iniciativa de Gobernanza de la Arquitectura. Si bien cada empresa tendrá diferentes requisitos, se espera que los conceptos básicos del diseño organizacional que se muestran en la Figura 44-2 de TOGAF sean aplicables e implementables en una amplia variedad de tipos de organización.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;i&gt;44.2.2.2 Áreas clave&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;La figura 44-2 de TOGAF identifica tres áreas clave de la administración de la arquitectura: Desarrollar, Implementar e Implementar. Cada uno de estos es responsabilidad de uno o más grupos dentro de la organización, mientras que enterprise continuum se muestra para soportar todas las actividades y artefactos asociados con el gobierno de las arquitecturas a lo largo de su ciclo de vida.&lt;br/&gt;&lt;br/&gt;Las responsabilidades, procesos y estructuras de desarrollo generalmente están vinculadas al ADM de TOGAF y su uso, mientras que las responsabilidades, procesos y estructuras de implementación generalmente están vinculadas a la Fase G (&lt;i&gt;Parte II, 14. Fase G: Gobernanza de la implementación&lt;/i&gt;).&lt;br/&gt;&lt;br/&gt;Como se mencionó anteriormente, el Marco de Gobierno de la Arquitectura es parte integral del Continuo Empresarial y administra todo el contenido relevante tanto para las arquitecturas en sí como para los procesos de Gobernanza de la Arquitectura.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;i&gt;44.2.2.3 Beneficios operativos&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;Como se ilustra en la Figura 44-2 de TOGAF, la gobernanza de las arquitecturas de la organización proporciona no solo control directo y orientación de su desarrollo e implementación, sino que también se extiende a las operaciones de las arquitecturas implementadas.&lt;br/&gt;&lt;br/&gt;Se ha encontrado que los siguientes beneficios se derivan a través de la gobernanza continua de las arquitecturas:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Vincula los procesos, recursos e información de TI con las estrategias y objetivos de la organización&lt;/li&gt;&lt;li&gt;Integra e institucionaliza las mejores prácticas de TI&lt;/li&gt;&lt;li&gt;Se alinea con marcos de la industria como COBIT (planificación y organización, adquisición e implementación, entrega y soporte, y monitoreo del rendimiento de TI)&lt;/li&gt;&lt;li&gt;Permite a la organización aprovechar al máximo su información, infraestructura y activos de hardware y software&lt;/li&gt;&lt;li&gt;Protege los activos digitales subyacentes de la organización&lt;/li&gt;&lt;li&gt;Soporta los requisitos regulatorios y de mejores prácticas, como la auditabilidad, la seguridad, la responsabilidad y la rendición de cuentas&lt;/li&gt;&lt;li&gt;Promueve la gestión visible de riesgos&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;Estos beneficios posicionan al Marco de Gobernanza de la Arquitectura TOGAF como un enfoque, una serie de procesos, una orientación cultural y un conjunto de responsabilidades propias, que en conjunto aseguran la integridad y efectividad de las arquitecturas de la organización.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;44.3 Gobernanza de la arquitectura en la práctica&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Esta sección proporciona pautas prácticas para la implementación efectiva de Gobernanza de la Arquitectura&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;i&gt;44.3.1 Gobernanza de la arquitectura : factores clave de éxito&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;b&gt;&lt;br/&gt;&lt;/b&gt;Es importante considerar lo siguiente para garantizar un enfoque exitoso de la Gobernanza de la Arquitectura y de la gestión efectiva del Contrato de Arquitectura:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Prácticas recomendadas para la presentación, adopción, reutilización, presentación de informes y retirada de políticas, procedimientos, funciones, habilidades, estructuras organizativas y servicios de soporte de arquitectura&lt;/li&gt;&lt;li&gt;Responsabilidades y estructuras organizativas para respaldar los procesos de gobierno de la arquitectura y los requisitos de informes&lt;/li&gt;&lt;li&gt;Integración de herramientas y procesos para facilitar la asimilación de los procesos, tanto procedimental como culturalmente&lt;/li&gt;&lt;li&gt;Criterios para el control de los procesos de Gobernanza de la Arquitectura, dispensaciones, evaluaciones de cumplimiento, SLAs y OLAs&lt;/li&gt;&lt;li&gt;Requisitos internos y externos para la eficacia, eficiencia, confidencialidad, integridad, disponibilidad, cumplimiento y confiabilidad de toda la información, los servicios y los procesos relacionados con el gobierno de la arquitectura&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;i&gt;44.3.2 Elementos de una estrategia de gobernanza de arquitectura eficaz&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;b&gt;&lt;i&gt;&lt;br/&gt;&lt;/i&gt;&lt;/b&gt;&lt;i&gt;44.3.2.1 Gobierno de la Arquitectura y Política Corporativa&lt;/i&gt;&lt;br/&gt;&lt;br/&gt;Una arquitectura empresarial impuesta sin el respaldo político adecuado está destinada a fracasar. Para tener éxito, la arquitectura empresarial debe reflejar las necesidades de la organización. Los arquitectos empresariales, si no están involucrados en el desarrollo de la estrategia empresarial, deben al menos tener una comprensión fundamental de la misma y de los problemas comerciales prevalecientes que enfrenta la organización. Incluso puede ser necesario que participen en el proceso de implementación del sistema y, en última instancia, que sean dueños de las decisiones de inversión y selección de productos que surjan de la implementación de la Arquitectura Tecnológica.&lt;br/&gt;&lt;br/&gt;Hay tres elementos importantes de la estrategia de Gobernanza de la Arquitectura que se relacionan particularmente con la aceptación y el éxito de la arquitectura dentro de la empresa. Si bien son relevantes y aplicables por derecho propio, aparte de su papel en la gobernanza, y por lo tanto se describen por separado, también forman parte integral de cualquier estrategia efectiva de gobernanza de la arquitectura.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Una Junta de Arquitectura interorganizacional (&lt;i&gt;41. Junta de Arquitectura&lt;/i&gt;) debe establecerse con el respaldo de la alta gerencia para supervisar la implementación de la estrategia de Gobierno de Arquitectura Empresarial&lt;/li&gt;&lt;li&gt;Un conjunto completo de Principios de Arquitectura (&lt;i&gt;20. Principios de Arquitectura&lt;/i&gt;) deben establecerse, para guiar, informar y apoyar la forma en que una organización se propone cumplir su misión a través del uso de TI.&lt;/li&gt;&lt;li&gt;Un cumplimiento de la arquitectura (&lt;i&gt;42. Cumplimiento de la arquitectura&lt;/i&gt;) se debe adoptar la estrategia: medidas específicas (más que una simple declaración de política) para garantizar el cumplimiento de la arquitectura, incluidas las evaluaciones de impacto del proyecto, un proceso formal de revisión del cumplimiento de la arquitectura y, posiblemente, la participación del equipo de arquitectura en la adquisición de productos.&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;Fase Preliminar&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;Recurso obtenido de la Fase Preliminar (Salida)&lt;br/&gt;&lt;br/&gt;Marco de gobernanza de la arquitectura (&lt;i&gt;Parte VI, 44.2 Marco de gobernanza de la arquitectura&lt;/i&gt;)&lt;br/&gt;&lt;br/&gt;-Este es un documento que se produce durante la fase actual. Forma parte de las Salidas de la documentación de la fase ADM,&#160;&#160;sin embargo NO se encuentra establecido en la sección 32. Entregables de arquitectura de la Parte IV: Marco de contenido de arquitectura.-&lt;br/&gt;&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="toggleItem('FlowFrom');" id="FlowFromTitle">Flow From</li>
+			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA250.htm">Objetos del negocios de la Fase Premilinar</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink221" /></button>Details:
+							<div id="detailsDIVLink221" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="FlowFromTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="50%" class="TableHeading">Element</td>
+					<td width="50%" class="TableHeading">Name</td>
+				</tr>
+				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="../EA4/EA1/EA6/EA1147.htm">2. Confirmar los marcos de gobernanza y apoyo</a><br />
+						Activity &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow222" /></button>Details:
+							<div id="detailsDIVLinkFlow222" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="../EA4/EA2/EA6/EA1293.htm">Preliminar</a><br />
+						Activity &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow223" /></button>Details:
+							<div id="detailsDIVLinkFlow223" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA252.htm">«recurso» Otros Recursos</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

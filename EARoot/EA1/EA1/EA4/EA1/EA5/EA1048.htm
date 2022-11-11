@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Fase de Gestión de Requisitos</title>
+<link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Fase de Gestión de Requisitos </h1>
+			<!-- <img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../../../index.htm">Adaptacion BMM</a> / <a href="../../../../EA1.htm">ADM_TOGAF</a> / <a href="../../../EA3.htm">Modelado de elementos del negocio</a> / <a href="../../EA295.htm">Modelado de Procesos del Negocio</a> / <a href="../EA299.htm">Diagrama de Actividades</a> / <a href="EA1050.htm">Fase de Gestión de Requisitos</a> / <a href="EA1048.htm">Fase de Gestión de Requisitos</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../../../../images/4.png" alt="Package"/> <a href="./EA1/EA1097.htm">Sub-proceso "2. Determinar Requisitos de línea de base"</a></li>
+<li><img src="../../../../../../images/4.png" alt="Package"/> <a href="./EA2/EA1107.htm">Sub-proceso "4. Identificar los requisitos modificados"</a></li>
+<li><img src="../../../../../../images/4.png" alt="Package"/> <a href="./EA3/EA1115.htm">Sub-proceso "5. Identificar los requisitos modificados y registrar las prioridades"</a></li>
+<li><img src="../../../../../../images/4.png" alt="Package"/> <a href="./EA4/EA1126.htm">Sub-proceso "6. Evaluar el impacto de los requisitos modificados"</a></li>
+<li><img src="../../../../../../images/189.png" alt="Diagram"/> <a href="EA1048.htm">Fase de Gestión de Requisitos</a></li>
+<li><img src="../../../../../../images/82.png" alt="Artifact"/> <a href="EA1051.htm">:Impacto de los requisitos</a></li>
+<li><img src="../../../../../../images/82.png" alt="Artifact"/> <a href="EA1052.htm">:Prioridades de Requisitos</a></li>
+<li><img src="../../../../../../images/82.png" alt="Artifact"/> <a href="EA1053.htm">:Prioridades de Requisitos</a></li>
+<li><img src="../../../../../../images/82.png" alt="Artifact"/> <a href="EA1054.htm">:Requisitos almacenados</a></li>
+<li><img src="../../../../../../images/82.png" alt="Artifact"/> <a href="EA1055.htm">:Requisitos integrados</a></li>
+<li><img src="../../../../../../images/82.png" alt="Artifact"/> <a href="EA1056.htm">Cambios en los Requisitos</a></li>
+<li><img src="../../../../../../images/82.png" alt="Artifact"/> <a href="EA1057.htm">Declaración de impacto de los requisitos del problema, versión n+1</a></li>
+<li><img src="../../../../../../images/82.png" alt="Artifact"/> <a href="EA1058.htm">Impacto de los requisitos</a></li>
+<li><img src="../../../../../../images/82.png" alt="Artifact"/> <a href="EA1059.htm">Nuevos Requisitos</a></li>
+<li><img src="../../../../../../images/82.png" alt="Artifact"/> <a href="EA1060.htm">Prioridades de Requisitos</a></li>
+<li><img src="../../../../../../images/82.png" alt="Artifact"/> <a href="EA1076.htm">Repositorio de requisitos de arquitectura</a></li>
+<li><img src="../../../../../../images/82.png" alt="Artifact"/> <a href="EA1063.htm">Requisitos almacenados</a></li>
+<li><img src="../../../../../../images/82.png" alt="Artifact"/> <a href="EA1064.htm">Requisitos integrados</a></li>
+<li><img src="../../../../../../images/116.png" alt="ActivityPartition"/> <a href="EA1065.htm">Otros procesos del ADM</a></li>
+<li><img src="../../../../../../images/116.png" alt="ActivityPartition"/> <a href="EA1066.htm">Procesos de Gestión de Requisitos del ADM</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class=diagram_image> 
+<img src="EA1049.png" usemap="#EA1049" border="0" />
+
+<MAP NAME="EA1049">
+<area shape="rect" coords="540,673,617,711" href="EA1055.htm" target="_self">
+<area shape="rect" coords="696,698,775,734" href="EA1054.htm" target="_self">
+<area shape="rect" coords="519,620,607,658" href="EA1053.htm" target="_self">
+<area shape="rect" coords="291,630,373,668" href="EA1063.htm" target="_self">
+<area shape="rect" coords="210,271,294,307" href="EA1052.htm" target="_self">
+<area shape="rect" coords="788,292,859,347" href="EA1051.htm" target="_self">
+<area shape="rect" coords="491,326,558,376" href="EA1058.htm" target="_self">
+<area shape="rect" coords="671,271,743,309" href="EA1064.htm" target="_self">
+<area shape="rect" coords="515,201,603,290" href="EA1057.htm" target="_self">
+<area shape="rect" coords="385,270,469,309" href="EA1056.htm" target="_self">
+<area shape="rect" coords="207,687,291,726" href="EA1060.htm" target="_self">
+<area shape="rect" coords="79,269,155,308" href="EA1059.htm" target="_self">
+<area shape="rect" coords="565,835,655,883" href="../../../EA3/EA262.htm" target="_self">
+<area shape="rect" coords="519,554,609,604" href="../../EA2/EA5/EA1280.htm" target="_self">
+<area shape="rect" coords="105,355,210,403" href="../../../EA3/EA188.htm" target="_self">
+<area shape="rect" coords="815,219,905,272" href="../../EA2/EA5/EA1281.htm" target="_self">
+<area shape="rect" coords="881,10,1021,62" href="../../../EA3/EA240.htm" target="_self">
+<area shape="rect" coords="572,10,706,62" href="../../../EA3/EA220.htm" target="_self">
+<area shape="rect" coords="245,11,352,61" href="../../../EA3/EA235.htm" target="_self">
+<area shape="rect" coords="132,11,238,61" href="../../../EA3/EA215.htm" target="_self">
+<area shape="rect" coords="60,11,125,61" href="../../../EA3/EA265.htm" target="_self">
+<area shape="rect" coords="796,460,826,490" href="EA1082.htm" target="_self">
+<area shape="rect" coords="48,457,78,487" href="EA1081.htm" target="_self">
+<area shape="rect" coords="423,720,550,790" href="EA1076.htm" target="_self">
+<area shape="rect" coords="1051,121,1081,151" href="EA1093.htm" target="_self">
+<area shape="rect" coords="896,91,1006,176" href="EA1088.htm" target="_self">
+<area shape="rect" coords="743,92,847,176" href="EA1092.htm" target="_self">
+<area shape="rect" coords="527,435,769,515" href="EA1086.htm" target="_self">
+<area shape="rect" coords="588,92,698,177" href="EA1091.htm" target="_self">
+<area shape="rect" coords="437,94,547,176" href="./EA4/EA1124.htm" target="_self">
+<area shape="rect" coords="380,434,494,513" href="./EA3/EA1113.htm" target="_self">
+<area shape="rect" coords="287,94,397,175" href="./EA2/EA1105.htm" target="_self">
+<area shape="rect" coords="241,435,351,511" href="EA1084.htm" target="_self">
+<area shape="rect" coords="103,435,210,512" href="./EA1/EA1095.htm" target="_self">
+<area shape="rect" coords="65,124,87,146" href="EA1094.htm" target="_self">
+<area shape="rect" coords="115,95,250,176" href="EA1087.htm" target="_self">
+<area shape="rect" coords="12,390,1023,586" href="EA1066.htm" target="_self">
+<area shape="rect" coords="10,41,1096,242" href="EA1065.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">Fase de Gestión de Requisitos : Business Process diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">26/07/2022 0:00:00</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">11/11/2022 14:11:31</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">Jhanca</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{0EB22C2C-07A5-4949-AA8F-9169B4C89087}</td>
+		</tr>
+	</table>
+	
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

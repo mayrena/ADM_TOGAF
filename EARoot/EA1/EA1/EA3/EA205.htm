@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Modelado de Objetos del Negocio::Alcance de la arquitectura</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Modelado de Objetos del Negocio::Alcance de la arquitectura </h1>
+			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../index.htm">Adaptacion BMM</a> / <a href="../../EA1.htm">ADM_TOGAF</a> / <a href="../EA3.htm">Modelado de elementos del negocio</a> / <a href="EA103.htm">Modelado de Objetos del Negocio</a> / <a href="EA205.htm">Alcance de la arquitectura</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA103.htm">Modelado de Objetos del Negocio</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Alcance de la arquitectura  : Public  &lt;&lt;recurso: Apoyo en los pasos&gt;&gt; Class</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">19/10/2022 2:21:02</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">19/10/2022 2:21:48</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Wanda Mayrena</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{C3CF7137-30EE-4956-9C3C-6CD3142E297F}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA4/EA2/EA1/EA1222.htm">Fase A: Visión de la Arquitectura</a>, <a href="EA101.htm">Modelado de Objetos del Negocio</a>, <a href="../EA4/EA1/EA1/EA3/EA403.htm">Sub-proceso 6."Definir el alcance"</a>, <a href="../EA4/EA1/EA1/EA306.htm">Fase A: Visión de la Arquitectura</a>, <a href="./EA5/EA288.htm">Fase A: Visión de la arquitectura</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;ul&gt;<br />&lt;li&gt;Alcance de la arquitectura (&lt;i&gt;Parte II: Método de desarrollo de arquitectura (ADM), 4.5 Alcance de la arquitectura&lt;/i&gt;)&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;Hay muchas razones para limitar (o restringir) el alcance de la actividad arquitectónica a emprender, la mayoría de las cuales se relacionan con los límites en:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;La autoridad organizativa del equipo que produce la arquitectura&lt;/li&gt;&lt;li&gt;Los objetivos y las preocupaciones de las partes interesadas que deben abordarse dentro de la arquitectura&lt;/li&gt;&lt;li&gt;La disponibilidad de personas, finanzas y otros recursos&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;El alcance elegido para la actividad de arquitectura idealmente debería permitir que el trabajo de todos los arquitectos dentro de la empresa se gobierne e integre de manera efectiva. Esto requiere un conjunto de &quot;particiones de arquitectura&quot; alineadas que garanticen que los arquitectos no estén trabajando en actividades duplicadas o conflictivas. También requiere la definición de relaciones de reutilización y cumplimiento entre particiones de arquitectura.&lt;br/&gt;&lt;br/&gt;La división de la empresa y su actividad relacionada con la arquitectura se analiza con más detalle en &lt;i&gt;36. Particionamiento de arquitectura .&lt;/i&gt;&lt;br/&gt;&lt;br/&gt;Normalmente se utilizan cuatro dimensiones para definir y limitar el alcance de una arquitectura:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Amplitud&lt;/b&gt;: ¿cuál es el alcance total de la empresa, y qué parte de ese alcance tratará este esfuerzo de arquitectura?&lt;/li&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Muchas empresas son muy grandes, y comprenden efectivamente una federación de unidades organizativas que podrían considerarse válidamente empresas por derecho propio.&lt;/li&gt;&lt;li&gt;La empresa moderna se extiende cada vez más más allá de sus límites tradicionales, para adoptar una combinación difusa de empresa comercial tradicional combinada con proveedores, clientes y socios.&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Profundidad&lt;/b&gt;: ¿a qué nivel de detalle debe ir el esfuerzo de arquitectura?&lt;/li&gt;&lt;/ul&gt;<br />¿Cuánta arquitectura es &quot;suficiente&quot;? ¿Cuál es la demarcación apropiada entre el esfuerzo de arquitectura y otras actividades relacionadas (diseño de sistemas, ingeniería de sistemas, desarrollo de sistemas)?&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Período de tiempo&lt;/b&gt;: ¿cuál es el período de tiempo que debe articularse para la Visión de la Arquitectura, y tiene sentido (en términos de practicidad y recursos) que el mismo período se cubra en la Descripción detallada de la Arquitectura?&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;Si no es así, ¿cuántas arquitecturas de transición se van a definir y cuáles son sus períodos de tiempo?&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Dominios de arquitectura:&lt;/b&gt; una descripción completa de la arquitectura empresarial debe contener los cuatro dominios de arquitectura (negocio, datos, aplicación, tecnología), pero las realidades de las limitaciones de recursos y tiempo a menudo significan que no hay suficiente tiempo, financiación o recursos para construir una descripción de arquitectura de arriba hacia abajo e inclusiva que abarque los cuatro dominios de arquitectura, incluso si se elige que el alcance de la empresa sea menor que la extensión total de la empresa en general.&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;Por lo general, el alcance de una arquitectura se expresa primero en términos de amplitud, profundidad y tiempo. Una vez que se comprenden estas dimensiones, se puede seleccionar una combinación adecuada de dominios de arquitectura que sean apropiados para el problema que se está abordando. Las técnicas para usar el ADM para desarrollar una serie de arquitecturas relacionadas se discuten en &lt;i&gt;19. Aplicación del ADM en todo el panorama arquitectónico.&lt;/i&gt;&lt;br/&gt;&lt;br/&gt;Las cuatro dimensiones del alcance de la arquitectura se exploran en detalle a continuación. En cada caso, particularmente en entornos a gran escala donde las arquitecturas se desarrollan necesariamente de manera federada, existe el peligro de que los arquitectos optimicen dentro de su propio ámbito de actividad, en lugar de a nivel de la empresa en general. A menudo es necesario suboptimizar en un área en particular, con el fin de optimizar a nivel empresarial. El objetivo siempre debe ser buscar el más alto nivel de comunalidad y centrarse en módulos escalables y reutilizables para maximizar la reutilización a nivel empresarial.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;4.5.1 Amplitud&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;i&gt;&lt;br/&gt;&lt;/i&gt;Una de las decisiones clave es el enfoque del esfuerzo de arquitectura, en términos de la amplitud de la actividad empresarial general que se cubrirá (qué sectores comerciales específicos, funciones, organizaciones, áreas geográficas, etc.).&lt;br/&gt;&lt;br/&gt;A menudo es necesario tener una serie de arquitecturas diferentes existentes en toda una empresa, centradas en marcos de tiempo particulares, funciones comerciales o requisitos comerciales.&lt;br/&gt;&lt;br/&gt;Para las grandes empresas complejas, las arquitecturas federadas, arquitecturas desarrolladas, mantenidas y administradas de forma independiente que posteriormente se integran dentro de un marco de integración, son típicas. Dicho marco especifica los principios de interoperabilidad, migración y conformidad. Esto permite que unidades de negocio específicas tengan arquitecturas desarrolladas y gobernadas como proyectos de arquitectura independientes. En la &lt;i&gt;parte III, 25&lt;/i&gt;, se pueden encontrar más detalles y orientaciones sobre la especificación de los requisitos de interoperabilidad para las &lt;i&gt;diferentes soluciones. Requisitos de interoperabilidad &lt;/i&gt;.&lt;br/&gt;&lt;br/&gt;La viabilidad de una única arquitectura para toda la empresa para cada función o propósito empresarial puede rechazarse por ser demasiado compleja y difícil de manejar. En estas circunstancias, se sugiere que existen varias arquitecturas empresariales diferentes en toda la empresa. Estas arquitecturas empresariales se centran en marcos de tiempo particulares, segmentos de negocio o funciones, y requisitos organizativos específicos. En tal caso, necesitamos crear la arquitectura empresarial general como una &quot;federación&quot; de estas arquitecturas empresariales. Una forma efectiva de administrar y explotar estas arquitecturas empresariales es adoptar un modelo de publicación y suscripción que permita que la arquitectura se integre en un marco de gobierno. En tal modelo, los desarrolladores de arquitectura y los consumidores de arquitectura en proyectos (los lados de la oferta y la demanda del trabajo de arquitectura) se suscriben a un marco de gobierno mutuamente beneficioso que garantiza que:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;El material arquitectónico es de buena calidad, actualizado, adecuado para el propósito y publicado (revisado y acordado para ser hecho público)&lt;/li&gt;&lt;li&gt;El uso del material de arquitectura puede ser monitoreado, y el cumplimiento de los estándares, modelos y principios puede ser exhibido, a través de:&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Un proceso de evaluación de cumplimiento que describe a qué se suscribe el usuario y evalúa su nivel de cumplimiento&lt;/li&gt;&lt;li&gt;Un proceso de dispensación que puede otorgar dispensas de la adhesión a los estándares y pautas de arquitectura en casos específicos (generalmente con un fuerte imperativo comercial)&lt;/li&gt;&lt;/ul&gt;<br />Las técnicas de publicación y suscripción se están desarrollando como parte del gobierno general de TI y específicamente para la esfera de Defensa.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;4.5.2 Profundidad&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;Se debe tener cuidado de juzgar el nivel apropiado de detalle que se capturará, en función del uso previsto de la Arquitectura Empresarial y las decisiones que se tomarán en función de ella. Es importante que se complete un nivel de profundidad consistente e igual en cada dominio de arquitectura (negocio, datos, aplicación, tecnología) incluido en el esfuerzo de arquitectura. Si se omiten los detalles pertinentes, la arquitectura puede no ser útil. Si se incluyen detalles innecesarios, el esfuerzo de arquitectura puede exceder el tiempo y los recursos disponibles, y / o la arquitectura resultante puede ser confusa o desordenada. El desarrollo de arquitecturas en diferentes niveles de detalle dentro de una empresa se discute con más detalle en &lt;i&gt;19. Aplicación del ADM en todo el panorama arquitectónico.&lt;/i&gt;&lt;br/&gt;&lt;br/&gt;También es importante predecir los usos futuros de la arquitectura para que, dentro de las limitaciones de recursos, la arquitectura pueda estructurarse para adaptarse a la futura adaptación, extensión o reutilización. La profundidad y el detalle de la Arquitectura Empresarial deben ser suficientes para su propósito, y no más.&lt;br/&gt;&lt;br/&gt;Las iteraciones del ADM se basarán en los artefactos y las capacidades creadas durante las iteraciones anteriores.&lt;br/&gt;&lt;br/&gt;Existe la necesidad de documentar todos los modelos en una empresa, al nivel de detalle apropiado para la necesidad del ciclo ADM actual. La clave es comprender el estado del trabajo de arquitectura de la empresa y lo que se puede lograr de manera realista con los recursos y competencias disponibles, y luego centrarse en identificar y entregar el valor que se puede lograr. El valor de las partes interesadas es un enfoque clave: un alcance demasiado amplio puede disuadir a algunas partes interesadas (sin retorno de la inversión).&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;4.5.3 Período de tiempo&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;El ADM se describe en términos de un ciclo único de Visión de Arquitectura, y un conjunto de Arquitecturas Objetivo (Negocio, Datos, Aplicación, Tecnología) que permiten la implementación de la visión.&lt;br/&gt;&lt;br/&gt;En tales casos, se puede adoptar una visión más amplia, mediante la cual una empresa está representada por varias instancias de arquitectura diferentes (por ejemplo, estratégicas, de segmento, capacidad), cada una de las cuales representa a la empresa en un momento determinado. Una instancia de arquitectura representará el estado actual de la empresa (el &quot;tal cual&quot; o línea base). Otra instancia de arquitectura, tal vez definida solo parcialmente, representará el estado final objetivo final (la &quot;visión&quot;). Se pueden definir instancias intermedias, intermedias o de &quot;Arquitectura de transición&quot;, cada una de las cuales comprende su propio conjunto de descripciones de arquitectura de destino. Un ejemplo de cómo podría lograrse esto se da en la&lt;i&gt; Parte III, 19. Aplicación del ADM en todo el panorama arquitectónico.&lt;/i&gt;&lt;br/&gt;&lt;br/&gt;Mediante este enfoque, el trabajo de Arquitectura de Destino se divide en dos o más etapas discretas:&lt;br/&gt;&lt;br/&gt;&lt;ol&gt;<br />&lt;li&gt;Primero, desarrollar descripciones de la arquitectura de objetivos para el sistema general (a gran escala), demostrando una respuesta a los objetivos y preocupaciones de las partes interesadas durante un período de tiempo relativamente distante (por ejemplo, un período de seis años).&lt;/li&gt;&lt;li&gt;A continuación, desarrolle una o más descripciones de &quot;Arquitectura de transición&quot;, como incrementos o mesetas, cada una en línea con y convergiendo en las Descripciones de arquitectura de destino, y describiendo los detalles del incremento en cuestión.&lt;/li&gt;&lt;/ol&gt;<br />&lt;br/&gt;En tal enfoque, las Arquitecturas de Destino son de naturaleza evolutiva y requieren revisión y actualización periódicas de acuerdo con la evolución de los requisitos comerciales y los desarrollos en tecnología, mientras que las Arquitecturas de Transición son (por diseño) de naturaleza incremental y, en principio, no deben evolucionar durante la fase de implementación del incremento, a fin de evitar el síndrome del &quot;objetivo móvil&quot;. Esto, por supuesto, solo es posible si el cronograma de implementación está bajo un estricto control y es relativamente corto (generalmente menos de dos años).&lt;br/&gt;&lt;br/&gt;Las arquitecturas de destino siguen siendo relativamente genéricas y, debido a eso, son menos vulnerables a la obsolescencia que las arquitecturas de transición. Incorporan solo las decisiones arquitectónicas estratégicas clave, que deben ser bendecidas por las partes interesadas desde el principio, mientras que las decisiones arquitectónicas detalladas en las Arquitecturas de Transición se posponen deliberadamente en la medida de lo posible (es decir, justo antes de la implementación) para mejorar la capacidad de respuesta frente a las nuevas tecnologías y productos.&lt;br/&gt;&lt;br/&gt;La empresa evoluciona migrando a cada una de estas arquitecturas de transición a su vez. A medida que se implementa cada arquitectura de transición, la empresa logra un estado operativo consistente en el camino hacia la visión final. Sin embargo, esta visión en sí misma se actualiza periódicamente para reflejar los cambios en el entorno empresarial y tecnológico, y en efecto puede que nunca se logre, como se describió originalmente. Todo el proceso continúa mientras la empresa exista y continúe cambiando.&lt;br/&gt;&lt;br/&gt;Tal desglose de la Descripción de Arquitectura en una familia de productos de arquitectura relacionados, por supuesto, requiere una gestión efectiva del conjunto y sus relaciones.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;4.5.4 Dominios de arquitectura&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Una arquitectura empresarial completa debe abordar los cuatro dominios de arquitectura (negocios, datos, aplicaciones, tecnología), pero las realidades de las limitaciones de recursos y tiempo a menudo significan que no hay suficiente tiempo, financiación o recursos para construir una descripción de arquitectura de arriba hacia abajo e inclusiva que abarque los cuatro dominios de arquitectura.&lt;br/&gt;&lt;br/&gt;Las descripciones de arquitectura normalmente se construirán con un propósito específico en mente, un conjunto específico de impulsores de negocio que impulsan el desarrollo de la arquitectura, y aclarar los problemas específicos que la Descripción de arquitectura pretende ayudar a explorar, y las preguntas que se espera que ayude a responder, es una parte importante de la fase inicial del ADM.&lt;br/&gt;&lt;br/&gt;Por ejemplo, si el propósito de un esfuerzo de arquitectura en particular es definir y examinar las opciones tecnológicas para lograr una capacidad particular, y los procesos de negocio fundamentales no están abiertos a la modificación, entonces una Arquitectura de Negocio completa puede no estar justificada. Sin embargo, debido a que las arquitecturas de datos, aplicaciones y tecnología se basan en la arquitectura empresarial, la arquitectura empresarial aún necesita ser pensada y entendida.&lt;br/&gt;&lt;br/&gt;Si bien las circunstancias a veces pueden dictar la creación de una Descripción de Arquitectura que no contenga los cuatro dominios de arquitectura, debe entenderse que dicha arquitectura no puede, por definición, ser una Arquitectura Empresarial completa. Uno de los riesgos es la falta de consistencia y, por lo tanto, la capacidad de integración. La integración debe venir más tarde, con sus propios costos y riesgos, o los riesgos y compensaciones involucrados en no desarrollar una arquitectura completa e integrada deben ser articulados por el arquitecto, y comunicados y entendidos por la administración de la empresa.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;Fase A: Visión de la arquitectura&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;Recurso de Apoyo, requerido en los pasos de la documentación.&lt;br/&gt;&lt;br/&gt;-Este recurso forma parte del estándar TOGAF 9.2 y es requerido en los pasos de la fase ADM, sin embargo no pertenece a formalmente a las entradas y/o salidas de la fase actual.-&lt;br/&gt;&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA247.htm">Objetos del negocios de la Fase A: Visión de la Arquitectura</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink148" /></button>Details:
+							<div id="detailsDIVLink148" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA1/EA3/EA406.htm">«Activity» Definir el alcance del período de tiempo</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA1/EA3/EA408.htm">«Activity» Definir la amplitud de la cobertura de la empresa</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA1/EA365.htm">«Activity» 6. Definir el alcance</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2/EA1/EA1232.htm">«Fase ADM» A: Visión de la Arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA1/EA3/EA411.htm">«Activity» Definir los dominios de arquitectura específicos que se cubrirán (negocio, datos, aplicación, tecnología)</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA1/EA3/EA407.htm">«Activity» Definir el nivel de detalle requerido</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA252.htm">«recurso» Otros Recursos</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Modelado de Objetos del Negocio::Análisis de brechas</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Modelado de Objetos del Negocio::Análisis de brechas </h1>
+			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../index.htm">Adaptacion BMM</a> / <a href="../../EA1.htm">ADM_TOGAF</a> / <a href="../EA3.htm">Modelado de elementos del negocio</a> / <a href="EA103.htm">Modelado de Objetos del Negocio</a> / <a href="EA206.htm">Análisis de brechas</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA103.htm">Modelado de Objetos del Negocio</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Análisis de brechas  : Public  &lt;&lt;recurso: Apoyo en los pasos&gt;&gt; Class</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">20/10/2022 12:23:25</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">30/10/2022 15:52:58</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Wanda Mayrena</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{563A1691-E496-4893-98D7-457D9C451729}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA4/EA2/EA2/EA1234.htm">Fase B: Arquitectura de Negocios</a>, <a href="../EA4/EA2/EA3/EA2/EA1257.htm">Fase C: Arquitecturas de Sistemas de Información - Arquitectura de Datos</a>, <a href="../EA4/EA2/EA3/EA1/EA1247.htm">Fase C: Arquitecturas de Sistemas de Información - Arquitectura de Aplicaciones</a>, <a href="../EA4/EA2/EA4/EA1267.htm">Fase D: Arquitectura Tecnológica</a>, <a href="EA101.htm">Modelado de Objetos del Negocio</a>, <a href="../EA4/EA1/EA2/EA462.htm">Fase B: Arquitectura de Negocios</a>, <a href="../EA4/EA1/EA3/EA1/EA611.htm">Fase C: Arquitecturas de Sistemas de Información - Arquitectura de Aplicaciones</a>, <a href="./EA1/EA266.htm">Fase B: Arquitectura del negocio</a>, <a href="./EA2/EA1/EA273.htm">Fase C: Arquitectura SI - Arquitectura de Aplicaciones</a>, <a href="./EA2/EA2/EA277.htm">Fase C: Arquitectura SI - Arquitectura de Datos</a>, <a href="./EA3/EA281.htm">Fase D: Arquitectura tecnológica</a>, <a href="../EA4/EA1/EA2/EA2/EA559.htm">Sub-proceso "4. Realizar análisis de brechas"</a>, <a href="../EA4/EA1/EA3/EA2/EA759.htm">Fase C: Arquitecturas de Sistemas de Información - Arquitectura de Datos</a>, <a href="../EA4/EA1/EA3/EA2/EA2/EA859.htm">Sub-proceso "4. Realizar análisis de brechas"</a>, <a href="../EA4/EA1/EA3/EA1/EA2/EA721.htm">Sub-proceso "4. Realizar análisis de brechas"</a>, <a href="../EA4/EA1/EA4/EA890.htm">Fase D: Arquitectura Tecnológica</a>, <a href="../EA4/EA1/EA4/EA2/EA1002.htm">Sub-proceso "4. Realizar análisis de brechas"</a>, <a href="../EA4/EA1/EA4/EA2/EA1/EA1018.htm">Sub-proceso "Verificar la coherencia y precisión interna de los modelos de arquitectura"</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;ul&gt;<br />&lt;li&gt;An&#225;lisis de brechas (&lt;i&gt;Parte III: Gu&#237;as y t&#233;cnicas de ADM, 23. An&#225;lisis de brechas&lt;/i&gt;)&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;La t&#233;cnica conocida como an&#225;lisis de brechas es ampliamente utilizada en el M&#233;todo de Desarrollo de Arquitectura TOGAF (ADM) para validar una arquitectura que se est&#225; desarrollando. La premisa b&#225;sica es resaltar un d&#233;ficit entre la Arquitectura de L&#237;nea base y la Arquitectura de destino; es decir, elementos que se han omitido deliberadamente, se han omitido accidentalmente o que a&#250;n no se han definido.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;23.1 Introducci&#243;n&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Un paso clave en la validaci&#243;n de una arquitectura es considerar lo que puede haber sido olvidado. La arquitectura debe soportar todas las necesidades esenciales de procesamiento de informaci&#243;n de la organizaci&#243;n. La fuente m&#225;s cr&#237;tica de brechas que deben considerarse son las preocupaciones de las partes interesadas que no se han abordado en trabajos arquitect&#243;nicos anteriores.&lt;br/&gt;&lt;br/&gt;Las posibles fuentes de brechas incluyen:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Brechas en el dominio del negocio:&lt;/li&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Brechas de personas (por ejemplo, requisitos de capacitaci&#243;n cruzada)&lt;/li&gt;&lt;li&gt;Brechas en el proceso (por ejemplo, ineficiencias del proceso)&lt;/li&gt;&lt;li&gt;Brechas de herramientas (por ejemplo, funcionalidad de herramienta duplicada o faltante)&lt;/li&gt;&lt;li&gt;Lagunas de informaci&#243;n&lt;/li&gt;&lt;li&gt;Brechas de medici&#243;n&lt;/li&gt;&lt;li&gt;Brechas financieras&lt;/li&gt;&lt;li&gt;Brechas en las instalaciones (edificios, espacio de oficinas, etc.)&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Brechas de dominio de datos:&lt;/li&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Datos no suficientemente actuales&lt;/li&gt;&lt;li&gt;Datos que no se encuentran donde se necesitan&lt;/li&gt;&lt;li&gt;No son los datos que se necesitan&lt;/li&gt;&lt;li&gt;Datos no disponibles cuando sea necesario&lt;/li&gt;&lt;li&gt;Datos no creados&lt;/li&gt;&lt;li&gt;Datos no consumidos&lt;/li&gt;&lt;li&gt;Brechas en la relaci&#243;n de datos&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Aplicaciones afectadas, eliminadas o creadas&lt;/li&gt;&lt;li&gt;Tecnolog&#237;as afectadas, eliminadas o creadas&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;b&gt;23.2 Pasos sugeridos&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Los pasos sugeridos son los siguientes:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Elaborar una matriz con todos los Bloques de Construcci&#243;n de Arquitectura (ABBs) de la Arquitectura de L&#237;nea base en el eje vertical, y todos los ABBs de la Arquitectura de Destino en el eje horizontal&lt;/li&gt;&lt;li&gt;Agregue al eje Arquitectura de l&#237;nea base una fila final con la etiqueta &quot;Nuevo&quot; y al eje Arquitectura de destino una columna final con la etiqueta &quot;Eliminado&quot;&lt;/li&gt;&lt;li&gt;Cuando un ABB est&#233; disponible en las arquitecturas de l&#237;nea base y de destino, reg&#237;strelo con &quot;Incluido&quot; en la celda de intersecci&#243;n&lt;/li&gt;&lt;li&gt;Cuando falta un ABB de la arquitectura de l&#237;nea base en la arquitectura de destino, cada uno debe revisarse&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Si se elimin&#243; correctamente, m&#225;rquelo como tal en la celda &quot;Eliminado&quot; correspondiente. Si no fue as&#237;, se ha descubierto una omisi&#243;n accidental en la arquitectura de destino que debe abordarse restableciendo el ABB en la siguiente iteraci&#243;n del dise&#241;o de la arquitectura: m&#225;rquelo como tal en la celda &quot;Eliminada&quot; correspondiente.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Cuando no se pueda encontrar un ABB de la arquitectura de destino en la arquitectura de l&#237;nea base, m&#225;rquelo en la intersecci&#243;n con la fila &quot;Nuevo&quot; como un espacio que debe llenarse, ya sea desarrollando o adquiriendo el bloque de creaci&#243;n&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Cuando se completa el ejercicio, cualquier cosa bajo &quot;Eliminado&quot; o &quot;Nuevo&quot; es una brecha, que debe explicarse como correctamente eliminada, o marcada como para ser abordada mediante el restablecimiento o desarrollo / adquisici&#243;n de la funci&#243;n.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;23.3 Ejemplo&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;La &lt;i&gt;figura 23-1 de TOGAF&lt;/i&gt; muestra un an&#225;lisis de ejemplo para ABBs que son servicios de la categor&#237;a Servicios de red del TRM de TOGAF, y muestra una serie de servicios de la arquitectura de l&#237;nea base que faltan en la arquitectura de destino. Consultar la &lt;i&gt;figura 23-1 de TOGAF&lt;/i&gt;.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;Fase B: Arquitectura de Negocios&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;Recurso de Apoyo, requerido en los pasos de la documentaci&#243;n.&lt;br/&gt;&lt;br/&gt;-Este recurso forma parte del est&#225;ndar TOGAF 9.2 y es requerido en los pasos de la fase ADM, sin embargo no pertenece a formalmente a las entradas y/o salidas de la fase actual.-&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;Fase C: Arquitecturas de Sistemas de Informaci&#243;n&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;- &lt;/i&gt;&lt;/b&gt;&lt;b&gt;(&lt;/b&gt;&lt;b&gt;&lt;i&gt;Arquitectura de Datos&lt;/i&gt;&lt;/b&gt;&lt;b&gt;) &lt;/b&gt;&lt;b&gt;&lt;i&gt;- &lt;/i&gt;&lt;/b&gt;&lt;b&gt;(&lt;/b&gt;&lt;b&gt;&lt;i&gt;Arquitectura de Aplicaciones&lt;/i&gt;&lt;/b&gt;&lt;b&gt;):&lt;/b&gt;&lt;br/&gt;Recurso de Apoyo, requerido en los pasos de la documentaci&#243;n.&lt;br/&gt;&lt;br/&gt;-Este artefacto se encuentra en los pasos de la fase ADM y es requerido como entrada de alguna actividad, sin embargo no se encuentra en los entregables de arquitectura (32 de TOGAF, del Marco de contenido de arquitectura), ni en la documentaci&#243;n de la fase ADM que define las entradas y/o salidas.-&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;Fase D: Arquitectura Tecnol&#243;gica&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;Recurso de Apoyo, requerido en los pasos de la documentaci&#243;n.&lt;br/&gt;&lt;br/&gt;-Este artefacto se encuentra en los pasos de la fase ADM y es requerido como entrada de alguna actividad, sin embargo no se encuentra en los entregables de arquitectura (32 de TOGAF, del Marco de contenido de arquitectura), ni en la documentaci&#243;n de la fase ADM que define las entradas y/o salidas.-&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA248.htm">Objetos del negocios de la Fase B: Arquitectura de Negocios</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink149" /></button>Details:
+							<div id="detailsDIVLink149" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2/EA3/EA1/EA1255.htm">«Fase ADM» C: Arquitecturas de Sistemas de Información - Arquitectura de Aplicaciones</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA3/EA2/EA2/EA870.htm">«Activity» Realizar análisis de compensación para resolver conflictos (si los hay) entre las diferentes vistas</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA4/EA2/EA1/EA1029.htm">«Activity» Realizar análisis de compensación para resolver conflictos (si los hay) entre las diferentes vistas</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA3/EA2/EA772.htm">«Activity» 4. Realizar análisis de brechas</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA4/EA906.htm">«Activity» 4. Realizar análisis de brechas</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA2/EA480.htm">«Activity» 4. Realizar análisis de brechas</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2/EA3/EA2/EA1265.htm">«Fase ADM» C: Arquitecturas de Sistemas de Información - Arquitectura de Datos</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA2/EA2/EA567.htm">«Activity» Validar que los modelos admiten los principios, objetivos y restricciones</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA3/EA2/EA3/EA881.htm">«Activity» Finalizar todos los productos de trabajo, como el análisis de brechas</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA2/EA2/EA566.htm">«Activity» Realizar análisis de compensación para resolver conflictos (si los hay) entre las diferentes vistas</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2/EA4/EA1275.htm">«Fase ADM» D: Arquitectura Tecnológica</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA2/EA2/EA562.htm">«Activity» Anote los cambios en el punto de vista representado en los modelos seleccionados del Repositorio de arquitectura y el documento</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA4/EA2/EA1017.htm">«Activity» Verificar la coherencia y precisión interna de los modelos de arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA3/EA1/EA3/EA741.htm">«Activity» Finalizar todos los productos de trabajo, como el análisis de brechas</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA2/EA2/EA565.htm">«Activity» Probar la integridad de los modelos de arquitectura con respecto a los requisitos</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA3/EA1/EA629.htm">«Activity» 4. Realizar análisis de brechas</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA252.htm">«recurso» Otros Recursos</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2/EA2/EA1242.htm">«Fase ADM» B: Arquitectura de Negocios</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA3/EA1/EA2/EA730.htm">«Activity» Realizar análisis de compensación para resolver conflictos (si los hay) entre las diferentes vistas</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

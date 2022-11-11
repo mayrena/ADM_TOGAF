@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Modelado de Objetos del Negocio::Gobernanza de la arquitectura</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Modelado de Objetos del Negocio::Gobernanza de la arquitectura </h1>
+			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../index.htm">Adaptacion BMM</a> / <a href="../../EA1.htm">ADM_TOGAF</a> / <a href="../EA3.htm">Modelado de elementos del negocio</a> / <a href="EA103.htm">Modelado de Objetos del Negocio</a> / <a href="EA229.htm">Gobernanza de la arquitectura</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA103.htm">Modelado de Objetos del Negocio</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Gobernanza de la arquitectura  : Public  &lt;&lt;recurso: Apoyo en los pasos&gt;&gt; Class</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">17/10/2022 19:18:40</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">17/10/2022 19:19:34</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Wanda Mayrena</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{2D36C55E-EC99-41ca-8144-18B34061A4A2}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;ul&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Gobernanza de la arquitectura (&lt;/font&gt;&lt;a href=&quot;file://file:///E:\Documents\MEGAsync\Debian_Archivos_2020\UE-2021\PreProyecto\Proyecto%20de%20Trabado%20de%20Grado\Togaf%209-2%20inicio\togaf92e-doc_1_paquete%20HTML\togaf92e-doc\arch\pt5.html&quot;&gt;&lt;font color=&quot;#00a6de&quot;&gt;&lt;i&gt;&lt;u&gt;Parte VI&lt;/u&gt;&lt;/i&gt;&lt;/font&gt;&lt;/a&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;i&gt;, &lt;/i&gt;&lt;/font&gt;&lt;a href=&quot;file://file:///E:\Documents\MEGAsync\Debian_Archivos_2020\UE-2021\PreProyecto\Proyecto%20de%20Trabado%20de%20Grado\Togaf%209-2%20inicio\togaf92e-doc_1_paquete%20HTML\togaf92e-doc\arch\chap44.html \l tag_44&quot;&gt;&lt;font color=&quot;#00a6de&quot;&gt;&lt;i&gt;&lt;u&gt;44. Gobernanza de la arquitectura&lt;/u&gt;&lt;/i&gt;&lt;/font&gt;&lt;/a&gt;&lt;font color=&quot;#333333&quot;&gt;).&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Esta sección describe la naturaleza de la gobernanza y los niveles de gobernanza.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;&lt;i&gt;44.1.1 Niveles de gobernanza dentro de la empresa&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;La gobernanza de la arquitectura es la práctica y la orientación mediante la cual las arquitecturas empresariales y otras arquitecturas se administran y controlan a nivel de toda la empresa.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;La gobernanza de la arquitectura generalmente no opera de forma aislada, sino dentro de una jerarquía de estructuras de gobierno, que, particularmente en la empresa más grande, puede incluir todo lo siguiente como dominios distintos con sus propias disciplinas y procesos:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Gobierno Corporativo&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Gobernanza tecnológica&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Gobierno de TI&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Gobernanza de la arquitectura&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Cada uno de estos dominios de gobernanza puede existir en múltiples niveles geográficos (global, regional y local) dentro de la empresa en general.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;El gobierno corporativo es, por lo tanto, un tema amplio, más allá del alcance de un marco de arquitectura empresarial como el marco TOGAF.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Esta y las subsecciones relacionadas se centran en la gobernanza de la arquitectura; pero lo describen en el contexto de la gobernanza en toda la empresa, debido a la jerarquía de las estructuras de gobernanza dentro de las cuales normalmente opera, como se explicó anteriormente.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;En particular, esta y las siguientes secciones tienen por objeto:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Proporcionar una visión general de la naturaleza de la gobernanza como disciplina por derecho propio.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Describir el contexto de gobierno en el que el gobierno de arquitectura suele funcionar dentro de la empresa&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Describir un marco de gobierno de arquitectura que se pueda adaptar y aplicar en la práctica, tanto para la arquitectura empresarial como para otras formas de arquitectura de TI.&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;&lt;i&gt;44.1.2 Naturaleza de la gobernanza&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;i&gt;44.1.2.1 Gobernanza: una perspectiva genérica&lt;/i&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;La gobernanza se trata esencialmente de garantizar que los negocios se lleven a cabo correctamente. Se trata menos de un control abierto y un estricto cumplimiento de las reglas, y más de orientación y uso efectivo y equitativo de los recursos para garantizar la sostenibilidad de los objetivos estratégicos de una organización.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;A continuación se esbozan los principios básicos de la gobernanza empresarial, identificados por la Organización para la Cooperación y el Desarrollo Económicos (OCDE):&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Se centra en los derechos, roles y trato equitativo de los accionistas&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Divulgación y transparencia y las responsabilidades de la junta&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Asegura:&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Orientación estratégica sólida de la organización&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Supervisión eficaz de la gestión por parte de la junta&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Responsabilidad de la junta directiva de la empresa y de los accionistas&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Responsabilidades de la Junta:&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Revisión y orientación de la estrategia corporativa&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Establecer y supervisar el logro de los objetivos de desempeño de la administración&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Apoyando esto, la OCDE considera una visión tradicional de la gobernanza como: &quot;... el sistema por el cual las corporaciones comerciales son dirigidas y controladas. La estructura de gobierno corporativo especifica la distribución de derechos y responsabilidades entre los diferentes participantes en la corporación, como la junta, los gerentes, los accionistas y otras partes interesadas, y detalla las reglas y procedimientos para tomar decisiones sobre asuntos corporativos. Al hacer esto, también proporciona la estructura a través de la cual se establecen los objetivos de la empresa, y los medios para alcanzar esos objetivos y monitorear el desempeño&quot; (Fuente: OCDE, 2001).&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;i&gt;44.1.2.2 Características de la gobernanza&lt;/i&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Las siguientes características han sido adaptadas de &lt;i&gt;Corporate Governance&lt;/i&gt; (Naidoo, 2002) y se posicionan aquí para resaltar tanto el valor como la necesidad de la gobernanza como un enfoque a adoptar dentro de las organizaciones y sus relaciones con todas las partes involucradas:&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;&lt;u&gt;Disciplina&lt;/u&gt;&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;Todas las partes involucradas tendrán el compromiso de adherirse a los procedimientos, procesos y estructuras de autoridad establecidos por la organización.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;&lt;u&gt;Transparencia&lt;/u&gt;&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;Todas las acciones implementadas y su apoyo a la toma de decisiones estarán disponibles para su inspección por parte de la organización autorizada y las partes proveedoras.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;&lt;u&gt;Independencia&lt;/u&gt;&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;Todos los procesos, toma de decisiones y mecanismos utilizados se establecerán de manera que se minimicen o eviten posibles conflictos de interés.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;&lt;u&gt;Responsabilidad (Gestión Responsable)&lt;/u&gt;&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;Los grupos identificables dentro de la organización, por ejemplo, las juntas de gobierno que toman medidas o toman decisiones, están autorizados y son responsables de sus acciones.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;&lt;u&gt;Responsabilidad&lt;/u&gt;&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;Cada parte contratada debe actuar de manera responsable con la organización y sus partes interesadas.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;&lt;u&gt;Equidad&lt;/u&gt;&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;No se permitirá que todas las decisiones tomadas, los procesos utilizados y su implementación creen una ventaja injusta para ninguna de las partes en particular.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;&lt;i&gt;44.1.3 Gobernanza tecnológica&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;La gobernanza de la tecnología controla cómo una organización utiliza la tecnología en la investigación, el desarrollo y la producción de sus bienes y servicios. Aunque puede incluir actividades de gobierno de TI, a menudo tiene un alcance más amplio.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;El gobierno de la tecnología es una capacidad, requisito y recurso clave para la mayoría de las organizaciones debido a la omnipresencia de la tecnología en todo el espectro organizacional.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Estudios recientes han demostrado que muchas organizaciones tienen un equilibrio a favor de los intangibles en lugar de los tangibles que requieren gestión. Dado que la mayoría de estos intangibles son activos informativos y digitales, es evidente que las empresas dependen cada vez más de TI: y el gobierno de TI, el gobierno de TI, por lo tanto, se está convirtiendo en una parte aún más importante del gobierno de la tecnología.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Estas tendencias también resaltan las dependencias de las empresas no solo de la información en sí, sino también de los procesos, sistemas y estructuras que la crean, entregan y consumen. A medida que aumenta el cambio hacia el aumento del valor a través de los intangibles en muchos sectores de la industria, la gestión de riesgos debe considerarse clave para comprender y moderar los nuevos desafíos, amenazas y oportunidades.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Las organizaciones no solo dependen cada vez más de TI para sus operaciones y rentabilidad, sino que también su reputación, marca y, en última instancia, sus valores también dependen de esa misma información y de la tecnología de soporte.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;&lt;i&gt;44.1.4 Gobierno de TI&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;i&gt;&lt;br/&gt;&lt;/i&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;El gobierno de TI proporciona el marco y la estructura que vincula los recursos y la información de TI con los objetivos y estrategias empresariales. Además, el gobierno de TI institucionaliza las mejores prácticas para planificar, adquirir, implementar y monitorear el rendimiento de TI, para garantizar que los activos de TI de la empresa respalden sus objetivos comerciales.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;En los últimos años, el gobierno de TI se ha convertido en parte integral del gobierno efectivo de la empresa moderna. Las empresas dependen cada vez más de TI para respaldar las funciones y procesos críticos del negocio; y para obtener con éxito una ventaja competitiva, las empresas necesitan administrar de manera efectiva la compleja tecnología que está omnipresente en toda la organización, con el fin de responder de manera rápida y segura a las necesidades comerciales.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Además, los entornos regulatorios de todo el mundo exigen cada vez más un control empresarial más estricto sobre la información, impulsado por el aumento de los informes de desastres en los sistemas de información y fraude electrónico. La gestión del riesgo relacionado con TI es ahora ampliamente aceptada como una parte clave de la gobernanza empresarial.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;De ello se deduce que se debe establecer una estrategia de gobierno de TI y una organización adecuada para implementar la estrategia con el respaldo de la alta dirección, aclarando quién posee los recursos de TI de la empresa y, en particular, quién tiene la responsabilidad final de su integración en toda la empresa.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;i&gt;44.1.4.1 Un marco de controles de TI - COBIT&lt;/i&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;i&gt;&lt;br/&gt;&lt;/i&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Al igual que con el gobierno corporativo, el gobierno de TI es un tema amplio, más allá del alcance de un marco de arquitectura empresarial como el marco TOGAF. Una buena fuente de información detallada sobre el gobierno de TI es el marco COBIT (&lt;i&gt;Control OBjectives for Information and related Technology&lt;/i&gt;). Este es un estándar abierto para el control sobre TI, desarrollado y promovido por el IT &lt;i&gt;Governance Institute&lt;/i&gt; (ITGI), y publicado por la&lt;i&gt; Information Systems Audit and Control Foundation&lt;/i&gt; (ISACF). Los controles COBIT pueden proporcionar ayudas útiles para ejecutar una estrategia de cumplimiento.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;&lt;i&gt;44.1.5 Gobernanza de Arquitectura: Visión general&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;i&gt;44.1.5.1 Características de gobernanza de la arquitectura&lt;/i&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Gobernanza de Arquitectura es la práctica y la orientación mediante la cual las arquitecturas empresariales y otras arquitecturas se administran y controlan a nivel de toda la empresa. Incluye lo siguiente:&lt;/font&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Implementar un sistema de controles sobre la creación y monitoreo de todos los componentes y actividades arquitectónicas, para asegurar la introducción, implementación y evolución efectiva de arquitecturas dentro de la organización.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Implementación de un sistema para garantizar el cumplimiento de las normas internas y externas y las obligaciones regulatorias&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Establecer procesos que apoyen la gestión efectiva de los procesos anteriores dentro de los parámetros acordados&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Desarrollar prácticas que garanticen la rendición de cuentas a una comunidad de partes interesadas claramente identificada, tanto dentro como fuera de la organización.&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;i&gt;44.1.5.2 La gobernanza de la arquitectura como responsabilidad a nivel de la junta directiva&lt;/i&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Como se mencionó anteriormente, el gobierno de TI se ha convertido recientemente en una responsabilidad de la junta como parte del gobierno general del negocio. La gobernanza de las arquitecturas de una organización es un factor clave en la vinculación efectiva de TI / negocio y, por lo tanto, se está convirtiendo cada vez más en una responsabilidad clave a nivel de la junta por derecho propio.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Esta sección tiene como objetivo proporcionar el impulso para abrir la gobernanza de TI y arquitectura para que las responsabilidades comerciales asociadas con las actividades y artefactos de arquitectura puedan dilucidarse y administrarse.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;i&gt;44.1.5.3 El estándar TOGAF y la gobernanza de la arquitectura&lt;/i&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Fase G del ADM de TOGAF (&lt;i&gt;Parte II, 14. Fase G: Gobernanza de implementación&lt;/i&gt;) está dedicada a la gobernanza de implementación, que se ocupa de la realización de la arquitectura a través de proyectos de cambio. El gobierno de implementación es solo un aspecto del gobierno de arquitectura, que cubre la gestión y el control de todos los aspectos del desarrollo y la evolución de las arquitecturas empresariales y otras arquitecturas dentro de la empresa.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;La Gobernanza de la Arquitectura debe estar respaldado por un Marco de Gobernanza de la Arquitectura (descrito en&lt;i&gt; 44.2 Marco de Gobernanza de la Arquitectura&lt;/i&gt;) que ayude a identificar procesos efectivos para que las responsabilidades de negocios asociadas con la Gobernanza de Arquitectura puedan dilucidarse, comunicarse y gestionarse de manera efectiva.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;&lt;i&gt;Fase Preliminar&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;Recurso de Apoyo, requerido en los pasos de la documentación&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;La Gobernanza de la Arquitectura está estrechamente vinculado al de los Principios de arquitectura. El organismo responsable de la gobernanza también será normalmente responsable de aprobar los Principios de Arquitectura y de resolver los problemas de arquitectura. Las cuestiones relacionadas con la gobernanza se explican en &lt;/font&gt;&lt;a href=&quot;file://file:///E:\Documents\MEGAsync\Debian_Archivos_2020\UE-2021\PreProyecto\Proyecto%20de%20Trabado%20de%20Grado\Togaf%209-2%20inicio\togaf92e-doc_1_paquete%20HTML\togaf92e-doc\arch\pt5.html&quot;&gt;&lt;font color=&quot;#00a6de&quot;&gt;&lt;u&gt;la Parte VI&lt;/u&gt;&lt;/font&gt;&lt;/a&gt;&lt;font color=&quot;#333333&quot;&gt;, &lt;/font&gt;&lt;a href=&quot;file://file:///E:\Documents\MEGAsync\Debian_Archivos_2020\UE-2021\PreProyecto\Proyecto%20de%20Trabado%20de%20Grado\Togaf%209-2%20inicio\togaf92e-doc_1_paquete%20HTML\togaf92e-doc\arch\chap44.html \l tag_44&quot;&gt;&lt;font color=&quot;#00a6de&quot;&gt;&lt;i&gt;&lt;u&gt;44. Gobernanza de la arquitectura&lt;/u&gt;&lt;/i&gt;&lt;/font&gt;&lt;/a&gt;&lt;font color=&quot;#333333&quot;&gt;, donde se proporciona un marco y directrices para la gobernanza de la arquitectura.&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;La gobernanza se trata esencialmente de garantizar que los negocios se lleven a cabo correctamente. Se trata menos de un control abierto y un estricto cumplimiento de las reglas, y más de orientación y uso efectivo y equitativo de los recursos para garantizar la sostenibilidad de los objetivos estratégicos de una organización.&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;-Este recurso forma par&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2/EA6/EA1293.htm">«Fase ADM» Preliminar</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

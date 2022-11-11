@@ -1,0 +1,10 @@
+tocTab[tocTab.length] = new Array("0.1.1.4.3:1", "", "Jerarquia de procesos del SN", "EARoot/EA1/EA1/EA4/EA3/EA1294.htm", "189.png", "28", "0", "", "Analysis diagram0","{5213C29A-3FAC-4ac8-A474-EDEB5A459A5B}");
+tocTab[tocTab.length] = new Array("0.1.1.4.3:2", "", "«process» Arquitectura de Aplicaciones", "EARoot/EA1/EA1/EA4/EA3/EA1297.htm", "21.png", "E65", "0", "", "Activity0","{890FD91F-4C3C-422c-90F3-1D2AE99332CD}");
+tocTab[tocTab.length] = new Array("0.1.1.4.3:3", "", "«process» Arquitectura de Datos", "EARoot/EA1/EA1/EA4/EA3/EA1298.htm", "21.png", "E64", "0", "", "Activity0","{0A1D492C-05C9-4ed4-A371-55699E5C0DCF}");
+tocTab[tocTab.length] = new Array("0.1.1.4.3:4", "", "«process» Fase A: Visión de la Arquitectura", "EARoot/EA1/EA1/EA4/EA3/EA1299.htm", "21.png", "E112", "0", "", "Activity0","{505F640A-C72D-44dd-8438-41B3D229503B}");
+tocTab[tocTab.length] = new Array("0.1.1.4.3:5", "", "«process» Fase B: Arquitectura del Negocio", "EARoot/EA1/EA1/EA4/EA3/EA1300.htm", "21.png", "E113", "0", "", "Activity0","{87C2A267-A82C-40a6-B12F-728E98909D6D}");
+tocTab[tocTab.length] = new Array("0.1.1.4.3:6", "", "«process» Fase C: Arquitectura de Sistemas de Información", "EARoot/EA1/EA1/EA4/EA3/EA1301.htm", "21.png", "E61", "0", "", "Activity0","{2BA6486F-09D8-454d-BE57-6C739846FEC2}");
+tocTab[tocTab.length] = new Array("0.1.1.4.3:7", "", "«process» Fase D: Arquitectura Tecnológica", "EARoot/EA1/EA1/EA4/EA3/EA1302.htm", "21.png", "E62", "0", "", "Activity0","{FD1C331F-3C35-4887-9254-9C0F2AB99487}");
+tocTab[tocTab.length] = new Array("0.1.1.4.3:8", "", "«process» Fase de Gestión de Requisitos", "EARoot/EA1/EA1/EA4/EA3/EA1303.htm", "21.png", "E63", "0", "", "Activity0","{9C1371F0-C951-47a2-BCA7-2A3C88E2A335}");
+tocTab[tocTab.length] = new Array("0.1.1.4.3:9", "", "«process» Fase Preliminar", "EARoot/EA1/EA1/EA4/EA3/EA1304.htm", "21.png", "E111", "0", "", "Activity0","{F86218D0-FAFB-44da-B962-E46715F11DB1}");
+tocTab[tocTab.length] = new Array("0.1.1.4.3:10", "", "«process» Método ADM de TOGAF 9.2", "EARoot/EA1/EA1/EA4/EA3/EA1305.htm", "21.png", "E91", "0", "", "Activity0","{DC89444F-5390-4bac-879B-EFEC8F90ACA2}");

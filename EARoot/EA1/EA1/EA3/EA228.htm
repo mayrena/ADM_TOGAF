@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Modelado de Objetos del Negocio::Gestión de riesgos</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Modelado de Objetos del Negocio::Gestión de riesgos </h1>
+			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../index.htm">Adaptacion BMM</a> / <a href="../../EA1.htm">ADM_TOGAF</a> / <a href="../EA3.htm">Modelado de elementos del negocio</a> / <a href="EA103.htm">Modelado de Objetos del Negocio</a> / <a href="EA228.htm">Gestión de riesgos</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA103.htm">Modelado de Objetos del Negocio</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Gestión de riesgos  : Public  &lt;&lt;recurso: Apoyo en los pasos&gt;&gt; Class</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">19/10/2022 2:27:55</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">19/10/2022 2:28:45</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Wanda Mayrena</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{91804346-B2B8-4349-8D5A-20E6C2314CF3}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA4/EA2/EA1/EA1222.htm">Fase A: Visión de la Arquitectura</a>, <a href="../EA4/EA1/EA1/EA2/EA392.htm">Sub-proceso "9. Definir las propuestas de valor de la arquitectura objetivo y los KPIs"</a>, <a href="EA101.htm">Modelado de Objetos del Negocio</a>, <a href="../EA4/EA1/EA1/EA306.htm">Fase A: Visión de la Arquitectura</a>, <a href="./EA5/EA288.htm">Fase A: Visión de la arquitectura</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;ul&gt;<br />&lt;li&gt;Gestión de riesgos (&lt;i&gt;Parte III: Guías y técnicas de ADM, 27. Gestión de riesgos&lt;/i&gt;).&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;Se describe la gestión de riesgos, que es una técnica utilizada para mitigar el riesgo al implementar un proyecto de arquitectura.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;27.1 Introducción&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Siempre habrá riesgo con cualquier esfuerzo de transformación de arquitectura / negocio. Es importante identificar, clasificar y mitigar estos riesgos antes de comenzar para que puedan rastrearse a lo largo del esfuerzo de transformación.&lt;br/&gt;&lt;br/&gt;La mitigación es un esfuerzo continuo y, a menudo, los desencadenantes de riesgo pueden estar fuera del alcance de los planificadores de transformación (por ejemplo, fusión, adquisición), por lo que los planificadores deben monitorear el contexto de transformación constantemente.&lt;br/&gt;&lt;br/&gt;También es importante tener en cuenta que el arquitecto empresarial puede identificar los riesgos y mitigar ciertos, pero es dentro del marco de gobierno que los riesgos deben aceptarse primero y luego gestionarse.&lt;br/&gt;&lt;br/&gt;Hay dos niveles de riesgo que deben considerarse, a saber:&lt;br/&gt;&lt;br/&gt;&lt;ol&gt;<br />&lt;li&gt;&lt;b&gt;Nivel inicial de riesgo: &lt;/b&gt;categorización del riesgo antes de determinar e implementar acciones de mitigación&lt;/li&gt;&lt;li&gt;&lt;b&gt;Nivel residual de riesgo:&lt;/b&gt; categorización del riesgo después de la implementación de acciones de mitigación (si las hubiera)&lt;/li&gt;&lt;/ol&gt;<br />El proceso para la gestión de riesgos se describe en las siguientes secciones y consta de las siguientes actividades:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Clasificación de riesgos&lt;/li&gt;&lt;li&gt;Identificación de riesgos&lt;/li&gt;&lt;li&gt;Evaluación inicial de riesgos&lt;/li&gt;&lt;li&gt;Mitigación de riesgos y evaluación de riesgos residuales&lt;/li&gt;&lt;li&gt;Monitoreo de riesgos&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;b&gt;27.2 Clasificación de riesgos&lt;/b&gt;&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;El riesgo es generalizado en cualquier actividad de Arquitectura Empresarial y está presente en todas las fases dentro del Método de Desarrollo de Arquitectura (ADM). Desde una perspectiva de gestión, es útil clasificar los riesgos para que la mitigación de los riesgos se pueda ejecutar de la manera más expedita posible.&lt;br/&gt;&lt;br/&gt;Una forma común de clasificar los riesgos es con respecto al impacto en la organización (como se discute en &lt;i&gt;27.4 Evaluación inicial de riesgos&lt;/i&gt;), por lo que los riesgos con ciertos impactos deben ser abordados por ciertos niveles de gobernanza.&lt;br/&gt;&lt;br/&gt;Los riesgos normalmente se clasifican como tiempo (cronograma), costo (presupuesto) y alcance, pero también podrían incluir riesgos de relación de transformación del cliente, riesgos contractuales, riesgos tecnológicos, riesgos de alcance y complejidad, riesgos ambientales (corporativos), riesgos de personal y riesgos de aceptación del cliente.&lt;br/&gt;&lt;br/&gt;Otra forma de delegar la gestión de riesgos es clasificar aún más los riesgos por dominios de arquitectura. Clasificar los riesgos como negocios, información, aplicaciones y tecnología es útil, pero puede haber formas específicas de expresar el riesgo que la dirección corporativa de Arquitectura Empresarial debe adoptar o ampliar en lugar de modificar.&lt;br/&gt;&lt;br/&gt;En última instancia, los riesgos de la arquitectura empresarial son riesgos corporativos y deben clasificarse y gestionarse según corresponda de la misma manera o de manera extendida.&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;&lt;b&gt;27.3 Identificación de riesgos&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Las evaluaciones de madurez y preparación para la transformación generarán muchos riesgos. Identifique los riesgos y luego determine la estrategia para abordarlos a lo largo de la transformación.&lt;br/&gt;&lt;br/&gt;El uso de modelos de madurez de capacidad (MMC) es adecuado para factores específicos asociados con la entrega de la arquitectura para identificar primero los estados de referencia y destino y luego identificar las acciones necesarias para pasar al estado de destino. Las implicaciones de no alcanzar el estado objetivo pueden resultar en el descubrimiento de riesgos. Véase&lt;i&gt; 26. Evaluación de preparación para la transformación empresarial&lt;/i&gt; para obtener detalles específicos.&lt;br/&gt;&lt;br/&gt;La documentación de riesgos se completa en el contexto de un Plan de Gestión de Riesgos, para el cual existen plantillas en metodologías estándar de gestión de proyectos, por ejemplo, El Libro de Conocimiento de Gestión de Proyectos (PMBOK) y PRINCE2, así como con las diversas metodologías gubernamentales.&lt;br/&gt;&lt;br/&gt;Normalmente, estas metodologías implican procedimientos para la planificación de contingencias, el seguimiento y la evaluación de los niveles de riesgo, la reacción a los factores cambiantes del nivel de riesgo, así como los procesos para documentar, informar y comunicar los riesgos a las partes interesadas.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;27.4 Evaluación inicial de riesgos&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;El siguiente paso es clasificar los riesgos con respecto al efecto y la frecuencia de acuerdo con las escalas utilizadas dentro de la organización. Combine el efecto y la frecuencia para llegar a una evaluación preliminar del riesgo.&lt;br/&gt;&lt;br/&gt;No hay reglas estrictas y rápidas con respecto a la medición del efecto y la frecuencia. Las siguientes directrices se basan en las mejores prácticas de gestión de riesgos existentes. El efecto podría evaluarse utilizando los siguientes criterios de ejemplo:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;Catastrófico&lt;/b&gt; infiere pérdida financiera crítica que podría resultar en la bancarrota de la organización&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;Crítico&lt;/b&gt; infiere una pérdida financiera grave en más de una línea de negocio que conduce a una pérdida de productividad y a un retorno de la inversión en la inversión en TI.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;Marginal&lt;/b&gt; infiere una pérdida financiera menor en una línea de negocio y un retorno de la inversión reducido en la inversión en TI.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;Insignificante&lt;/b&gt; infiere un impacto mínimo en la capacidad de una línea de negocio para ofrecer servicios y/o productos&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;La frecuencia podría indicarse de la siguiente manera:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;Frecuentes:&lt;/b&gt; es probable que ocurran con mucha frecuencia y/o de forma continua&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;Probable:&lt;/b&gt; ocurre varias veces en el transcurso de un ciclo de transformación&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;Ocasional:&lt;/b&gt; ocurre esporádicamente&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;Rara vez:&lt;/b&gt; remotamente posible y probablemente ocurriría no más de una vez en el curso de un ciclo de transformación&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;Poco probable:&lt;/b&gt; probablemente no ocurrirá durante el curso de un ciclo de transformación&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;La combinación de los dos factores para inferir el impacto se llevaría a cabo utilizando un esquema de clasificación heurística pero consistente para los riesgos. Un posible esquema para evaluar el impacto corporativo podría ser el siguiente:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;Riesgo extremadamente alto (E):&lt;/b&gt; lo más probable es que el esfuerzo de transformación fracase con graves consecuencias&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;Alto riesgo (H):&lt;/b&gt; falla significativa de partes del esfuerzo de transformación que resulta en que ciertos objetivos no se logren&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;Riesgo moderado (M):&lt;/b&gt; fracaso notable de partes del esfuerzo de transformación que amenazan el éxito de ciertos objetivos&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;Bajo riesgo (L):&lt;/b&gt; ciertos objetivos no serán del todo exitosos&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;&lt;b&gt;27.5 Mitigación de riesgos y evaluación de riesgos residuales&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;La mitigación de riesgos se refiere a la identificación, planificación y realización de acciones que reducirán el riesgo a un nivel aceptable.&lt;br/&gt;&lt;br/&gt;El esfuerzo de mitigación podría ser un simple monitoreo y / o aceptación del riesgo para un plan de contingencia en toda regla que requiera redundancia completa en un Plan de Continuidad del Negocio (con todas las implicaciones asociadas de alcance, costo y tiempo).&lt;br/&gt;&lt;br/&gt;Debido a las implicaciones de esta evaluación de riesgos, debe llevarse a cabo de manera pragmática pero sistemática. Con la prioridad de los riesgos frecuentes de alto impacto, cada riesgo debe mitigarse a su vez.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;27.6 Realizar una evaluación del riesgo residual&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Una vez que se haya identificado el esfuerzo de mitigación para cada uno de los riesgos, vuelva a evaluar el efecto y la frecuencia y luego vuelva a calcular los impactos y vea si el esfuerzo de mitigación realmente ha hecho una diferencia aceptable. Los esfuerzos de mitigación a menudo requerirán muchos recursos y se debe desafiar un desembolso importante por poco o ningún riesgo residual.&lt;br/&gt;&lt;br/&gt;Una vez que se mitiga el riesgo inicial, entonces el riesgo que queda se denomina &quot;riesgo residual&quot;. La consideración clave es que el esfuerzo de mitigación en realidad reduce el impacto corporativo y no solo mueve el riesgo a otro cuadrante igualmente alto. Por ejemplo, cambiar el riesgo de frecuente / catastrófico a frecuente / crítico todavía ofrece un riesgo extremadamente alto. Si esto ocurre, entonces el esfuerzo de mitigación debe ser reconsiderado.&lt;br/&gt;&lt;br/&gt;El resultado final debe ser una evaluación del riesgo de transformación que podría estructurarse como una hoja de trabajo, como se muestra en la &lt;i&gt;Figura 27-2 de TOGAF&lt;/i&gt;.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;27.7 Monitoreo y gobernanza de riesgos (Fase G)&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Los riesgos residuales deben ser aprobados por el marco de gobierno de TI y, potencialmente, en el gobierno corporativo donde se requiere la aceptación comercial de los riesgos residuales.&lt;br/&gt;&lt;br/&gt;Una vez que se han aceptado los riesgos residuales, la ejecución de las acciones de mitigación debe supervisarse cuidadosamente para garantizar que la empresa esté lidiando con el riesgo residual en lugar del inicial.&lt;br/&gt;&lt;br/&gt;Las hojas de trabajo de evaluación de identificación y mitigación de riesgos se mantienen como artefactos de gobernanza y se mantienen actualizadas en la Fase G (Gobernanza de implementación), donde se realiza el monitoreo de riesgos.&lt;br/&gt;&lt;br/&gt;La gobernanza de la implementación puede identificar riesgos críticos que no se están mitigando y pueden requerir otro ciclo de ADM completo o parcial.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;27.8 Resumen&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;La gestión de riesgos es una parte integral de la arquitectura empresarial. Se alienta a los profesionales a utilizar su metodología de gestión de riesgos corporativos o ampliarla utilizando la orientación de este capítulo. En ausencia de una metodología corporativa formal, los arquitectos pueden utilizar la orientación de este capítulo como una práctica recomendada.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;Fase A: Visión de la arquitectura&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;Recurso de Apoyo, requerido en los pasos de la documentación&lt;br/&gt;&lt;br/&gt;-Este recurso forma parte del estándar TOGAF 9.2 y es requerido en los pasos de la fase ADM, sin embargo no pertenece a formalmente a las entradas y/o salidas de la fase actual.-&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA247.htm">Objetos del negocios de la Fase A: Visión de la Arquitectura</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink209" /></button>Details:
+							<div id="detailsDIVLink209" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA252.htm">«recurso» Otros Recursos</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA1/EA359.htm">«Activity» 10. Identificar los riesgos de transformación empresarial y las actividades de mitigación</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA1/EA2/EA397.htm">«Activity» Evaluar el riesgo empresarial</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA1/EA368.htm">«Activity» 9. Definir las propuestas de valor y los Indicadores claves de rendimiento (KPI) de la arquitectura objetivo </a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2/EA1/EA1232.htm">«Fase ADM» A: Visión de la Arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

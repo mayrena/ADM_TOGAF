@@ -1,0 +1,524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>B: Arquitectura de Negocios</title>
+<link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> B: Arquitectura de Negocios </h1>
+			<!-- <img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../../../index.htm">Adaptacion BMM</a> / <a href="../../../../EA1.htm">ADM_TOGAF</a> / <a href="../../../EA3.htm">Modelado de elementos del negocio</a> / <a href="../../EA295.htm">Modelado de Procesos del Negocio</a> / <a href="../EA1215.htm">Diagrama de Procesos</a> / <a href="EA1236.htm">Fase B: Arquitectura de Negocios</a> / <a href="EA1242.htm">B: Arquitectura de Negocios</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA1236.htm">Fase B: Arquitectura de Negocios</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">B: Arquitectura de Negocios  : Public  &lt;&lt;Fase ADM&gt;&gt; Activity</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">12/08/2022 11:48:08</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">30/10/2022 0:12:26</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Wanda Mayrena</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{0946281D-31A6-4021-B181-E7C9B1A0D088}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA1234.htm">Fase B: Arquitectura de Negocios</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">Durante esta fase se describe el desarrollo de una Arquitectura de Negocios para apoyar una Visión de Arquitectura acordada.&lt;br/&gt;&lt;br/&gt;La arquitectura de negocios es una representación de las visiones de negocio holísticas y multidimensionales de: capacidades, entrega de valor de extremo a extremo, información y estructura organizativa; y las relaciones entre estas opiniones y estrategias de negocios, productos, políticas, iniciativas y partes interesadas.&lt;br/&gt;&lt;br/&gt;La arquitectura de negocios relaciona los elementos de negocios con los objetivos de negocios y los elementos de otros dominios.&lt;br/&gt;&lt;br/&gt;El conocimiento de la Arquitectura de Negocios es un requisito previo para el trabajo de arquitectura en cualquier otro dominio (Datos, Aplicación, Tecnología), y por lo tanto es la primera actividad de arquitectura que debe emprenderse, si no se atiende ya en otros procesos organizacionales (planificación empresarial, planificación estratégica de negocios, reingeniería de procesos de negocio, etc.).&lt;br/&gt;&lt;br/&gt;En términos prácticos, la Arquitectura de Negocios también es a menudo necesaria como un medio para demostrar el valor comercial del trabajo de arquitectura posterior a las partes interesadas clave, y el retorno de la inversión para esas partes interesadas al apoyar y participar en el trabajo posterior.&lt;br/&gt;&lt;br/&gt;El alcance del trabajo en la Fase B está determinado principalmente por la Visión de arquitectura como se establece en la Fase A. La estrategia de negocio define los objetivos, los impulsores y las métricas para el éxito, pero no necesariamente cómo llegar allí. Ese es el papel de la Arquitectura de Negocios, definido en detalle en la Fase B.&lt;br/&gt;&lt;br/&gt;Esto dependerá en gran medida del entorno empresarial. En algunos casos, los elementos clave de la Arquitectura de Negocios se pueden hacer en otras actividades; por ejemplo, la misión, la visión, la estrategia y los objetivos de la empresa pueden documentarse como parte de alguna estrategia comercial más amplia o actividad de planificación empresarial que tenga su propio ciclo de vida dentro de la empresa.&lt;br/&gt;&lt;br/&gt;En tales casos, puede ser necesario verificar y actualizar la estrategia y los planes de negocios actualmente documentados, y/o tender un puente entre los impulsores de negocios de alto nivel, la estrategia de negocios y los objetivos, por un lado, y los requisitos de negocios específicos que son relevantes para este esfuerzo de desarrollo de arquitectura. La estrategia de negocios generalmente define qué lograr: los objetivos y los impulsores, y las métricas para el éxito, pero no cómo llegar allí. Ese es el papel de la Arquitectura de Negocios.&lt;br/&gt;&lt;br/&gt;En otros casos, se puede haber realizado poco o ningún trabajo de Arquitectura de Negocios hasta la fecha. En tales casos, será necesario que el equipo de arquitectura investigue, verifique y obtenga la aceptación de los objetivos y procesos de negocios clave que la arquitectura debe respaldar. Esto se puede hacer como un ejercicio independiente, ya sea precediendo al desarrollo de la arquitectura o como parte de la Fase A.&lt;br/&gt;&lt;br/&gt;En ambos casos, se puede utilizar la técnica de escenarios de negocio (consulte la &lt;i&gt;Guía de la serie TOGAF®: Escenarios de negocio&lt;/i&gt;), o cualquier otro método que ilumine los requisitos clave del negocio e indique los requisitos técnicos implícitos para la arquitectura de TI.&lt;br/&gt;&lt;br/&gt;Un objetivo clave es reutilizar el material existente tanto como sea posible. En entornos arquitectónicamente más maduros, habrá definiciones de arquitectura existentes, que (con suerte) se habrán mantenido desde el último ciclo de desarrollo de la arquitectura. Cuando existen descripciones de arquitectura, estas se pueden utilizar como punto de partida y verificar y actualizar si es necesario; Consulte la &lt;i&gt;Parte V, 35.4.1 Continuum de la Arquitectura&lt;/i&gt;.&lt;br/&gt;&lt;br/&gt;Recopilar y analizar solo la información que permite tomar decisiones informadas relevantes para el alcance de este esfuerzo de arquitectura. Si este esfuerzo se centra en la definición de (posiblemente nuevos) procesos de negocio, entonces la Fase B implicará necesariamente una gran cantidad de trabajo detallado. Si el enfoque está más en las Arquitecturas de Destino en otros dominios (datos / información, sistemas de aplicaciones, infraestructura) para admitir una Arquitectura de Negocio esencialmente existente, entonces es importante construir una imagen completa en la Fase B sin entrar en detalles innecesarios.&lt;br/&gt;&lt;br/&gt;Las áreas clave de enfoque durante esta fase de establecimiento o refinamiento de la Arquitectura de Negocios de la práctica de arquitectura son:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Una &lt;b&gt;Ontología de Arquitectura&lt;/b&gt; que defina los términos y definiciones arquitectónicas que se utilizarán en la organización con el fin de establecer una comprensión común de estos términos.&lt;/li&gt;&lt;li&gt;El &lt;b&gt;proceso de arquitectura&lt;/b&gt; donde el ADM formaría la base del proceso y debería personalizarse para cumplir con los requisitos de la organización y la visión de la práctica de la arquitectura.&lt;/li&gt;&lt;/ul&gt;<br />&lt;i&gt;Consulte 4.3 Adaptación del ADM&lt;/i&gt; para obtener orientación sobre el desarrollo de este proceso. Los procesos de gobernanza de la arquitectura requeridos deben incluirse en el proceso general de arquitectura.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Los&lt;b&gt; puntos de vista y vistas de arquitectura&lt;/b&gt; que enumeran todos los puntos de vista y vistas que deben ser abordados por la práctica de arquitectura.&lt;/li&gt;&lt;/ul&gt;<br />Las partes interesadas de la práctica de arquitectura identificadas guiarían el desarrollo de esta definición. Uno de los puntos de vista a incluir es el punto de vista de la Gobernanza de la Arquitectura; consulte la &lt;i&gt;parte IV, 31. Artefactos arquitectónicos&lt;/i&gt; para obtener orientación sobre esta salida.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;El &lt;b&gt;Marco de Arquitectura&lt;/b&gt; que describe los diversos entregables de arquitectura que generará la práctica de arquitectura, las interrelaciones y dependencias entre los entregables de arquitectura, así como las reglas y pautas que rigen el diseño de estos entregables.&lt;/li&gt;&lt;/ul&gt;<br />Los puntos de vista y vistas de arquitectura definidos deben utilizarse para guiar la definición del marco de arquitectura. La &lt;i&gt;Parte II: Método de Desarrollo de Arquitectura (ADM)&lt;/i&gt; y la &lt;i&gt;parte IV, 32. Los entregables de arquitectura&lt;/i&gt; son referencias útiles que ayudarán a describir el marco de arquitectura.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;La &lt;b&gt;Matriz de Responsabilidad de Arquitectura&lt;/b&gt; que define los roles en la práctica de arquitectura y asigna la responsabilidad de los roles a los entregables y procesos de arquitectura&lt;/li&gt;&lt;/ul&gt;<br />Esta matriz incluiría las estructuras y roles de Gobernanza de la Arquitectura requeridos. La &lt;i&gt;Parte II: Método de desarrollo de arquitectura (ADM)&lt;/i&gt;, así como la &lt;i&gt;parte VI, 41. Junta de Arquitectura&lt;/i&gt;, &lt;i&gt;44. Gobernanza de la arquitectura&lt;/i&gt;, y &lt;i&gt;46. Marco de habilidades de arquitectura&lt;/i&gt; proporcionaría orientación sobre este producto.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Las &lt;b&gt;métricas de rendimiento de arquitectura&lt;/b&gt; identifican y describen las métricas que se utilizarán para monitorear el rendimiento de la práctica de arquitectura en comparación con su visión y objetivos declarados de la práctica de arquitectura.&lt;/li&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;El &lt;b&gt;Marco de Gobierno de la Arquitectura&lt;/b&gt;, que es una visión específica del proceso de arquitectura definido y la Matriz de Responsabilidad de la Arquitectura&lt;/li&gt;&lt;/ul&gt;&lt;p/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="toggleItem('FlowTo');" id="FlowToTitle">Flow To</li>
+			<li onClick="toggleItem('FlowFrom');" id="FlowFromTitle">Flow From</li>
+			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="FlowToTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="50%" class="TableHeading">Element</td>
+					<td width="50%" class="TableHeading">Name</td>
+				</tr>
+				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="../../../EA3/EA213.htm">Catálogos,  Matrices,  Diagramas y/o Técnicas</a><br />
+						Class &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow5212" /></button>Details:
+							<div id="detailsDIVLinkFlow5212" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="EA1240.htm">{anonymous}</a><br />
+						Object &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow5213" /></button>Details:
+							<div id="detailsDIVLinkFlow5213" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="EA1239.htm">{anonymous}</a><br />
+						Object &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow5214" /></button>Details:
+							<div id="detailsDIVLinkFlow5214" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="EA1237.htm">{anonymous}</a><br />
+						Object &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow5215" /></button>Details:
+							<div id="detailsDIVLinkFlow5215" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="EA1238.htm">{anonymous}</a><br />
+						Object &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow5216" /></button>Details:
+							<div id="detailsDIVLinkFlow5216" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="EA1241.htm">{anonymous}</a><br />
+						Object &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow5217" /></button>Details:
+							<div id="detailsDIVLinkFlow5217" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="../../../EA3/EA220.htm">Especificación de requisitos de arquitectura</a><br />
+						Class &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow5218" /></button>Details:
+							<div id="detailsDIVLinkFlow5218" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="ItemBody" id="FlowFromTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="50%" class="TableHeading">Element</td>
+					<td width="50%" class="TableHeading">Name</td>
+				</tr>
+				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="../../../EA3/EA258.htm">Principios de negocio,  objetivos de negocio e impulsores del negocio</a><br />
+						Class &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow5219" /></button>Details:
+							<div id="detailsDIVLinkFlow5219" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="../../../EA3/EA215.htm">Declaración de trabajo de arquitectura</a><br />
+						Class &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow5220" /></button>Details:
+							<div id="detailsDIVLinkFlow5220" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="../../../EA3/EA257.htm">Principios de Arquitectura</a><br />
+						Class &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow5221" /></button>Details:
+							<div id="detailsDIVLinkFlow5221" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="../../../EA3/EA259.htm">Proyecto de Documento de definición de arquitectura</a><br />
+						Class &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow5222" /></button>Details:
+							<div id="detailsDIVLinkFlow5222" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isReadOnly:</td>
+				<td width="70%" class="TableRow">false</td>
+			</tr>
+
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1243.htm">«objetivo» Desarrollar la Arquitectura de Negocio Objetivo e identificar los componentes de la hoja de ruta en función de las brechas entre las arquitecturas de negocio de línea de base y de destino  </a></td>
+					<td width="10%" class="TableRow" valign="top">Object</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA189.htm">«proceso interno ADM» Evaluar capacidades</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA232.htm">«recurso» Hoja de ruta de arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA264.htm">«entregable» Solicitud de trabajo de arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA200.htm">«entregable»  Evaluación de la capacidad</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA1/EA24.htm">Gerente de Programas y/o Proyectos</a></td>
+					<td width="10%" class="TableRow" valign="top">Actor</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA240.htm">«recurso: Entradas arquitectónicas» Modelo organizativo para la arquitectura empresarial</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA239.htm">«recurso: Apoyo en los pasos» Metamodelo de contenido</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA235.htm">«recurso: Entradas arquitectónicas» Marco de arquitectura a medida</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA1/EA16.htm">Arquitecto</a></td>
+					<td width="10%" class="TableRow" valign="top">Actor</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA183.htm">«proceso interno ADM» Enfoque Fase A: Visión de la arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA182.htm">«proceso interno ADM» Desarrollo de requisitos</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA184.htm">«proceso interno ADM» Enfoque Fase B: Arquitectura del Negocio</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA214.htm">«recurso: Entradas arquitectónicas» Continuum empresarial</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA254.htm">«entregable» Plan de Comunicaciones</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA265.htm">«entregable» Visión de la Arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA262.htm">«recurso: Entradas arquitectónicas» Repositorio de arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA206.htm">«recurso: Apoyo en los pasos» Análisis de brechas</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA204.htm">«regla» ADM</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA210.htm">«recurso» Bloques de construcción de arquitectura -ABBs-</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

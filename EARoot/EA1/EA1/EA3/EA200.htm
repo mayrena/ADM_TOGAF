@@ -1,0 +1,402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Modelado de Objetos del Negocio:: Evaluación de la capacidad</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Modelado de Objetos del Negocio:: Evaluación de la capacidad </h1>
+			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../index.htm">Adaptacion BMM</a> / <a href="../../EA1.htm">ADM_TOGAF</a> / <a href="../EA3.htm">Modelado de elementos del negocio</a> / <a href="EA103.htm">Modelado de Objetos del Negocio</a> / <a href="EA200.htm"> Evaluación de la capacidad</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA103.htm">Modelado de Objetos del Negocio</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle"> Evaluación de la capacidad  : Public  &lt;&lt;entregable&gt;&gt; Class</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">19/10/2022 0:45:41</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">09/11/2022 5:37:26</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Wanda Mayrena</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{CAC69C16-A45C-4445-A519-07D9E8BDEC97}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA4/EA2/EA1/EA1222.htm">Fase A: Visión de la Arquitectura</a>, <a href="../EA4/EA2/EA2/EA1234.htm">Fase B: Arquitectura de Negocios</a>, <a href="../EA4/EA2/EA3/EA2/EA1257.htm">Fase C: Arquitecturas de Sistemas de Información - Arquitectura de Datos</a>, <a href="../EA4/EA2/EA3/EA1/EA1247.htm">Fase C: Arquitecturas de Sistemas de Información - Arquitectura de Aplicaciones</a>, <a href="../EA4/EA2/EA4/EA1267.htm">Fase D: Arquitectura Tecnológica</a>, <a href="EA101.htm">Modelado de Objetos del Negocio</a>, <a href="../EA4/EA1/EA2/EA462.htm">Fase B: Arquitectura de Negocios</a>, <a href="../EA4/EA1/EA1/EA306.htm">Fase A: Visión de la Arquitectura</a>, <a href="../EA4/EA1/EA3/EA1/EA611.htm">Fase C: Arquitecturas de Sistemas de Información - Arquitectura de Aplicaciones</a>, <a href="./EA5/EA288.htm">Fase A: Visión de la arquitectura</a>, <a href="./EA1/EA266.htm">Fase B: Arquitectura del negocio</a>, <a href="./EA2/EA1/EA273.htm">Fase C: Arquitectura SI - Arquitectura de Aplicaciones</a>, <a href="./EA2/EA2/EA277.htm">Fase C: Arquitectura SI - Arquitectura de Datos</a>, <a href="./EA3/EA281.htm">Fase D: Arquitectura tecnológica</a>, <a href="../EA4/EA1/EA3/EA2/EA759.htm">Fase C: Arquitecturas de Sistemas de Información - Arquitectura de Datos</a>, <a href="../EA4/EA1/EA4/EA890.htm">Fase D: Arquitectura Tecnológica</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;ul&gt;<br />&lt;li&gt;Evaluaci&#243;n de la capacidad (&lt;i&gt;Parte IV: Marco de contenido de arquitectura, 32.2.10 Evaluaci&#243;n de la capacidad&lt;/i&gt;).&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;Antes de embarcarse en una definici&#243;n de arquitectura detallada, es valioso comprender el nivel de capacidad de l&#237;nea de base y objetivo de la empresa. Esta evaluaci&#243;n de la capacidad se puede examinar en varios niveles:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&#191;Cu&#225;l es el nivel de capacidad de la empresa en su conjunto? &#191;D&#243;nde desea la empresa aumentar u optimizar la capacidad? &#191;Cu&#225;les son las &#225;reas de enfoque arquitect&#243;nico que apoyar&#225;n el desarrollo deseado de la empresa?&lt;/li&gt;&lt;li&gt;&#191;Cu&#225;l es el nivel de capacidad o madurez de la funci&#243;n de TI dentro de la empresa? &#191;Cu&#225;les son las implicaciones probables de llevar a cabo el proyecto de arquitectura en t&#233;rminos de gobernanza de dise&#241;o, gobernanza operativa, habilidades y estructura organizativa? &#191;Cu&#225;l es el estilo, el nivel de formalidad y la cantidad de detalles apropiados para que el proyecto de arquitectura se ajuste a la cultura y la capacidad de la organizaci&#243;n de TI?&lt;/li&gt;&lt;li&gt;&#191;Cu&#225;l es la capacidad y madurez de la funci&#243;n de arquitectura dentro de la empresa? &#191;Qu&#233; activos arquitect&#243;nicos existen actualmente? &#191;Son mantenidos y precisos? &#191;Qu&#233; normas y modelos de referencia deben tenerse en cuenta? &#191;Es probable que haya oportunidades para crear activos reutilizables durante el proyecto de arquitectura?&lt;/li&gt;&lt;li&gt;Cuando existen brechas de capacidad, &#191;hasta qu&#233; punto est&#225; el negocio listo para transformarse con el fin de alcanzar la capacidad objetivo? &#191;Cu&#225;les son los riesgos para la transformaci&#243;n, las barreras culturales y otras consideraciones que deben abordarse m&#225;s all&#225; de la brecha de capacidad b&#225;sica?&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;Los contenidos t&#237;picos de una evaluaci&#243;n de capacidad son:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Evaluaci&#243;n de la capacidad de negocio, que incluye:&lt;ul&gt;<br />&lt;li&gt;Capacidades del negocio&lt;/li&gt;&lt;li&gt;Evaluaci&#243;n del estado de l&#237;nea de base del nivel de rendimiento de cada capacidad&lt;/li&gt;&lt;li&gt;Aspiraci&#243;n de estado futuro para el nivel de rendimiento de cada capacidad&lt;/li&gt;&lt;li&gt;Evaluaci&#243;n del estado de l&#237;nea de base de c&#243;mo se realiza cada capacidad&lt;/li&gt;&lt;li&gt;Aspiraci&#243;n futura del estado sobre c&#243;mo se debe realizar cada capacidad&lt;/li&gt;&lt;li&gt;Evaluaci&#243;n de los impactos probables para la organizaci&#243;n de negocios resultantes de la implementaci&#243;n exitosa de la arquitectura de destino&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Evaluaci&#243;n de la capacidad de TI, que incluye:&lt;/li&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Nivel de madurez de l&#237;nea de base y objetivo del proceso de cambio&lt;/li&gt;&lt;li&gt;Nivel de madurez de l&#237;nea de base y objetivo de los procesos operativos&lt;/li&gt;&lt;li&gt;Capacidad de l&#237;nea de base y evaluaci&#243;n de la capacidad&lt;/li&gt;&lt;li&gt;Evaluaci&#243;n de los impactos probables para la organizaci&#243;n de TI resultantes de la implementaci&#243;n exitosa de la arquitectura de destino&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Evaluaci&#243;n de la madurez de la arquitectura, que incluye:&lt;/li&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Arquitectura Procesos de gobernanza, organizaci&#243;n, roles y responsabilidades&lt;/li&gt;&lt;li&gt;Evaluaci&#243;n de habilidades de arquitectura&lt;/li&gt;&lt;li&gt;Amplitud, profundidad y calidad de la definici&#243;n de paisajes con Repositorio de Arquitectura&lt;/li&gt;&lt;li&gt;Definici&#243;n de la amplitud, profundidad y calidad de los est&#225;ndares con el Repositorio de Arquitectura&lt;/li&gt;&lt;li&gt;Amplitud, profundidad y calidad de la definici&#243;n del modelo de referencia con el Repositorio de arquitectura&lt;/li&gt;&lt;li&gt;Evaluaci&#243;n del potencial de reutilizaci&#243;n&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Evaluaci&#243;n de preparaci&#243;n para la transformaci&#243;n empresarial, que incluye:&lt;/li&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Factores de preparaci&#243;n&lt;/li&gt;&lt;li&gt;Visi&#243;n para cada factor de preparaci&#243;n&lt;/li&gt;&lt;li&gt;Calificaciones de preparaci&#243;n actuales y objetivo&lt;/li&gt;&lt;li&gt;Riesgos de preparaci&#243;n&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;Fase A: Visi&#243;n de la arquitectura&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;Recurso obtenido de la &lt;b&gt;&lt;i&gt;Fase A (Salida)&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Los resultados de la Fase A pueden incluir, pero no se limitan a:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Evaluaci&#243;n de la capacidad (&lt;i&gt;Parte IV, 32.2.10 Evaluaci&#243;n de la capacidad&lt;/i&gt;).&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;-Este es un documento que se produce durante la fase actual, pertenece a los entregables de arquitectura, y se apoyan con las plantillas del Set 2 ofrecidas en la librer&#237;a de la pagina oficial de TOGAF, ademas se encuentra establecido como Salida en la documentaci&#243;n de la fase ADM y en la secci&#243;n 32. Entregables de arquitectura de la Parte IV: Marco de contenido de arquitectura.-&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;Fase B: Arquitectura de Negocios&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;es recurso: &lt;b&gt;Entradas no arquitect&#243;nicas&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Evaluaci&#243;n de la capacidad (&lt;i&gt;Parte IV, 32.2.10 Evaluaci&#243;n de la capacidad&lt;/i&gt;)&lt;/li&gt;&lt;/ul&gt;<br />&lt;b&gt;&lt;br/&gt;&lt;/b&gt;-Este entregable es un documento ya definido para la organizaci&#243;n, y es consumido para su uso durante la fase actual. Se establece como Entrada en la documentaci&#243;n del ADM y en la secci&#243;n 32. Entregables de arquitectura de la Parte IV: Marco de contenido de arquitectura.-&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;Fase C: Arquitecturas de Sistemas de Informaci&#243;n:&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;- &lt;/i&gt;&lt;/b&gt;&lt;b&gt;(&lt;/b&gt;&lt;b&gt;&lt;i&gt;Arquitectura de Datos&lt;/i&gt;&lt;/b&gt;&lt;b&gt;) &lt;/b&gt;&lt;b&gt;&lt;i&gt;- &lt;/i&gt;&lt;/b&gt;&lt;b&gt;(&lt;/b&gt;&lt;b&gt;&lt;i&gt;Arquitectura de Aplicaciones&lt;/i&gt;&lt;/b&gt;&lt;b&gt;)&lt;/b&gt;&lt;br/&gt;Es recurso: &lt;b&gt;Entradas no arquitect&#243;nicas:&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Evaluaci&#243;n de la capacidad (&lt;i&gt;Parte IV, 32.2.10 Evaluaci&#243;n de la capacidad&lt;/i&gt;)&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;-Este entregable es un documento ya definido para la organizaci&#243;n, y es consumido para su uso durante la fase actual. Se establece como Entrada en la documentaci&#243;n del ADM y en la secci&#243;n 32. Entregables de arquitectura de la Parte IV: Marco de contenido de arquitectura.-&lt;br/&gt;&lt;b&gt;&lt;i&gt;&lt;br/&gt;&lt;/i&gt;&lt;/b&gt;&lt;b&gt;&lt;i&gt;&lt;br/&gt;&lt;/i&gt;&lt;/b&gt;&lt;b&gt;&lt;i&gt;Fase D: Arquitectura Tecnol&#243;gica&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;es recurso: &lt;b&gt;Entradas no arquitect&#243;nicas:&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Evaluaci&#243;n de la capacidad (&lt;i&gt;Parte IV, 32.2.10 Evaluaci&#243;n de la capacidad&lt;/i&gt;)&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;-Este entregable es un documento ya definido para la organizaci&#243;n, y es consumido para su uso durante la fase actual. Se establece como Entrada en la documentaci&#243;n del ADM y en la secci&#243;n 32. Entregables de arquitectura de la Parte IV: Marco de contenido de arquitectura.-&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="toggleItem('FlowFrom');" id="FlowFromTitle">Flow From</li>
+			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA247.htm">Objetos del negocios de la Fase A: Visión de la Arquitectura</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink142" /></button>Details:
+							<div id="detailsDIVLink142" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA222.htm">«artefacto» Evaluación de la capacidad</a><br />
+						Artifact &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink143" /></button>Details:
+							<div id="detailsDIVLink143" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="FlowFromTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="50%" class="TableHeading">Element</td>
+					<td width="50%" class="TableHeading">Name</td>
+				</tr>
+				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="../EA4/EA2/EA1/EA1232.htm">A: Visión de la Arquitectura</a><br />
+						Activity &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow144" /></button>Details:
+							<div id="detailsDIVLinkFlow144" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="../EA4/EA1/EA1/EA364.htm">5. Evaluar la preparación para la transformación del negocio</a><br />
+						Activity &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow145" /></button>Details:
+							<div id="detailsDIVLinkFlow145" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="../EA4/EA1/EA1/EA363.htm">4. Evaluar capacidades</a><br />
+						Activity &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow146" /></button>Details:
+							<div id="detailsDIVLinkFlow146" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA4/EA908.htm">«Activity» 6. Resolver los impactos en todo el panorama de la arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA3/EA1/EA631.htm">«Activity» 6. Resolver los impactos en todo el panorama de la arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2/EA2/EA1242.htm">«Fase ADM» B: Arquitectura de Negocios</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2/EA3/EA1/EA1255.htm">«Fase ADM» C: Arquitecturas de Sistemas de Información - Arquitectura de Aplicaciones</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA3/EA1/EA1/EA679.htm">«Activity» 1.3 Identificar las matrices requeridas</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA217.htm">Entradas no arquitectónicas</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA252.htm">«recurso» Otros Recursos</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA218.htm">«entregable» Entregables</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">Entregable que se genera en la Fase A
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA3/EA2/EA774.htm">«Activity» 6. Resolver los impactos en todo el panorama de la arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA2/EA482.htm">«Activity» 6. Resolver los impactos en todo el panorama de la arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2/EA4/EA1275.htm">«Fase ADM» D: Arquitectura Tecnológica</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2/EA3/EA2/EA1265.htm">«Fase ADM» C: Arquitecturas de Sistemas de Información - Arquitectura de Datos</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

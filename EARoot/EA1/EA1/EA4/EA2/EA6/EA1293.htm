@@ -1,0 +1,518 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Preliminar</title>
+<link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Preliminar </h1>
+			<!-- <img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../../../index.htm">Adaptacion BMM</a> / <a href="../../../../EA1.htm">ADM_TOGAF</a> / <a href="../../../EA3.htm">Modelado de elementos del negocio</a> / <a href="../../EA295.htm">Modelado de Procesos del Negocio</a> / <a href="../EA1215.htm">Diagrama de Procesos</a> / <a href="EA1286.htm">Fase Preliminar</a> / <a href="EA1293.htm">Preliminar</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA1286.htm">Fase Preliminar</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Preliminar  : Public  &lt;&lt;Fase ADM&gt;&gt; Activity</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">03/07/2022 12:57:38</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">31/10/2022 17:37:21</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Wanda Mayrena</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{0A39DDD3-9061-43e8-B642-C2C9BFFD72D9}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA1284.htm">Fase Preliminar</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">El ADM de TOGAF es un m&#233;todo gen&#233;rico, destinado a ser utilizado por una amplia variedad de empresas diferentes, y en conjunto con una amplia variedad de otros marcos de arquitectura, si es necesario. Por lo tanto, la Fase Preliminar implica hacer cualquier trabajo necesario para iniciar y adaptar el ADM para definir un marco espec&#237;fico de la organizaci&#243;n.&lt;br/&gt;&lt;br/&gt;Esta secci&#243;n describe las actividades de preparaci&#243;n e iniciaci&#243;n necesarias para cumplir con la directiva empresarial para una nueva arquitectura empresarial, incluida la definici&#243;n de un marco de arquitectura espec&#237;fica de la organizaci&#243;n y la definici&#243;n de principios.&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;Esta fase preliminar consiste en definir &quot;d&#243;nde, qu&#233;, por qu&#233;, qui&#233;n y c&#243;mo hacemos arquitectura&quot; en la empresa en cuesti&#243;n. Los principales aspectos son los siguientes:&lt;/font&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Definici&#243;n de la empresa&lt;/li&gt;&lt;li&gt;Identificaci&#243;n de impulsores y elementos clave en el contexto organizacional&lt;/li&gt;&lt;li&gt;Definici&#243;n de los requisitos para el trabajo de arquitectura&lt;/li&gt;&lt;li&gt;Definici&#243;n de los Principios de Arquitectura que informar&#225;n cualquier trabajo de arquitectura&lt;/li&gt;&lt;li&gt;Definici&#243;n del marco que se va a utilizar&lt;/li&gt;&lt;li&gt;Definici&#243;n de las relaciones entre los marcos de gesti&#243;n&lt;/li&gt;&lt;li&gt;Evaluaci&#243;n de la madurez de la arquitectura empresarial&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;El nivel de detalle abordado en la Fase Preliminar depender&#225; del alcance y los objetivos del esfuerzo general de arquitectura.&lt;br/&gt;&lt;br/&gt;El orden de los pasos en la Fase Preliminar, as&#237; como el momento en que se inician y completan formalmente deben adaptarse a la situaci&#243;n en cuesti&#243;n de acuerdo con la Gobernanza de la Arquitectura establecida.&lt;br/&gt;&lt;br/&gt;TOGAF ADM es un m&#233;todo gen&#233;rico, destinado a ser utilizado por una amplia variedad de empresas diferentes, y en conjunto con una amplia variedad de otros marcos de arquitectura, si es necesario. Por lo tanto, la Fase Preliminar implica hacer cualquier trabajo necesario para iniciar y adaptar el ADM para definir un marco espec&#237;fico de la organizaci&#243;n. Los problemas relacionados con la adaptaci&#243;n del ADM a un contexto organizacional espec&#237;fico se discuten en detalle en la parte 4.3 Adaptaci&#243;n del ADM .&lt;br/&gt;&lt;br/&gt;El nivel de detalle abordado en la Fase Preliminar depender&#225; del alcance y los objetivos del esfuerzo general de arquitectura.&lt;br/&gt;&lt;br/&gt;El orden de los pasos en la Fase Preliminar, as&#237; como el momento en que se inician y completan formalmente deben adaptarse a la situaci&#243;n en cuesti&#243;n de acuerdo con la Gobernanza de la Arquitectura establecida.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Enfoque de la fase preliminar&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Esta fase preliminar consiste en definir &quot;d&#243;nde, qu&#233;, por qu&#233;, qui&#233;n y c&#243;mo hacemos arquitectura&quot; en la empresa en cuesti&#243;n. Los principales aspectos son los siguientes:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Definici&#243;n de la empresa&lt;/li&gt;&lt;li&gt;Identificaci&#243;n de impulsores y elementos clave en el contexto organizacional&lt;/li&gt;&lt;li&gt;Definici&#243;n de los requisitos para el trabajo de arquitectura&lt;/li&gt;&lt;li&gt;Definici&#243;n de los Principios de Arquitectura que informar&#225;n cualquier trabajo de arquitectura&lt;/li&gt;&lt;li&gt;Definici&#243;n del marco que se va a utilizar&lt;/li&gt;&lt;li&gt;Definici&#243;n de las relaciones entre los marcos de gesti&#243;n&lt;/li&gt;&lt;li&gt;Evaluaci&#243;n de la madurez de la arquitectura empresarial&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;La arquitectura empresarial proporciona una visi&#243;n estrat&#233;gica de arriba hacia abajo de una organizaci&#243;n para permitir que los ejecutivos, planificadores, arquitectos e ingenieros coordinen, integren y lleven a cabo sus actividades de manera coherente. El marco de arquitectura empresarial proporciona el contexto estrat&#233;gico dentro del cual este equipo puede operar.&lt;br/&gt;&lt;br/&gt;Por lo tanto, el desarrollo de la arquitectura empresarial no es una actividad solitaria y los arquitectos empresariales deben reconocer la interoperabilidad entre sus marcos y el resto del negocio.&lt;br/&gt;&lt;br/&gt;Los objetivos y aspiraciones comerciales estrat&#233;gicos, provisionales y t&#225;cticos deben cumplirse. Del mismo modo, la arquitectura empresarial debe reflejar este requisito y permitir el funcionamiento de la disciplina de la arquitectura en diferentes niveles dentro de la organizaci&#243;n.&lt;br/&gt;&lt;br/&gt;Dependiendo de la escala de la empresa y el nivel de compromiso presupuestario con la disciplina de arquitectura empresarial, se pueden adoptar una serie de enfoques para subdividir o dividir los equipos, procesos y entregables de arquitectura. Los enfoques para la partici&#243;n de la arquitectura se analizan en &lt;i&gt;la Parte V, 36. Particionamiento de arquitectura&lt;/i&gt;. La fase preliminar debe utilizarse para determinar el enfoque deseado de la partici&#243;n y para establecer las bases para que el enfoque seleccionado se ponga en pr&#225;ctica.&lt;br/&gt;&lt;br/&gt;La Fase Preliminar puede ser revisada, desde la fase de Visi&#243;n de arquitectura (&lt;i&gt;Parte III, 18. Aplicaci&#243;n de iteraci&#243;n al ADM&lt;/i&gt;), con el fin de garantizar que la capacidad de arquitectura de la organizaci&#243;n sea adecuada para abordar un problema de arquitectura espec&#237;fico.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;u&gt;1. Empresa&lt;/u&gt;&lt;/b&gt;&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;Uno de los principales desaf&#237;os de la arquitectura empresarial es el del alcance empresarial.&lt;br/&gt;&lt;br/&gt;El alcance de la empresa, y si est&#225; federada, determinar&#225; las partes interesadas que obtendr&#225;n m&#225;s beneficios de la capacidad de arquitectura empresarial. Es imperativo que se designe un patrocinador en esta etapa para garantizar que la actividad resultante tenga recursos para proceder y el apoyo claro de la administraci&#243;n empresarial. La empresa puede abarcar muchas organizaciones y los deberes del patrocinador son garantizar que todas las partes interesadas est&#233;n incluidas en la definici&#243;n, el establecimiento y el uso de la capacidad de arquitectura.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;u&gt;2. Contexto organizacional&lt;/u&gt;&lt;/b&gt;&lt;br/&gt;&lt;u&gt;&lt;br/&gt;&lt;/u&gt;Para tomar decisiones efectivas e informadas sobre el marco de arquitectura que se utilizar&#225; dentro de una empresa en particular, es necesario comprender el contexto que rodea el marco de arquitectura. Las &#225;reas espec&#237;ficas a considerar incluir&#237;an:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Los modelos comerciales para la Arquitectura Empresarial y los planes presupuestarios para la actividad de Arquitectura Empresarial; cuando no existan tales planes, la Fase Preliminar debe utilizarse para desarrollar un plan presupuestario.&lt;/li&gt;&lt;li&gt;Las partes interesadas para la arquitectura en la empresa; sus principales cuestiones y preocupaciones&lt;/li&gt;&lt;li&gt;Las intenciones y la cultura de la organizaci&#243;n, tal como se capturan en las directivas de negocio de la junta, los imperativos de negocio, las estrategias de negocio, los principios de negocio, los objetivos de negocio y los impulsores de negocio.&lt;/li&gt;&lt;li&gt;Procesos actuales que apoyan la ejecuci&#243;n del cambio y el funcionamiento de la empresa, incluyendo la estructura del proceso y tambi&#233;n el nivel de rigor y formalidad aplicado dentro de la organizaci&#243;n.&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;Las &#225;reas de enfoque deben incluir:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;M&#233;todos actuales para la descripci&#243;n de la arquitectura&lt;/li&gt;&lt;li&gt;Marcos y m&#233;todos actuales de gesti&#243;n de proyectos&lt;/li&gt;&lt;li&gt;Marcos y m&#233;todos actuales de gesti&#243;n de sistemas&lt;/li&gt;&lt;li&gt;Procesos y m&#233;todos actuales de gesti&#243;n de portafolio de proyectos&lt;/li&gt;&lt;li&gt;Procesos y m&#233;todos actuales de gesti&#243;n de la portafolio de aplicaciones&lt;/li&gt;&lt;li&gt;Procesos y m&#233;todos actuales de gesti&#243;n de portafolio tecnol&#243;gicas&lt;/li&gt;&lt;li&gt;Procesos y m&#233;todos actuales de gesti&#243;n de portafolio de informaci&#243;n&lt;/li&gt;&lt;li&gt;Marcos y m&#233;todos actuales de dise&#241;o y desarrollo de sistemas&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;El panorama de la arquitectura de l&#237;nea base, incluido el estado de la empresa y tambi&#233;n c&#243;mo se representa actualmente el paisaje en forma de documentaci&#243;n&lt;/li&gt;&lt;li&gt;Las habilidades y capacidades de la empresa y las organizaciones espec&#237;ficas que adoptar&#225;n el marco&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;La revisi&#243;n del contexto organizacional debe proporcionar requisitos valiosos sobre c&#243;mo adaptar el marco de arquitectura en t&#233;rminos de:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Nivel de formalidad y rigor a aplicar&lt;/li&gt;&lt;li&gt;Nivel de sofisticaci&#243;n y gasto requerido&lt;/li&gt;&lt;li&gt;Puntos de contacto con otras organizaciones, procesos, roles y responsabilidades&lt;/li&gt;&lt;li&gt;Enfoque de la cobertura de contenido&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;b&gt;&lt;u&gt;3. Requisitos para el trabajo de arquitectura&lt;/u&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Los imperativos empresariales detr&#225;s del trabajo de arquitectura empresarial impulsan los requisitos y las m&#233;tricas de rendimiento para el trabajo de arquitectura. Deben ser lo suficientemente claros para que esta fase pueda abarcar los resultados comerciales y los requisitos de recursos, y definir los requisitos de informaci&#243;n empresarial y las estrategias asociadas del trabajo de arquitectura empresarial que se ha de realizar. Por ejemplo, estos pueden incluir:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Requisitos de negocio&lt;/li&gt;&lt;li&gt;Aspiraciones culturales&lt;/li&gt;&lt;li&gt;Intenciones de la organizaci&#243;n&lt;/li&gt;&lt;li&gt;Intenci&#243;n estrat&#233;gica&lt;/li&gt;&lt;li&gt;Previsi&#243;n de necesidades financieras&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Los elementos significativos de estos deben articularse para que el patrocinador pueda identificar a todos los tomadores de decisiones clave y partes interesadas involucradas en la definici&#243;n y el establecimiento de una capacidad de arquitectura.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;u&gt;4. Principios&lt;/u&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;La Fase Preliminar define los Principios de Arquitectura que formar&#225;n parte de las restricciones en cualquier trabajo de arquitectura emprendido en la empresa. Las cuestiones relacionadas con esto se explican en la &lt;i&gt;Parte III, 20. Principios de Arquitectura&lt;/i&gt;.&lt;br/&gt;&lt;br/&gt;La definici&#243;n de los Principios de Arquitectura es fundamental para el desarrollo de una Arquitectura Empresarial. El trabajo de arquitectura se basa en los principios empresariales, as&#237; como en los principios de arquitectura. Los Principios de Arquitectura en s&#237; mismos tambi&#233;n se basan normalmente en parte en principios de negocio. La definici&#243;n de los principios empresariales normalmente queda fuera del alcance de la funci&#243;n de arquitectura. Sin embargo, dependiendo de c&#243;mo se definan y promulguen dichos principios dentro de la empresa, puede ser posible que el conjunto de Principios de Arquitectura tambi&#233;n se reafirme, o haga referencia cruzada a un conjunto de principios de negocio, objetivos de negocio e impulsores estrat&#233;gicos de negocio definidos en otra parte dentro de la empresa. Dentro de un proyecto de arquitectura, el arquitecto normalmente tendr&#225; que asegurarse de que las definiciones de estos principios de negocio, objetivos e impulsores estrat&#233;gicos est&#233;n actualizadas, y aclarar cualquier &#225;rea de ambig&#252;edad.&lt;br/&gt;&lt;br/&gt;El tema de la Gobernanza de la Arquitectura est&#225; estrechamente relacionado con el de los Principios de la Arquitectura. El organismo responsable de la gobernanza tambi&#233;n ser&#225; normalmente responsable de aprobar los Principios de Arquitectura y de resolver los problemas de arquitectura. Las cuestiones relacionadas con la gobernanza se explican en la &lt;i&gt;Parte VI, 44. Arquitectura de Gobernanza&lt;/i&gt;.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;u&gt;5. Marcos de gesti&#243;n&lt;/u&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;El M&#233;todo de Desarrollo de Arquitectura (ADM) TOGAF es un m&#233;todo gen&#233;rico, destinado a ser utilizado por empresas en una amplia variedad de tipos de industrias y geograf&#237;as. Tambi&#233;n est&#225; dise&#241;ado para su uso con una amplia variedad de otros marcos de arquitectura empresarial, si es necesario (aunque se puede usar perfectamente por derecho propio, sin adaptaci&#243;n).&lt;br/&gt;&lt;br/&gt;El marco TOGAF tiene que coexistir y mejorar las capacidades operacionales de otros marcos de gesti&#243;n que est&#225;n presentes dentro de cualquier organizaci&#243;n, ya sea formal o informalmente. Adem&#225;s de estos marcos, la mayor&#237;a de las organizaciones tienen un m&#233;todo para el desarrollo de soluciones, la mayor&#237;a de las cuales tienen un componente de TI. La importancia de los sistemas es que re&#250;nen los diversos dominios (tambi&#233;n conocidos como Personas, Procesos y Material / Tecnolog&#237;a) para ofrecer una capacidad comercial.&lt;br/&gt;&lt;br/&gt;Los principales marcos que se propone coordinar con el marco del TOGAF son:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Gesti&#243;n de la capacidad empresarial &lt;/b&gt;que determina qu&#233; capacidades empresariales se requieren para ofrecer valor empresarial, incluida la definici&#243;n del retorno de la inversi&#243;n y las medidas de control/rendimiento necesarias.&lt;/li&gt;&lt;li&gt;&lt;b&gt;M&#233;todos de gesti&#243;n de proyectos/portafolios&lt;/b&gt; que determinan c&#243;mo una empresa gestiona sus iniciativas de cambio&lt;/li&gt;&lt;li&gt;&lt;b&gt;M&#233;todos de gesti&#243;n de operaciones&lt;/b&gt; que describen c&#243;mo una empresa ejecuta sus operaciones diarias, incluida la TI&lt;/li&gt;&lt;li&gt;&lt;b&gt;M&#233;todos de desarrollo de soluciones&lt;/b&gt; que formalizan la forma en que se entregan los sistemas empresariales de acuerdo con las estructuras desarrolladas en la arquitectura de TI&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;Como se ilustra en la &lt;i&gt;Figura 5-2 de TOGAF&lt;/i&gt;, estos marcos no son discretos y hay superposiciones significativas entre ellos y la Gesti&#243;n de la Capacidad del negocio. Este &#250;ltimo incluye la entrega de valor del negocio medido por el rendimiento.&lt;br/&gt;&lt;br/&gt;La importancia general es que el arquitecto empresarial que aplica el marco TOGAF no puede centrarse estrictamente en la implementaci&#243;n de TI, sino que debe ser consciente del impacto que la arquitectura tiene en toda la empresa.&lt;br/&gt;&lt;br/&gt;Por lo tanto, la Fase Preliminar implica hacer cualquier trabajo necesario para adaptar el ADM para definir un marco espec&#237;fico de la organizaci&#243;n, utilizando los entregables de TOGAF o los entregables de otro marco. Los temas involucrados en esto se discuten en&lt;i&gt; 4.3 Adaptaci&#243;n del ADM&lt;/i&gt;.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;u&gt;6. Relaci&#243;n con los marcos de gesti&#243;n&lt;/u&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;El conjunto m&#225;s detallado de dependencias entre los diversos marcos y la actividad de planificaci&#243;n empresarial que incorpora el plan estrat&#233;gico y la direcci&#243;n de la empresa se ilustran en la &lt;i&gt;Figura 5-3 de TOGAF&lt;/i&gt;. La arquitectura empresarial se puede utilizar para proporcionar una estructura para todas las iniciativas corporativas, el marco de gesti&#243;n de portafolio se puede utilizar para entregar los componentes de la arquitectura y el marco de gesti&#243;n de operaciones admite la incorporaci&#243;n de estos nuevos componentes dentro de la infraestructura corporativa.&lt;br/&gt;&lt;br/&gt;Los planificadores de negocios est&#225;n presentes durante todo el proceso y est&#225;n en condiciones de apoyar y hacer cumplir la arquitectura al retener la aprobaci&#243;n de los recursos en las diversas etapas de planificaci&#243;n y desarrollo.&lt;br/&gt;&lt;br/&gt;La metodolog&#237;a de desarrollo de soluciones se utiliza dentro del Marco de Gesti&#243;n de Portafolio para planificar, crear y entregar los componentes arquitect&#243;nicos especificados en los estatutos del proyecto y el portafolio. Estos entregables incluyen, pero no son exclusivamente, TI; por ejemplo, un nuevo edificio, un nuevo conjunto de habilidades, equipos de producci&#243;n, contrataci&#243;n, marketing, etc. La arquitectura empresarial proporciona potencialmente el contexto para todas las actividades empresariales.&lt;br/&gt;&lt;br/&gt;Se requiere que los marcos de gesti&#243;n se complementen entre s&#237; y trabajen en estrecha armon&#237;a por el bien de la empresa.&lt;br/&gt;&lt;br/&gt;La planificaci&#243;n de negocios a nivel de estrategia proporciona la direcci&#243;n inicial a la arquitectura empresarial. Las actualizaciones a nivel de planificaci&#243;n anual proporcionan un nivel m&#225;s fino de orientaci&#243;n continua. La planificaci&#243;n basada en la capacidad es una de las muchas t&#233;cnicas populares para la planificaci&#243;n de negocios.&lt;br/&gt;&lt;br/&gt;La arquitectura empresarial estructura la planificaci&#243;n de negocios en un marco integrado que considera a la empresa como un sistema o sistema de sistemas. Este enfoque integrado validar&#225; el plan de negocios y puede proporcionar comentarios valiosos a los planificadores corporativos. En algunas organizaciones, los arquitectos empresariales se han trasladado o trabajan muy de cerca con los grupos de direcci&#243;n estrat&#233;gica. El enfoque TOGAF ofrece un marco para la arquitectura empresarial.&lt;br/&gt;&lt;br/&gt;La gesti&#243;n de proyectos / portafolio es el marco de entrega que recibe la direcci&#243;n estructurada y detallada que les permite planificar y construir lo que se requiere, sabiendo que cada entrega asignado estar&#225; en contexto (es decir, la pieza del rompecabezas que entregan encajar&#225; en el rompecabezas corporativo que es la Arquitectura Empresarial). A menudo, este marco se basa en las metodolog&#237;as de gesti&#243;n de proyectos del Instituto de Gesti&#243;n de Proyectos o de la Oficina de Comercio Gubernamental del Reino Unido (PRINCE2). Las arquitecturas de proyectos y el dise&#241;o detallado fuera de contexto a menudo se basan en metodolog&#237;as de dise&#241;o de sistemas.&lt;br/&gt;&lt;br/&gt;La administraci&#243;n de operaciones recibe los entregables y luego los integra y mantiene dentro de la infraestructura corporativa. A menudo, los servicios de gesti&#243;n de servicios de TI se basan en ISO/IEC 20000:2011 o BS15000 (ITIL).&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;u&gt;7. Planificaci&#243;n de la arquitectura empresarial/evaluaci&#243;n de la madurez del cambio empresarial&lt;/u&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Modelos de madurez de capacidad (detallados en la &lt;i&gt;Parte VI, 45. Modelos de Madurez de Arquitectura&lt;/i&gt;) son formas &#250;tiles de evaluar la capacidad de una empresa para ejercer diferentes capacidades.&lt;br/&gt;&lt;br/&gt;Los modelos de madurez de capacidad suelen identificar los factores seleccionados que se requieren para ejercer una capacidad. La capacidad de una organizaci&#243;n para ejecutar factores espec&#237;ficos proporciona una medida de madurez y se puede utilizar para recomendar una serie de pasos secuenciales para mejorar una capacidad. Es una evaluaci&#243;n que brinda a los ejecutivos una idea de c&#243;mo mejorar pragm&#225;ticamente una capacidad.&lt;br/&gt;&lt;br/&gt;Un buen modelo de madurez de Arquitectura Empresarial cubre las caracter&#237;sticas necesarias para desarrollar y consumir Arquitectura Empresarial. Las organizaciones pueden determinar sus propios factores y derivar los modelos de madurez apropiados, pero se recomienda tomar un modelo existente y personalizarlo seg&#250;n sea necesario.&lt;br/&gt;&lt;br/&gt;Existen varios modelos buenos, incluyendo &lt;i&gt;NASCIO&lt;/i&gt; y el Modelo de Madurez de Capacidad de Arquitectura del Departamento de Comercio de los Estados Unidos.&lt;br/&gt;&lt;br/&gt;El uso de los modelos de madurez de capacidad se detalla en la &lt;i&gt;Parte VI: Marco de capacidad de arquitectura, 45. Modelos de madurez de la arquitectura&lt;/i&gt;&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="toggleItem('FlowTo');" id="FlowToTitle">Flow To</li>
+			<li onClick="toggleItem('FlowFrom');" id="FlowFromTitle">Flow From</li>
+			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="FlowToTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="50%" class="TableHeading">Element</td>
+					<td width="50%" class="TableHeading">Name</td>
+				</tr>
+				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="EA1288.htm">{anonymous}</a><br />
+						Object &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow5283" /></button>Details:
+							<div id="detailsDIVLinkFlow5283" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="EA1291.htm">{anonymous}</a><br />
+						Object &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow5284" /></button>Details:
+							<div id="detailsDIVLinkFlow5284" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="../../../EA3/EA258.htm">Principios de negocio,  objetivos de negocio e impulsores del negocio</a><br />
+						Class &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow5285" /></button>Details:
+							<div id="detailsDIVLinkFlow5285" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="../../../EA3/EA264.htm">Solicitud de trabajo de arquitectura</a><br />
+						Class &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow5286" /></button>Details:
+							<div id="detailsDIVLinkFlow5286" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="../../../EA3/EA213.htm">Catálogos,  Matrices,  Diagramas y/o Técnicas</a><br />
+						Class &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow5287" /></button>Details:
+							<div id="detailsDIVLinkFlow5287" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="EA1287.htm">{anonymous}</a><br />
+						Object &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow5288" /></button>Details:
+							<div id="detailsDIVLinkFlow5288" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="../../../EA3/EA236.htm">Marco de gobernanza de la arquitectura</a><br />
+						Class &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow5289" /></button>Details:
+							<div id="detailsDIVLinkFlow5289" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="EA1289.htm">{anonymous}</a><br />
+						Object &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow5290" /></button>Details:
+							<div id="detailsDIVLinkFlow5290" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="ItemBody" id="FlowFromTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="50%" class="TableHeading">Element</td>
+					<td width="50%" class="TableHeading">Name</td>
+				</tr>
+				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="../../../EA3/EA257.htm">Principios de Arquitectura</a><br />
+						Class &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow5291" /></button>Details:
+							<div id="detailsDIVLinkFlow5291" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="../../../EA3/EA235.htm">Marco de arquitectura a medida</a><br />
+						Class &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow5292" /></button>Details:
+							<div id="detailsDIVLinkFlow5292" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="../../../EA3/EA262.htm">Repositorio de arquitectura</a><br />
+						Class &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow5293" /></button>Details:
+							<div id="detailsDIVLinkFlow5293" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="../../../EA3/EA240.htm">Modelo organizativo para la arquitectura empresarial</a><br />
+						Class &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow5294" /></button>Details:
+							<div id="detailsDIVLinkFlow5294" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isReadOnly:</td>
+				<td width="70%" class="TableRow">false</td>
+			</tr>
+
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA256.htm">«recurso: Entradas no arquitectónicas» Principales marcos que operan en el negocio</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA253.htm">«recurso: Apoyo en los pasos» Partición de arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA211.htm">«recurso: Entradas no arquitectónicas» Capacidad de arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA1/EA25.htm">Gerente o Líder de Arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Actor</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA234.htm">«recurso: Materiales de referencia externos a la empresa» La Biblioteca TOGAF</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA204.htm">«regla» ADM</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA231.htm">«recurso: Apoyo en los pasos» Herramientas para el desarrollo de la arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA202.htm">«recurso: Entradas no arquitectónicas» Acuerdos de asociación y contrato</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA251.htm">«recurso: Materiales de referencia externos a la empresa» Otros marcos de arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA230.htm">«recurso: Entradas no arquitectónicas» Gobernanza y marcos legales</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA207.htm">«recurso: Apoyo en los pasos» Aplicación de iteración al ADM</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA241.htm">«recurso: Apoyo en los pasos» Modelos de madurez de la arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA221.htm">«recurso: Entradas no arquitectónicas» Estrategias de la junta y planes de negocios de la junta</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA1/EA16.htm">Arquitecto</a></td>
+					<td width="10%" class="TableRow" valign="top">Actor</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1292.htm">«objetivo» Determinar la capacidad de arquitectura deseada por la organización y establecer la capacidad de arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Object</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA229.htm">«recurso: Apoyo en los pasos» Gobernanza de la arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA203.htm">«recurso: Apoyo en los pasos» Adaptación del ADM  </a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

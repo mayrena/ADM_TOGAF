@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Modelado de Objetos del Negocio::Metamodelo de contenido</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Modelado de Objetos del Negocio::Metamodelo de contenido </h1>
+			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../index.htm">Adaptacion BMM</a> / <a href="../../EA1.htm">ADM_TOGAF</a> / <a href="../EA3.htm">Modelado de elementos del negocio</a> / <a href="EA103.htm">Modelado de Objetos del Negocio</a> / <a href="EA239.htm">Metamodelo de contenido</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA103.htm">Modelado de Objetos del Negocio</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Metamodelo de contenido  : Public  &lt;&lt;recurso: Apoyo en los pasos&gt;&gt; Class</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">20/10/2022 12:18:11</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">10/11/2022 3:47:51</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Wanda Mayrena</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{DF354357-7B02-4445-82D2-6D8E68288B03}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA4/EA2/EA2/EA1234.htm">Fase B: Arquitectura de Negocios</a>, <a href="../EA4/EA2/EA3/EA2/EA1257.htm">Fase C: Arquitecturas de Sistemas de Información - Arquitectura de Datos</a>, <a href="../EA4/EA2/EA3/EA1/EA1247.htm">Fase C: Arquitecturas de Sistemas de Información - Arquitectura de Aplicaciones</a>, <a href="../EA4/EA2/EA4/EA1267.htm">Fase D: Arquitectura Tecnológica</a>, <a href="EA101.htm">Modelado de Objetos del Negocio</a>, <a href="../EA4/EA1/EA2/EA462.htm">Fase B: Arquitectura de Negocios</a>, <a href="../EA4/EA1/EA3/EA1/EA611.htm">Fase C: Arquitecturas de Sistemas de Información - Arquitectura de Aplicaciones</a>, <a href="./EA1/EA266.htm">Fase B: Arquitectura del negocio</a>, <a href="./EA2/EA1/EA273.htm">Fase C: Arquitectura SI - Arquitectura de Aplicaciones</a>, <a href="./EA2/EA2/EA277.htm">Fase C: Arquitectura SI - Arquitectura de Datos</a>, <a href="./EA3/EA281.htm">Fase D: Arquitectura tecnológica</a>, <a href="../EA4/EA1/EA2/EA1/EA517.htm">Sub-proceso "1. Seleccionar modelos de referencia,  puntos de vista y herramientas"</a>, <a href="../EA4/EA1/EA3/EA2/EA759.htm">Fase C: Arquitecturas de Sistemas de Información - Arquitectura de Datos</a>, <a href="../EA4/EA1/EA3/EA2/EA1/EA813.htm">Sub-proceso "1. Seleccionar modelos de referencia,  puntos de vista y herramientas"</a>, <a href="../EA4/EA1/EA3/EA1/EA1/EA669.htm">Sub-proceso "1. Seleccionar modelos de referencia,  puntos de vista y herramientas"</a>, <a href="../EA4/EA1/EA4/EA890.htm">Fase D: Arquitectura Tecnológica</a>, <a href="../EA4/EA1/EA4/EA1/EA938.htm">Sub-proceso "1. Seleccionar modelos de referencia,  puntos de vista y herramientas"</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;ul&gt;<br />&lt;li&gt;Metamodelo de contenido (&lt;i&gt;Parte IV: Marco de contenido de arquitectura, 30. Metamodelo de contenido&lt;/i&gt;)&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;El m&#233;todo de desarrollo de arquitectura (ADM) de TOGAF proporciona un ciclo de vida del proceso para crear y administrar arquitecturas dentro de una empresa. En cada fase dentro del ADM, una discusi&#243;n de entradas, salidas y pasos describe una serie de productos o artefactos de trabajo arquitect&#243;nico, como el proceso y la aplicaci&#243;n. El metamodelo de contenido proporcionado aqu&#237; define una estructura formal para estos t&#233;rminos para garantizar la coherencia dentro del ADM y tambi&#233;n para proporcionar orientaci&#243;n a las organizaciones que desean implementar su arquitectura dentro de una herramienta de arquitectura.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;30.2 Metamodelo de contenido Visi&#243;n y conceptos&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;En esta secci&#243;n se proporciona una descripci&#243;n general de los objetivos del metamodelo de contenido, los conceptos que admiten el metamodelo y una descripci&#243;n general del metamodelo en s&#237;. Las secciones posteriores luego pasan a discutir cada &#225;rea del metamodelo con m&#225;s detalle. El contenido de esta secci&#243;n es el siguiente:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Los conceptos del metamodelo de contenido principal (&lt;i&gt;30.2.1 Conceptos del metamodelo de contenido principal&lt;/i&gt;) identifican los conceptos clave dentro del metamodelo de contenido principal, que incluyen:&lt;/li&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Contenido principal y de extensi&#243;n&lt;/li&gt;&lt;li&gt;Modelado formal e informal&lt;/li&gt;&lt;li&gt;Entidades principales del metamodelo&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;Descripci&#243;n general del metamodelo de contenido TOGAF (&lt;i&gt;30.2.2 Descripci&#243;n general del metamodelo de contenido&lt;/i&gt;) proporciona una visi&#243;n general de alto nivel del contenido del metamodelo&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;b&gt;&lt;i&gt;30.2.1 Conceptos b&#225;sicos del metamodelo de contenido&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Una arquitectura TOGAF se basa en definir una serie de bloques de construcci&#243;n arquitect&#243;nicos dentro de los cat&#225;logos de arquitectura, especificar las relaciones entre esos bloques de construcci&#243;n en matrices de arquitectura y luego presentar diagramas de comunicaci&#243;n que muestren de manera precisa y concisa qu&#233; es la arquitectura.&lt;br/&gt;&lt;br/&gt;En esta secci&#243;n se presentan los conceptos b&#225;sicos que componen el metamodelo de contenido TOGAF, a trav&#233;s de las siguientes subsecciones:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Contenido principal y de extensi&#243;n&lt;/b&gt; proporciona una introducci&#243;n a la forma en que el marco TOGAF emplea un metamodelo b&#225;sico de n&#250;cleo y luego aplica una serie de m&#243;dulos de extensi&#243;n para abordar problemas arquitect&#243;nicos espec&#237;ficos con m&#225;s detalle.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Entidades principales del metamodelo &lt;/b&gt;presenta las entidades principales del metamodelo TOGAF, mostrando el prop&#243;sito de cada entidad y las relaciones clave que respaldan la trazabilidad arquitect&#243;nica&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;b&gt;&lt;i&gt;&lt;u&gt;Contenido principal y de extensi&#243;n&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;u&gt;&lt;br/&gt;&lt;/u&gt;El papel del marco TOGAF es proporcionar un est&#225;ndar abierto para la arquitectura que sea aplicable en muchos escenarios y situaciones. Para cumplir con esta visi&#243;n, es necesario proporcionar un metamodelo de arquitectura empresarial con todas las funciones para el contenido y tambi&#233;n proporcionar la capacidad de evitar la realizaci&#243;n de actividades innecesarias mediante el apoyo a la adaptaci&#243;n.&lt;br/&gt;&lt;br/&gt;El metamodelo debe proporcionar un modelo b&#225;sico con el conjunto m&#237;nimo de caracter&#237;sticas y, a continuaci&#243;n, admitir la inclusi&#243;n de extensiones opcionales durante la adaptaci&#243;n de la contrataci&#243;n.&lt;br/&gt;&lt;br/&gt;El metamodelo de contenido principal de TOGAF y sus extensiones se ilustran en la &lt;i&gt;Figura 30-1 de TOGAF&lt;/i&gt;.&lt;br/&gt;&lt;br/&gt;El metamodelo principal proporciona un conjunto m&#237;nimo de contenido arquitect&#243;nico para admitir la trazabilidad entre artefactos. Los conceptos de metamodelo adicionales para admitir un modelado m&#225;s espec&#237;fico o m&#225;s profundo est&#225;n contenidos dentro de un grupo de extensiones que l&#243;gicamente agrupan cat&#225;logos, matrices y diagramas de extensiones, lo que permite el enfoque en &#225;reas de inter&#233;s y enfoque espec&#237;ficos.&lt;br/&gt;&lt;br/&gt;Todos los m&#243;dulos de extensi&#243;n son opcionales y deben seleccionarse durante la Fase Preliminar del desarrollo de la arquitectura para satisfacer las necesidades de la organizaci&#243;n. Adem&#225;s, las agrupaciones de extensi&#243;n descritas por el metamodelo de contenido son solo una sugerencia y se puede llevar a cabo una mayor adaptaci&#243;n para satisfacer las necesidades espec&#237;ficas a discreci&#243;n de los arquitectos.&lt;br/&gt;&lt;br/&gt;Este concepto de n&#250;cleo y extensi&#243;n pretende ser un movimiento hacia el apoyo a los enfoques de extensi&#243;n de m&#233;todos formales dentro del marco TOGAF, como el concepto de complemento de m&#233;todo que se encuentra dentro del Metamodelo de Ingenier&#237;a de Procesos de Software (SPEM&#8482;) desarrollado por el &lt;i&gt;Object Management Group&lt;/i&gt; (OMG) (&lt;i&gt;Consulte www.omg.org/spec/SPEM&lt;/i&gt;.)&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;&lt;u&gt;Entidades principales del metamodelo&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;&lt;u&gt;&lt;br/&gt;&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;El metamodelo de contenido utiliza la terminolog&#237;a discutida dentro del TOGAF ADM como base para un metamodelo formal. Se utilizan los siguientes t&#233;rminos b&#225;sicos:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Actor:&lt;/b&gt; una persona, organizaci&#243;n o sistema que est&#225; fuera de la consideraci&#243;n del modelo de arquitectura, pero interact&#250;a con &#233;l.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Componente de aplicaci&#243;n:&lt;/b&gt; una encapsulaci&#243;n de la funcionalidad de la aplicaci&#243;n que est&#225; alineada con la estructura de implementaci&#243;n&lt;/li&gt;&lt;li&gt;&lt;b&gt;Capacidad de negocio: &lt;/b&gt;una habilidad particular que una empresa puede poseer o intercambiar para lograr un prop&#243;sito espec&#237;fico.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Servicio de negocio&lt;/b&gt;: soporta las capacidades de negocios a trav&#233;s de una interfaz definida expl&#237;citamente y est&#225; expl&#237;citamente gobernada por una organizaci&#243;n&lt;/li&gt;&lt;li&gt;&lt;b&gt;Curso de acci&#243;n: &lt;/b&gt;direcci&#243;n y enfoque proporcionados por metas y objetivos estrat&#233;gicos, a menudo para entregar la propuesta de valor caracterizada en el modelo de negocio.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Entidad de datos:&lt;/b&gt; una encapsulaci&#243;n de datos que es reconocida por un experto en el dominio empresarial como un concepto discreto&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Las entidades de datos se pueden vincular a aplicaciones, repositorios y servicios y pueden estructurarse de acuerdo con consideraciones de implementaci&#243;n.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Funci&#243;n:&lt;/b&gt; ofrece capacidades de negocio estrechamente alineadas con una organizaci&#243;n, pero no gobernadas expl&#237;citamente por la organizaci&#243;n.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Servicio de Sistemas de Informaci&#243;n:&lt;/b&gt; los elementos automatizados de un servicio empresarial&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />Un servicio de sistema de informaci&#243;n puede prestar o apoyar parte o la totalidad de uno o m&#225;s servicios empresariales.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Unidad de Organizaci&#243;n:&lt;/b&gt; una unidad aut&#243;noma de recursos con metas, objetivos y medidas&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />Las unidades organizativas pueden incluir partes externas y organizaciones asociadas comerciales.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Rol:&lt;/b&gt; un actor asume un rol para realizar una tarea&lt;/li&gt;&lt;li&gt;&lt;b&gt;Componente tecnol&#243;gico:&lt;/b&gt; una encapsulaci&#243;n de la infraestructura tecnol&#243;gica que representa una clase de producto tecnol&#243;gico o un producto tecnol&#243;gico espec&#237;fico&lt;/li&gt;&lt;li&gt;&lt;b&gt;Servicio de tecnolog&#237;a:&lt;/b&gt; una capacidad t&#233;cnica necesaria para proporcionar una infraestructura habilitadora que respalde la entrega de aplicaciones&lt;/li&gt;&lt;li&gt;&lt;b&gt;Flujo de valor:&lt;/b&gt; una representaci&#243;n de una colecci&#243;n de extremo a extremo de actividades de valor agregado que crean un resultado general para un cliente, parte interesada o usuario final.&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;A continuaci&#243;n se describen algunos de los conceptos clave de relaci&#243;n relacionados con las entidades principales del metamodelo:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;El proceso normalmente debe usarse para describir el flujo&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Un proceso es un flujo de interacciones entre funciones y servicios y no se puede implementar f&#237;sicamente. Todos los procesos deben describir el flujo de ejecuci&#243;n de una funci&#243;n y, por lo tanto, el despliegue de un proceso es a trav&#233;s de la funci&#243;n que soporta; es decir, una aplicaci&#243;n implementa una funci&#243;n que tiene un proceso, no una aplicaci&#243;n implementa un proceso.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;La funci&#243;n describe las unidades de capacidad del negocio en todos los niveles de granularidad&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />El t&#233;rmino &quot;funci&#243;n&quot; se utiliza para describir una unidad de capacidad empresarial en todos los niveles de granularidad, encapsulando t&#233;rminos como cadena de valor, &#225;rea de proceso, capacidad, funci&#243;n empresarial, etc. Cualquier unidad acotada de la funci&#243;n de negocio debe describirse como una funci&#243;n.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Los servicios empresariales respaldan los objetivos de la organizaci&#243;n y se definen a un nivel de granularidad coherente con el nivel de gobernanza necesario&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />Un servicio empresarial funciona como un l&#237;mite para una o m&#225;s funciones. La granularidad de los servicios empresariales depende del enfoque y el &#233;nfasis del negocio (como se refleja en sus impulsores, metas y objetivos). Un servicio en terminolog&#237;a de arquitectura orientada a servicios (SOA) (es decir, una unidad desplegable de funcionalidad de aplicaci&#243;n) est&#225; en realidad mucho m&#225;s cerca de un servicio de aplicaci&#243;n, componente de aplicaci&#243;n o componente de tecnolog&#237;a, que puede implementar o admitir un servicio empresarial.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Los servicios empresariales se implementan en los componentes de la aplicaci&#243;n&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />Los servicios empresariales pueden realizarse mediante actividades comerciales que no se relacionan con TI, o pueden realizarse a trav&#233;s de TI. Los servicios empresariales que se realizan a trav&#233;s de TI se implementan en los componentes de la aplicaci&#243;n. Los componentes de la aplicaci&#243;n se pueden descomponer jer&#225;rquicamente y pueden admitir uno o m&#225;s servicios empresariales. Es posible que un servicio empresarial sea compatible con varios componentes de aplicaci&#243;n, pero esto es problem&#225;tico desde el punto de vista de la gobernanza y es sintom&#225;tico de los servicios empresariales que son demasiado gruesos o los componentes de la aplicaci&#243;n que son demasiado detallados.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Los componentes de la aplicaci&#243;n se implementan en los componentes de tecnolog&#237;a&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />Un componente de aplicaci&#243;n es implementado por un conjunto de componentes tecnol&#243;gicos. Por ejemplo, una aplicaci&#243;n como &quot;&lt;i&gt;HR System&lt;/i&gt;&quot; normalmente se implementar&#237;a en varios componentes tecnol&#243;gicos, incluido el hardware, el software del servidor de aplicaciones y los servicios de aplicaciones.&lt;br/&gt;&lt;br/&gt;La &lt;i&gt;figura 30-2 de TOGAF&lt;/i&gt; ilustra las entidades centrales y sus relaciones.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;30.2.2 Descripci&#243;n general del metamodelo de contenido&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;El metamodelo de contenido define un conjunto de entidades que permiten capturar, almacenar, filtrar, consultar y representar conceptos arquitect&#243;nicos de una manera que admita la coherencia, la integridad y la trazabilidad.&lt;br/&gt;&lt;br/&gt;En el nivel m&#225;s alto, el marco de contenido se divide de acuerdo con las fases ADM de TOGAF, como se muestra en la &lt;i&gt;Figura 30-3 de TOGAF&lt;/i&gt;.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Las entidades &lt;b&gt;Principios, Visi&#243;n y Requisitos de Arquitectura&lt;/b&gt; est&#225;n destinadas a capturar el contexto circundante de los modelos de arquitectura formal, incluidos los Principios de Arquitectura generales, el contexto estrat&#233;gico que forma entrada para el modelado de arquitectura y los requisitos generados a partir de la arquitectura.&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;El contexto de la arquitectura se recopila normalmente en las fases Preliminar y Visi&#243;n de Arquitectura.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Las entidades de &lt;b&gt;Arquitectura de Negocios&lt;/b&gt; capturan modelos arquitect&#243;nicos de operaci&#243;n empresarial, analizando espec&#237;ficamente los factores que motivan a la empresa, c&#243;mo est&#225; estructurada organizativamente la empresa y tambi&#233;n qu&#233; capacidades comerciales tiene la empresa.&lt;/li&gt;&lt;li&gt;Las entidades de&lt;b&gt; Arquitectura de Sistemas de Informaci&#243;n&lt;/b&gt; capturan modelos de arquitectura de sistemas de TI, observando aplicaciones y datos en l&#237;nea con las fases de TOGAF ADM&lt;/li&gt;&lt;li&gt;Las entidades de &lt;b&gt;Arquitectura Tecnol&#243;gica&lt;/b&gt; capturan los activos tecnol&#243;gicos adquiridos que se utilizan para implementar y realizar soluciones de sistemas de informaci&#243;n&lt;/li&gt;&lt;li&gt;Las entidades de &lt;b&gt;Realizaci&#243;n de Arquitectura&lt;/b&gt; capturan hojas de ruta de cambio que muestran la transici&#243;n entre los estados de arquitectura y las instrucciones de enlace que se utilizan para dirigir y gobernar una implementaci&#243;n de la arquitectura&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Una representaci&#243;n m&#225;s detallada del metamodelo de contenido se muestra en la&lt;i&gt; Figura 30-4 de TOGAF&lt;/i&gt;.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;30.3 Metamodelo de contenido en detalle&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Esta secci&#243;n contiene las siguientes subsecciones:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Metamodelo de contenido principal (&lt;i&gt;30.3.1 Metamodelo de contenido principal&lt;/i&gt;) describe las entidades de metamodelo que forman el metamodelo de contenido principal&lt;/li&gt;&lt;li&gt;Metamodelo de contenido completo (&lt;i&gt;30.3.2 Metamodelo de contenido completo&lt;/i&gt;) describe las entidades de metamodelo que forman extensiones para el metamodelo de contenido&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;b&gt;&lt;i&gt;30.3.1 Metamodelo de contenido principal&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;La &lt;i&gt;figura 30-5 de TOGAF&lt;/i&gt; muestra las entidades y relaciones del metamodelo que est&#225;n presentes dentro del metamodelo de contenido principal.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;30.3.2 Metamodelo de contenido completo&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;i&gt;&lt;br/&gt;&lt;/i&gt;Cuando todas las extensiones se aplican al metamodelo de contenido principal, se introducen varias entidades de metamodelo adicionales. La &lt;i&gt;figura 30-6 de TOGAF &lt;/i&gt;muestra qu&#233; entidades est&#225;n contenidas en el metamodelo de contenido principal y qu&#233; entidades se introducen en qu&#233; extensi&#243;n.&lt;br/&gt;Las relaciones entre entidades en el metamodelo completo se muestran en la &lt;i&gt;Figura 30-7.de TOGAF&lt;/i&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;30.4 Extensiones de metamodelo de contenido&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Como se discuti&#243; anteriormente, el metamodelo de contenido TOGAF admite una serie de m&#243;dulos de extensi&#243;n que permiten una consideraci&#243;n m&#225;s profunda de las preocupaciones particulares de la arquitectura. La &lt;i&gt;figura 30-8 de TOGAF&lt;/i&gt; muestra el metamodelo de contenido principal y los m&#243;dulos de extensi&#243;n predefinidos.&lt;br/&gt;&lt;br/&gt;Durante la fase de Visi&#243;n de Arquitectura de un compromiso en particular, el alcance del compromiso se utilizar&#225; para determinar las extensiones apropiadas que se emplear&#225;n para abordar adecuadamente los requisitos de arquitectura. Por ejemplo, el alcance de un compromiso podr&#237;a definirse como contenido central, m&#225;s las extensiones de gobernanza, como se muestra en la &lt;i&gt;Figura 30-9 de TOGAF&lt;/i&gt;.&lt;br/&gt;Las siguientes secciones proporcionan una descripci&#243;n m&#225;s detallada del prop&#243;sito y el contenido de cada uno de los m&#243;dulos de extensi&#243;n.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;30.4.1 Extensiones de gobernanza&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;i&gt;&lt;br/&gt;&lt;/i&gt;&lt;i&gt;&lt;u&gt;Prop&#243;sito&lt;/u&gt;&lt;/i&gt;&lt;br/&gt;&lt;br/&gt;La extensi&#243;n de la gobernanza est&#225; destinada a permitir que se mantengan datos estructurados adicionales en relaci&#243;n con los objetivos y los servicios empresariales, apoyando la gobernanza operativa del panorama.&lt;br/&gt;El alcance de esta extensi&#243;n es el siguiente:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;La capacidad de aplicar medidas a los objetivos y luego vincular esas medidas a los servicios&lt;/li&gt;&lt;li&gt;La capacidad de aplicar contratos a la comunicaci&#243;n de servicios o interacciones de servicios con usuarios y sistemas externos&lt;/li&gt;&lt;li&gt;La capacidad de definir cualidades de servicio reutilizables que definen un perfil de nivel de servicio que se puede utilizar en los contratos&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Creaci&#243;n de diagramas adicionales para mostrar la propiedad y la gesti&#243;n de los sistemas&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Esta extensi&#243;n debe utilizarse en las siguientes situaciones:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Cuando una organizaci&#243;n est&#225; considerando un cambio de TI que resultar&#225; en un impacto significativo en los modelos de gobierno operativo existentes&lt;/li&gt;&lt;li&gt;Cuando una organizaci&#243;n tiene requerimientos granulares para los niveles de servicio que difieren de un servicio a otro&lt;/li&gt;&lt;li&gt;Cuando una organizaci&#243;n busca transformar su pr&#225;ctica de gobierno operativo&lt;/li&gt;&lt;li&gt;Cuando una organizaci&#243;n tiene un enfoque muy fuerte en los impulsores, metas y objetivos del negocio y c&#243;mo estos se remontan a los niveles de servicio.&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Los beneficios de usar esta extensi&#243;n son los siguientes:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Los niveles de servicio se definen de una manera m&#225;s estructurada, con:&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;M&#225;s detalles&lt;/li&gt;&lt;li&gt;La capacidad de reutilizar perfiles de servicio en todos los contratos&lt;/li&gt;&lt;li&gt;Seguimiento m&#225;s s&#243;lido de los objetivos de negocio&lt;/li&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Los impactos en las operaciones y los modelos de gobernanza operativa se consideran de una manera m&#225;s estructurada, con:&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;Diagramas adicionales de propiedad del sistema y de los datos&lt;/li&gt;&lt;li&gt;Diagramas adicionales de la operaci&#243;n del sistema y dependencias en los procesos de operaciones&lt;/li&gt;&lt;/ul&gt;<br />Adem&#225;s de las extensiones descritas aqu&#237;, las organizaciones que deseen centrarse en la Gobernanza de la Arquitectura tambi&#233;n deben consultar:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;El marco COBIT para la gobernanza de TI proporcionado por la Asociaci&#243;n de Auditor&#237;a y Control de Sistemas de Informaci&#243;n (ISACA); consultar &lt;i&gt;www.isaca.org&lt;/i&gt;&lt;/li&gt;&lt;li&gt;El&lt;i&gt; IT Portfolio Management Facility&lt;/i&gt;&#8482; (ITPMF&#8482;) de la OMG; consultar &lt;i&gt;www.omg.org/spec/ITPMF&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;i&gt;&lt;u&gt;Extensiones requeridas para el metamodelo principal&lt;/u&gt;&lt;/i&gt;&lt;br/&gt;&lt;u&gt;&lt;br/&gt;&lt;/u&gt;Las extensiones de las entidades y relaciones del metamodelo principal se muestran gr&#225;ficamente en la &lt;i&gt;figura 30-10 de TOGAF&lt;/i&gt;.&lt;br/&gt;&lt;br/&gt;Los cambios en las entidades y relaciones del metamodelo son los siguientes:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Se a&#241;ade medida como entidad que vincula objetivo y servicio empresarial&lt;/li&gt;&lt;li&gt;La calidad del servicio se agrega como una entidad que proporciona una plantilla de perfil de servicio gen&#233;rica que se aplicar&#225; a los servicios o contratos empresariales&lt;/li&gt;&lt;li&gt;El contrato se agrega como una entidad que formaliza las caracter&#237;sticas funcionales y no funcionales de una interacci&#243;n de servicio con otros servicios, aplicaciones externas o usuarios.&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Los cambios en los atributos del metamodelo son los siguientes:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Se agregan atributos para las entidades del metamodelo de Medida, Calidad de Servicio y Contrato de Servicio&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Los diagramas adicionales que se crear&#225;n son los siguientes:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Diagrama de capacidad de administraci&#243;n empresarial&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;b&gt;&lt;i&gt;30.4.2 Extensiones de servicios&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;&lt;i&gt;&lt;u&gt;Prop&#243;sito&lt;/u&gt;&lt;/i&gt;&lt;br/&gt;&lt;u&gt;&lt;br/&gt;&lt;/u&gt;La extensi&#243;n de servicios est&#225; destinada a permitir un modelado m&#225;s sofisticado del portafolio de servicios mediante la creaci&#243;n de un concepto de servicios de sistema de informaci&#243;n (IS) adem&#225;s del concepto central de servicios de negocios. Los servicios de IS son directamente compatibles con las aplicaciones y la creaci&#243;n de la capa de abstracci&#243;n relaja las restricciones de los servicios empresariales y, al mismo tiempo, permite a las partes interesadas t&#233;cnicas incluir m&#225;s formalidad en un cat&#225;logo de servicios de IS.&lt;br/&gt;&lt;br/&gt;El alcance de esta extensi&#243;n es el siguiente:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Creaci&#243;n de servicios de IS como una extensi&#243;n del servicio empresarial&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Esta extensi&#243;n debe utilizarse en las siguientes situaciones:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Cuando la empresa tiene una definici&#243;n preestablecida de sus servicios que no se alinea bien con las necesidades t&#233;cnicas y arquitect&#243;nicas&lt;/li&gt;&lt;li&gt;Cuando el negocio y TI utilizan un lenguaje diferente para describir capacidades similares&lt;/li&gt;&lt;li&gt;Donde el servicio de TI est&#225; desalineado con las necesidades del negocio, particularmente en torno a las &#225;reas de calidad de servicio, visibilidad del rendimiento y granularidad de la administraci&#243;n&lt;/li&gt;&lt;li&gt;Donde TI est&#225; tomando los pasos iniciales para involucrar a las empresas en discusiones sobre la arquitectura de TI&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Los beneficios de usar esta extensi&#243;n son los siguientes:&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Los servicios empresariales se pueden definir fuera de las restricciones que existen en el metamodelo principal; Esto permite un compromiso m&#225;s natural con las partes interesadas del negocio&lt;/li&gt;&lt;li&gt;Los servicios de IS se pueden definir de acuerdo con un modelo que se ajusta estrechamente a la implementaci&#243;n, proporcionando una abstracci&#243;n de soluciones m&#225;s realista para respaldar la toma de decisiones de TI.&lt;/li&gt;&lt;li&gt;Las relaciones de servicio de NEGOCIO y DE muestran d&#243;nde se alinea la vista de negocio con la vista de IS y d&#243;nde hay desalineaciones&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Adem&#225;s de las extensiones descritas aqu&#237;, las organizaciones que deseen centrarse en arquitecturas centradas en los servicios tambi&#233;n deben consultar:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;La especificaci&#243;n &lt;i&gt;Service Component Architecture&lt;/i&gt; (SCA) desarrollada por la colaboraci&#243;n &lt;i&gt;Open Service Oriented Architecture&lt;/i&gt; (OSOA); consultar &lt;i&gt;www.oasis-opencsa.org/sca&lt;/i&gt;&lt;/li&gt;&lt;li&gt;La especificaci&#243;n &lt;i&gt;Service Data Objects&lt;/i&gt; (SDO) desarrollada por la colaboraci&#243;n&lt;i&gt; Open Service Oriented Architecture&lt;/i&gt; (OSOA); consulte &lt;i&gt;www.oasis-opencsa.org/sdo&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;i&gt;&lt;u&gt;Extensiones requeridas para el metamodelo principal&lt;/u&gt;&lt;/i&gt;&lt;br/&gt;&lt;br/&gt;Las extensiones de las entidades y relaciones del metamodelo principal se muestran gr&#225;ficamente en la &lt;i&gt;Figura 30-11 de TOGAF&lt;/i&gt;.&lt;br/&gt;&lt;br/&gt;Los cambios en las entidades y relaciones del metamodelo son los siguientes:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;i&gt;IS Service&lt;/i&gt; se agrega como una entidad de metamodelo, extendiendo el servicio de negocios&lt;/li&gt;&lt;li&gt;&lt;i&gt;IS Service&lt;/i&gt; hereda todas las relaciones de un servicio empresarial&lt;/li&gt;&lt;li&gt;Se crea una relaci&#243;n que vincula un servicio IS a un servicio de negocios&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Los cambios en los atributos del metamodelo son los siguientes:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;i&gt;IS Service&lt;/i&gt; se agrega como un tipo de servicio de negocios&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Los diagramas adicionales que se crear&#225;n son los siguientes:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Diagrama de casos de uso de negocios&lt;/li&gt;&lt;li&gt;Diagrama de descomposici&#243;n de la organizaci&#243;n&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;b&gt;&lt;i&gt;30.4.3 Extensiones de modelado de procesos&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;&lt;i&gt;&lt;u&gt;Prop&#243;sito&lt;/u&gt;&lt;/i&gt;&lt;br/&gt;&lt;br/&gt;La extensi&#243;n de modelado de procesos est&#225; dise&#241;ada para permitir el modelado detallado de flujos de procesos mediante la adici&#243;n de eventos, productos y controles al metamodelo. Por lo general, la arquitectura empresarial no profundiza en el flujo de procesos, pero en ciertas organizaciones centradas en procesos o eventos puede ser necesario elaborar el proceso de una manera mucho m&#225;s formal utilizando este m&#243;dulo de extensi&#243;n.&lt;br/&gt;&lt;br/&gt;El alcance de esta extensi&#243;n es el siguiente:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Creaci&#243;n de eventos como disparadores de procesos&lt;/li&gt;&lt;li&gt;Creaci&#243;n de controles que la l&#243;gica de negocio y la gobernanza compuertan para la ejecuci&#243;n de procesos&lt;/li&gt;&lt;li&gt;Creaci&#243;n de productos para representar la salida de un proceso&lt;/li&gt;&lt;li&gt;Creaci&#243;n de diagramas de eventos para realizar un seguimiento de los desencadenadores y los cambios de estado en toda la organizaci&#243;n&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Esta extensi&#243;n debe utilizarse en las siguientes situaciones:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Donde la arquitectura debe prestar atenci&#243;n espec&#237;fica al estado y los eventos&lt;/li&gt;&lt;li&gt;Cuando se requiere que la arquitectura identifique y almacene expl&#237;citamente los pasos de control del proceso; por ejemplo, para apoyar el cumplimiento normativo&lt;/li&gt;&lt;li&gt;Donde la arquitectura presenta flujos de proceso cr&#237;ticos o elaborados&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Los beneficios de usar esta extensi&#243;n son los siguientes:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Esta extensi&#243;n permite el modelado detallado de procesos y la catalogaci&#243;n de artefactos de procesos&lt;/li&gt;&lt;li&gt;Se puede utilizar para apoyar las actividades de cumplimiento normativo&lt;/li&gt;&lt;li&gt;Se puede utilizar para reutilizar el an&#225;lisis de descomposici&#243;n de procesos heredados o no arquitect&#243;nicos&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Adem&#225;s de las extensiones descritas aqu&#237;, las organizaciones que deseen centrarse en arquitecturas centradas en procesos tambi&#233;n deben consultar:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;La especificaci&#243;n &lt;i&gt;Business Process Modeling Notation &lt;/i&gt;(BPMN), proporcionada por el OMG; consultar &lt;i&gt;www.bpmn.org&lt;/i&gt;&lt;/li&gt;&lt;li&gt;La especificaci&#243;n Del Metamodelo de Ingenier&#237;a de Procesos de Software (S&lt;i&gt;oftware Process Engineering Metamodel&lt;/i&gt; (SPEM)), proporcionada por el OMG; consulte &lt;i&gt;www.omg.org/spec/SPEM&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;i&gt;&lt;u&gt;Extensiones requeridas para el metamodelo principal&lt;/u&gt;&lt;/i&gt;&lt;br/&gt;&lt;u&gt;&lt;br/&gt;&lt;/u&gt;Las extensiones de las entidades y relaciones del metamodelo principal se muestran en la &lt;i&gt;Figura 30-12 de TOGAF&lt;/i&gt;.&lt;br/&gt;&lt;br/&gt;Los cambios en las entidades y relaciones del metamodelo son los siguientes:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;El evento se agrega como una entidad de metamodelo, situada entre Actor, Proceso y Servicio&lt;/li&gt;&lt;li&gt;El control se agrega como una entidad de metamodelo, relacionada con un proceso&lt;/li&gt;&lt;li&gt;El producto se agrega como una entidad de metamodelo, vinculando Organizaci&#243;n y Procesos&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Los cambios en los atributos del metamodelo son los siguientes:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Se agregan atributos para las entidades de metamodelo de Evento, Control y Producto&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Los diagramas adicionales que se crear&#225;n son los siguientes:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Diagramas de flujo de procesos, que muestran la forma en que las funciones, eventos, controles y productos del negocio est&#225;n vinculados para admitir un escenario empresarial particular&lt;/li&gt;&lt;li&gt;Diagramas de eventos, que muestran los eventos, de d&#243;nde se reciben y qu&#233; procesos desencadenan&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;b&gt;&lt;i&gt;30.4.4 Extensiones de datos&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;&lt;i&gt;&lt;u&gt;Prop&#243;sito&lt;/u&gt;&lt;/i&gt;&lt;br/&gt;&lt;i&gt;&lt;u&gt;&lt;br/&gt;&lt;/u&gt;&lt;/i&gt;La extensi&#243;n de datos est&#225; destinada a permitir un modelado m&#225;s sofisticado y la encapsulaci&#243;n de datos. El modelo central proporciona un concepto de entidad de datos que admite la creaci&#243;n de modelos de datos, que luego se ampl&#237;a con esta extensi&#243;n para incluir el concepto de un componente de datos. Los componentes de datos forman una encapsulaci&#243;n l&#243;gica o f&#237;sica de entidades de datos abstractas en unidades que se pueden gobernar e implementar en aplicaciones.&lt;br/&gt;&lt;br/&gt;El alcance de esta extensi&#243;n es el siguiente:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Creaci&#243;n de componentes de datos l&#243;gicos que agrupan entidades de datos en m&#243;dulos encapsulados para fines de gobernanza, seguridad e implementaci&#243;n&lt;/li&gt;&lt;li&gt;Creaci&#243;n de componentes de datos f&#237;sicos que implementan componentes de datos l&#243;gicos y son an&#225;logos a bases de datos, registros, repositorios, esquemas y otras t&#233;cnicas de segmentaci&#243;n de datos&lt;/li&gt;&lt;li&gt;Creaci&#243;n de diagramas de ciclo de vida de datos, seguridad de datos y migraci&#243;n de datos de la arquitectura para mostrar los problemas de datos con m&#225;s detalle&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Esta extensi&#243;n debe utilizarse en las siguientes situaciones:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Donde la arquitectura presenta una complejidad y un riesgo significativos en torno a la ubicaci&#243;n, encapsulaci&#243;n y administraci&#243;n de datos o acceso a ellos.&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Los beneficios de usar esta extensi&#243;n son los siguientes:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;La estructura de los datos se modela independientemente de su ubicaci&#243;n, lo que permite desarrollar modelos de datos que abarcan m&#250;ltiples sistemas sin estar vinculados a preocupaciones f&#237;sicas.&lt;/li&gt;&lt;li&gt;Las agrupaciones l&#243;gicas de datos se pueden usar para establecer l&#237;mites de gobernanza, seguridad o implementaci&#243;n en torno a los datos, lo que proporciona una apreciaci&#243;n mucho m&#225;s hol&#237;stica de los problemas de datos que rodean la arquitectura.&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;i&gt;&lt;u&gt;Extensiones requeridas para el metamodelo principal&lt;/u&gt;&lt;/i&gt;&lt;br/&gt;&lt;br/&gt;Las extensiones de las entidades y relaciones del metamodelo principal se muestran gr&#225;ficamente en la &lt;i&gt;figura 30-13 de TOGAF&lt;/i&gt;.&lt;br/&gt;&lt;br/&gt;Los cambios en las entidades y relaciones del metamodelo son los siguientes:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;El componente de datos l&#243;gicos se agrega como una entidad de metamodelo, encapsulando entidades de datos&lt;/li&gt;&lt;li&gt;El componente de datos f&#237;sicos se agrega como una entidad de metamodelo, ampliando el componente de datos l&#243;gicos&lt;/li&gt;&lt;li&gt;Se crea una relaci&#243;n entre el componente de datos f&#237;sicos y el componente de aplicaci&#243;n; Si se aplica la extensi&#243;n de consolidaci&#243;n de infraestructura, debe ser al componente de aplicaci&#243;n f&#237;sica&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Los cambios en los atributos del metamodelo son los siguientes:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Se agregan atributos para las entidades del metamodelo de Componente de Datos L&#243;gicos y Componente de Datos F&#237;sicos&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Los diagramas adicionales que se crear&#225;n son los siguientes:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Diagrama de seguridad de datos&lt;/li&gt;&lt;li&gt;Diagrama de migraci&#243;n de datos&lt;/li&gt;&lt;li&gt;Diagrama del ciclo de vida de los datos&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;b&gt;&lt;i&gt;30.4.5 Extensiones de consolidaci&#243;n de infraestructura&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;i&gt;&lt;br/&gt;&lt;/i&gt;&lt;i&gt;&lt;u&gt;Prop&#243;sito&lt;/u&gt;&lt;/i&gt;&lt;br/&gt;&lt;br/&gt;La extensi&#243;n de consolidaci&#243;n de infraestructura est&#225; dise&#241;ada para ser utilizada en entornos donde los portafolios de aplicaciones y tecnolog&#237;a se han fragmentado y la arquitectura busca consolidar la capacidad de negocios como de costumbre en un n&#250;mero menor de ubicaciones, aplicaciones o componentes tecnol&#243;gicos.&lt;br/&gt;&lt;br/&gt;El alcance de esta extensi&#243;n es el siguiente:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Creaci&#243;n de componentes de aplicaciones l&#243;gicas y f&#237;sicas para abstraer la capacidad de una aplicaci&#243;n de las aplicaciones reales existentes&lt;/li&gt;&lt;li&gt;Creaci&#243;n de componentes tecnol&#243;gicos l&#243;gicos y f&#237;sicos para abstraer el tipo de producto de los productos tecnol&#243;gicos reales existentes&lt;/li&gt;&lt;li&gt;Creaci&#243;n de diagramas adicionales centrados en la ubicaci&#243;n de los activos, el cumplimiento de los est&#225;ndares, la estructura de las aplicaciones, la migraci&#243;n de aplicaciones y la configuraci&#243;n de la infraestructura&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Esta extensi&#243;n debe utilizarse en las siguientes situaciones:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Donde muchos productos tecnol&#243;gicos est&#225;n en su lugar con capacidad duplicada o superpuesta&lt;/li&gt;&lt;li&gt;Donde hay muchas aplicaciones en su lugar con funcionalidad duplicada o superpuesta&lt;/li&gt;&lt;li&gt;Cuando las aplicaciones est&#225;n dispersas geogr&#225;ficamente y la l&#243;gica de decisi&#243;n para determinar la ubicaci&#243;n de una aplicaci&#243;n no se entiende bien&lt;/li&gt;&lt;li&gt;Cu&#225;ndo se van a migrar las aplicaciones a una plataforma consolidada&lt;/li&gt;&lt;li&gt;Cu&#225;ndo se van a migrar las caracter&#237;sticas de la aplicaci&#243;n a una aplicaci&#243;n consolidada&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Los beneficios de usar esta extensi&#243;n son los siguientes:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Permite la visibilidad y el an&#225;lisis de la duplicaci&#243;n redundante de capacidades en los dominios de aplicaciones y tecnolog&#237;a&lt;/li&gt;&lt;li&gt;Soporta el an&#225;lisis del cumplimiento de las normas&lt;/li&gt;&lt;li&gt;Soporta el an&#225;lisis del impacto de la migraci&#243;n de la consolidaci&#243;n de aplicaciones o tecnolog&#237;a&lt;/li&gt;&lt;li&gt;Soporta la definici&#243;n arquitect&#243;nica detallada de la estructura de la aplicaci&#243;n&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Adem&#225;s de las extensiones descritas aqu&#237;, las organizaciones que deseen centrarse en la consolidaci&#243;n de la infraestructura tambi&#233;n deben consultar:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;El Lenguaje Unificado de Modelado (UML), proporcionado por el OMG; consultar &lt;i&gt;www.uml.org&lt;/i&gt;&lt;/li&gt;&lt;li&gt;El &lt;i&gt;Systems Modeling Language&amp;tradel&lt;/i&gt; (SysML&#174;) - &lt;i&gt;www.sysml.org&lt;/i&gt; - que reduce la complejidad y el enfoque de ingenier&#237;a de software de UML para los fines del modelado de sistemas&lt;/li&gt;&lt;li&gt;El&lt;i&gt; IT Portfolio Management Facility &lt;/i&gt;(ITPMF) de la OMG; consultar &lt;i&gt;www.omg.org/spec/ITPMF&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;i&gt;&lt;u&gt;Extensiones requeridas para el metamodelo principal&lt;/u&gt;&lt;/i&gt;&lt;br/&gt;&lt;u&gt;&lt;br/&gt;&lt;/u&gt;Las extensiones de las entidades y relaciones del metamodelo principal se muestran en la &lt;i&gt;Figura 30-14 de TOGAF&lt;/i&gt;.&lt;br/&gt;&lt;br/&gt;Los cambios en las entidades y relaciones del metamodelo son los siguientes:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Los componentes de aplicaci&#243;n se ampl&#237;an para incluir componentes de aplicaci&#243;n l&#243;gica (una clase de aplicaci&#243;n) y componentes de aplicaci&#243;n f&#237;sica (una aplicaci&#243;n real)&lt;/li&gt;&lt;li&gt;Los componentes de tecnolog&#237;a se ampl&#237;an para incluir componentes de tecnolog&#237;a l&#243;gica (una clase de producto tecnol&#243;gico) y componentes de tecnolog&#237;a f&#237;sica (un producto tecnol&#243;gico real)&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Los cambios en los atributos del metamodelo son los siguientes:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Creaci&#243;n de atributos para las entidades del metamodelo de Componente de aplicaci&#243;n l&#243;gica, Componente de aplicaci&#243;n f&#237;sica, Componente de tecnolog&#237;a l&#243;gica, Componente de tecnolog&#237;a f&#237;sica y Ubicaci&#243;n&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />Los diagramas adicionales que se crear&#225;n son los siguientes:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Diagrama de realizaci&#243;n de procesos/aplicaciones&lt;/li&gt;&lt;li&gt;Diagrama de ingenier&#237;a de software&lt;/li&gt;&lt;li&gt;Diagrama de migraci&#243;n de aplicaciones&lt;/li&gt;&lt;li&gt;Diagrama de distribuci&#243;n de software&lt;/li&gt;&lt;li&gt;Diagrama de procesamiento&lt;/li&gt;&lt;li&gt;Diagrama de hardware/computaci&#243;n en red&lt;/li&gt;&lt;li&gt;Diagrama de redes y comunicaciones&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;b&gt;&lt;i&gt;30.4.6 Extensiones de motivaci&#243;n&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;&lt;i&gt;Prop&#243;sito&lt;/i&gt;&lt;br/&gt;&lt;br/&gt;La extensi&#243;n de motivaci&#243;n est&#225; destinada a permitir un modelado estructurado adicional de los impulsores, metas y objetivos que influyen en una organizaci&#243;n para proporcionar servicios comerciales a sus clientes. Esto, a su vez, permite una definici&#243;n m&#225;s efectiva de los contratos de servicios y una mejor medici&#243;n del rendimiento del negocio.&lt;br/&gt;&lt;br/&gt;El alcance de esta extensi&#243;n es el siguiente:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Creaci&#243;n de una entidad de metamodelo para Conductores que muestre los factores que generalmente motivan o restringen a una organizaci&#243;n&lt;/li&gt;&lt;li&gt;Creaci&#243;n de una entidad metamodelo para Metas que muestre el prop&#243;sito estrat&#233;gico y la misi&#243;n de una organizaci&#243;n&lt;/li&gt;&lt;li&gt;Creaci&#243;n de una entidad metamodelo para el Objetivo que muestre los logros a corto y mediano plazo que una organizaci&#243;n desea alcanzar&lt;/li&gt;&lt;li&gt;Creaci&#243;n de un diagrama de meta/objetivo/servicio que muestre la trazabilidad desde los impulsores, metas y objetivos hasta los servicios&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Esta extensi&#243;n debe utilizarse en las siguientes situaciones:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Cuando la arquitectura necesita comprender la motivaci&#243;n de las organizaciones con m&#225;s detalle que los principios y objetivos est&#225;ndar de negocio o compromiso que se modelan informalmente dentro del metamodelo de contenido central.&lt;/li&gt;&lt;li&gt;Cuando las organizaciones tienen impulsores y objetivos contradictorios y ese conflicto debe entenderse y abordarse de manera estructurada.&lt;/li&gt;&lt;li&gt;Cuando los niveles de servicio son desconocidos o poco claros&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Los beneficios de usar esta extensi&#243;n son los siguientes:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Destaca la desalineaci&#243;n de las prioridades en toda la empresa y c&#243;mo estas se cruzan con los servicios compartidos (por ejemplo, algunas organizaciones pueden estar tratando de reducir los costos, mientras que otras est&#225;n tratando de aumentar la capacidad)&lt;/li&gt;&lt;li&gt;Muestra las demandas competitivas de servicios empresariales de una manera m&#225;s estructurada, lo que permite definir niveles de servicio comprometidos&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Adem&#225;s de las extensiones descritas aqu&#237;, las organizaciones que deseen centrarse en el modelado arquitect&#243;nico de la motivaci&#243;n empresarial tambi&#233;n deben consultar:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;La especificaci&#243;n del Modelo de Motivaci&#243;n Empresarial - &lt;i&gt;Business Motivation Model&#8482; &lt;/i&gt;(BMM&#8482;), proporcionada por el OMG; consulte &lt;i&gt;www.omg.org/spec/BMM/About-BMM&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;i&gt;&lt;u&gt;Extensiones requeridas para el metamodelo principal&lt;/u&gt;&lt;/i&gt;&lt;br/&gt;&lt;br/&gt;Las extensiones de las entidades y relaciones del metamodelo principal se muestran gr&#225;ficamente en la &lt;i&gt;figura 30-15 de TOGAF&lt;/i&gt;.&lt;br/&gt;&lt;br/&gt;Los cambios en las entidades y relaciones del metamodelo son los siguientes:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;El impulsor, la meta y el objetivo&lt;/b&gt; se agregan como entidades que vinculan la unidad organizativa con el servicio de negocios&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Los cambios en los atributos del metamodelo son los siguientes:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Se agregan atributos para las entidades del metamodelo de Impulsores, Meta y Objetivo&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Los diagramas adicionales que se crear&#225;n son los siguientes:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Diagrama de meta/objetivo/servicio&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;b&gt;30.5 Entidades del metamodelo de contenido&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;En la secci&#243;n &lt;i&gt;30.5, 30.6, 30.7 de la parte IV: Marco de contenido de arquitectura, Metamodelo de contenido, &lt;/i&gt;(consultar &lt;i&gt;30.5, 30.6 y 30.7 de TOGAF&lt;/i&gt;)&lt;i&gt;,&lt;/i&gt; se plantean diferentes tablas donde se enumeran y describen las entidades y atributos del metamodelo de contenido y las relaciones de metamodelos.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;&lt;br/&gt;&lt;/i&gt;&lt;/b&gt;&lt;b&gt;&lt;i&gt;Fase B: Arquitectura de Negocios&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;Recurso de Apoyo, requerido en los pasos de la documentaci&#243;n.&lt;br/&gt;&lt;br/&gt;-Este recurso forma parte del est&#225;ndar TOGAF 9.2 y es requerido en los pasos de la fase ADM, sin embargo no pertenece a formalmente a las entradas y/o salidas de la fase actual.-&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;Fase C: Arquitecturas de Sistemas de Informaci&#243;n&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;- &lt;/i&gt;&lt;/b&gt;&lt;b&gt;(&lt;/b&gt;&lt;b&gt;&lt;i&gt;Arquitectura de Datos&lt;/i&gt;&lt;/b&gt;&lt;b&gt;) &lt;/b&gt;&lt;b&gt;&lt;i&gt;- &lt;/i&gt;&lt;/b&gt;&lt;b&gt;(&lt;/b&gt;&lt;b&gt;&lt;i&gt;Arquitectura de Aplicaciones&lt;/i&gt;&lt;/b&gt;&lt;b&gt;):&lt;/b&gt;&lt;br/&gt;Recurso de Apoyo, requerido en los pasos de la documentaci&#243;n.&lt;br/&gt;&lt;br/&gt;-Este recurso forma parte del est&#225;ndar TOGAF 9.2 y es requerido en los pasos de la fase ADM, sin embargo no pertenece formalmente a las entradas y/o salidas de la fase actual.-&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA248.htm">Objetos del negocios de la Fase B: Arquitectura de Negocios</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink227" /></button>Details:
+							<div id="detailsDIVLink227" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2/EA4/EA1275.htm">«Fase ADM» D: Arquitectura Tecnológica</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA2/EA477.htm">«Activity» 1. Seleccionar modelos de referencia, puntos de vista y herramientas</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA2/EA1/EA528.htm">«Activity» 1.5 Identificar los diagramas requeridos</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA3/EA1/EA1/EA678.htm">«Activity» 1.2 Identificar los catálogos necesarios de bloques de creación de aplicaciones</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA2/EA1/EA527.htm">«Activity» 1.4 Identificar las matrices requeridas</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA4/EA1/EA949.htm">«Activity» 1.2 Identificar los catálogos requeridos de bloques de construcción de tecnología</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA252.htm">«recurso» Otros Recursos</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA2/EA1/EA526.htm">«Activity» 1.3 Identificar los catálogos necesarios de bloques de construcción de negocios</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA4/EA904.htm">«Activity» 2. Desarrollar la descripción de la arquitectura de la tecnología de línea de base</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA4/EA903.htm">«Activity» 1. Seleccionar modelos de referencia, puntos de vista y herramientas</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA3/EA2/EA1/EA821.htm">«Activity» 1.2  Identificar los catálogos necesarios de bloques de creación de datos</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2/EA3/EA1/EA1255.htm">«Fase ADM» C: Arquitecturas de Sistemas de Información - Arquitectura de Aplicaciones</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2/EA2/EA1242.htm">«Fase ADM» B: Arquitectura de Negocios</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA3/EA1/EA626.htm">«Activity» 1. Seleccionar modelos de referencia, puntos de vista y herramientas</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2/EA3/EA2/EA1265.htm">«Fase ADM» C: Arquitecturas de Sistemas de Información - Arquitectura de Datos</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA3/EA1/EA627.htm">«Activity» 2. Desarrollar una descripción de la arquitectura de la aplicación de línea base</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA3/EA1/EA1/EA679.htm">«Activity» 1.3 Identificar las matrices requeridas</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA3/EA1/EA1/EA680.htm">«Activity» 1.4 Identificar los diagramas requeridos</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA3/EA2/EA769.htm">«Activity» 1. Seleccionar modelos de referencia, puntos de vista y herramientas</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA3/EA2/EA1/EA822.htm">«Activity» 1.3 Identificar las matrices requeridas</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

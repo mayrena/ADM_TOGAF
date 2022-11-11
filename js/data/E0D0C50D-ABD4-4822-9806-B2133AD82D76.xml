@@ -1,0 +1,2 @@
+tocTab[tocTab.length] = new Array("0.1.1.3.1:1", "", "Fase B: Arquitectura del negocio", "EARoot/EA1/EA1/EA3/EA1/EA266.htm", "175.png", "50", "0", "", "Logical diagram0","{4EBF779A-B25D-4e9d-A336-B7B60C928477}");
+tocTab[tocTab.length] = new Array("0.1.1.3.1:2", "", ": Repositorio de arquitectura", "EARoot/EA1/EA1/EA3/EA1/EA269.htm", "25.png", "E593", "0", "", "Object0","{4E883C46-75CE-4195-95B3-42FBAE03A657}");

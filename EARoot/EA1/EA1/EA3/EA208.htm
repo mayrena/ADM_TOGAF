@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Modelado de Objetos del Negocio::Aplicación del ADM en todo el panorama arquitectónico</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Modelado de Objetos del Negocio::Aplicación del ADM en todo el panorama arquitectónico </h1>
+			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../index.htm">Adaptacion BMM</a> / <a href="../../EA1.htm">ADM_TOGAF</a> / <a href="../EA3.htm">Modelado de elementos del negocio</a> / <a href="EA103.htm">Modelado de Objetos del Negocio</a> / <a href="EA208.htm">Aplicación del ADM en todo el panorama arquitectónico</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA103.htm">Modelado de Objetos del Negocio</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Aplicación del ADM en todo el panorama arquitectónico  : Public  &lt;&lt;recurso: Apoyo en los pasos&gt;&gt; Class</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">19/10/2022 2:12:15</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">19/10/2022 23:25:02</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Wanda Mayrena</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{D5AB2F72-AB84-4b2e-9947-D340E0ED8A60}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA4/EA2/EA1/EA1222.htm">Fase A: Visión de la Arquitectura</a>, <a href="EA101.htm">Modelado de Objetos del Negocio</a>, <a href="../EA4/EA1/EA1/EA306.htm">Fase A: Visión de la Arquitectura</a>, <a href="./EA5/EA288.htm">Fase A: Visión de la arquitectura</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;ul&gt;<br />&lt;li&gt;Aplicación del ADM en todo el panorama arquitectónico (&lt;i&gt;Parte III: Guías y técnicas de ADM, 19. Aplicación del ADM en todo el panorama de la arquitectura&lt;/i&gt;).&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;En una empresa típica, muchas arquitecturas se describirán en el Panorama de arquitectura en cualquier momento. Algunas arquitecturas abordarán necesidades muy específicas; otros serán más generales. Algunos abordarán los detalles; algunos proporcionarán un panorama general. Para abordar esta complejidad, el estándar TOGAF utiliza los conceptos de niveles y el Continuo Empresarial para proporcionar un marco conceptual para organizar el Paisaje arquitectónico. Estos conceptos están estrechamente vinculados con la organización del contenido real en el Repositorio de arquitectura y cualquier partición de arquitectura discutida en la &lt;i&gt;Parte V: Continuum empresarial y herramientas&lt;/i&gt;.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;19.2 Paisaje de Arquitectura&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Los niveles proporcionan un marco para dividir el panorama arquitectónico en tres niveles de granularidad:&lt;br/&gt;&lt;br/&gt;&lt;ol&gt;<br />&lt;li&gt;&lt;b&gt;La arquitectura estratégica&lt;/b&gt; proporciona un marco de organización para la actividad operativa y de cambio y permite el establecimiento de la dirección a nivel ejecutivo.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Arquitectura de segmentos&lt;/b&gt; proporciona un marco de organización para la actividad operativa y de cambio y permite establecer la dirección y desarrollar hojas de ruta de arquitectura efectivas a nivel de programa o cartera.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Arquitectura de capacidad&lt;/b&gt; proporciona un marco de organización para la actividad de cambio y el desarrollo de hojas de ruta de arquitectura efectivas que realizan incrementos de capacidad.&lt;/li&gt;&lt;/ol&gt;<br />&lt;br/&gt;El Continuo&#160;&#160;proporciona un método para dividir cada nivel del Paisaje de Arquitectura (ver &lt;i&gt;35.4.1 Continuo de Arquitectura&lt;/i&gt;) por abstracción. Ofrece una forma consistente de definir y comprender las reglas, representaciones y relaciones genéricas en una arquitectura, incluidas las relaciones de trazabilidad y derivación. El Continuo de Arquitectura muestra las relaciones desde los elementos básicos hasta la arquitectura específica de la organización.&lt;br/&gt;&lt;br/&gt;Continuum de Arquitectura es una herramienta útil para descubrir puntos en común y eliminar redundancias innecesarias.&lt;br/&gt;&lt;br/&gt;Los niveles y el Continuo de Arquitectura proporcionan un mecanismo integral para describir y clasificar el Paisaje arquitectónico. Estos conceptos se pueden utilizar para organizar el Paisaje arquitectónico en un conjunto de arquitecturas relacionadas con:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Complejidad manejable para cada arquitectura o solución individual&lt;/li&gt;&lt;li&gt;Agrupaciones definidas&lt;/li&gt;&lt;li&gt;Jerarquías y estructuras de navegación definidas&lt;/li&gt;&lt;li&gt;Procesos, roles y responsabilidades apropiados asociados a cada agrupación&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;No existe un modelo de organización definitivo para la arquitectura, ya que cada empresa debe adoptar un modelo que refleje su propio modelo operativo.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;19.3 Organización del panorama arquitectónico para comprender el estado de la empresa&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Las siguientes características se utilizan normalmente para organizar el paisaje arquitectónico:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Amplitud:&lt;/b&gt; el área de amplitud (tema) es generalmente la característica organizativa principal para describir un paisaje arquitectónico.&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Las arquitecturas se descomponen funcionalmente en una jerarquía de áreas temáticas o segmentos específicos.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Profundidad:&lt;/b&gt; con áreas temáticas más amplias, se necesitan menos detalles para garantizar que la arquitectura tenga un tamaño y una complejidad manejables.&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Las áreas temáticas más específicas generalmente permitirán (y requerirán) arquitecturas más detalladas.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Tiempo:&lt;/b&gt; para una amplitud y profundidad específicas, una empresa puede crear una arquitectura de línea base y un conjunto de arquitecturas de destino que se extiendan hacia el futuro.&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Las arquitecturas más amplias y menos detalladas generalmente serán válidas durante períodos de tiempo más largos y pueden proporcionar una visión para la empresa que se extienda más hacia el futuro.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Actualidad:&lt;/b&gt; finalmente, cada vista de arquitectura progresará a través de un ciclo de desarrollo donde aumenta en precisión hasta que finalmente se aprueba.&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Después de la aprobación, una arquitectura comenzará a disminuir en precisión si no se mantiene activamente. En algunos casos, la actualidad puede ser utilizada como un factor organizador para las arquitecturas históricas.&lt;br/&gt;&lt;br/&gt;Utilizando los criterios anteriores, las arquitecturas se pueden agrupar en niveles de Arquitectura Estratégica, de Segmento y de Capacidad.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;19.4 Desarrollo de arquitecturas a diferentes niveles&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Las secciones anteriores han identificado que se requieren diferentes tipos de arquitectura para abordar las diferentes necesidades de las partes interesadas en diferentes niveles de la organización. Por lo general, cada arquitectura no existe de forma aislada y, por lo tanto, debe estar dentro de una jerarquía de gobierno. Las arquitecturas amplias y resumidas establecen la dirección para arquitecturas estrechas y detalladas.&lt;br/&gt;&lt;br/&gt;Se pueden emplear varias técnicas para utilizar el ADM como un proceso que admite tales jerarquías de arquitecturas. Esencialmente hay dos estrategias que se pueden aplicar:&lt;br/&gt;&lt;br/&gt;&lt;ol&gt;<br />&lt;li&gt;Las arquitecturas en diferentes niveles se pueden desarrollar a través de iteraciones dentro de un solo ciclo del proceso ADM&lt;/li&gt;&lt;li&gt;Las arquitecturas en diferentes niveles se pueden desarrollar a través de una jerarquía de procesos ADM, ejecutados simultáneamente&lt;/li&gt;&lt;/ol&gt;<br />&lt;br/&gt;En los extremos de la escala, cualquiera de estas dos opciones puede adoptarse plenamente. En la práctica, es probable que un arquitecto necesite combinar elementos de cada uno para adaptarse a los requisitos exactos de su Solicitud de Trabajo de Arquitectura. Cada uno de estos enfoques se describe en&lt;i&gt; 18. Aplicación de iteración al ADM&lt;/i&gt;.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;Fase A: Visión de la arquitectura&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;Recurso de Apoyo, requerido en los pasos de la documentación.&lt;br/&gt;&lt;br/&gt;-Este recurso forma parte del estándar TOGAF 9.2 y es requerido en los pasos de la fase ADM, sin embargo no pertenece a formalmente a las entradas y/o salidas de la fase actual.-&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA247.htm">Objetos del negocios de la Fase A: Visión de la Arquitectura</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink151" /></button>Details:
+							<div id="detailsDIVLink151" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA1/EA363.htm">«Activity» 4. Evaluar capacidades</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA252.htm">«recurso» Otros Recursos</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2/EA1/EA1232.htm">«Fase ADM» A: Visión de la Arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

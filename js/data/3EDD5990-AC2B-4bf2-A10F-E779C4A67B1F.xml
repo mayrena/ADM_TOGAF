@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.1.1.4.1", "1", "Diagrama de Actividades", "EARoot/EA1/EA1/EA4/EA1/EA299.htm", "4.png", "", "", "{DC11C208-363E-43f3-8F0E-DAF1C74470B5}", "Package");
+tocTab[tocTab.length] = new Array("0.1.1.4.2", "1", "Diagrama de Procesos", "EARoot/EA1/EA1/EA4/EA2/EA1215.htm", "4.png", "", "", "{4D408B95-7557-4a97-8088-1BD8253B937B}", "Package");
+tocTab[tocTab.length] = new Array("0.1.1.4.3", "1", "Jerarquia de procesos del negocio", "EARoot/EA1/EA1/EA4/EA3/EA1296.htm", "4.png", "", "", "{EA6C63F0-AB4B-415a-8C71-1F86F32B175E}", "Package");

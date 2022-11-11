@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Modelado de Objetos del Negocio::Evaluación de la preparación para la transformación del negocio</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Modelado de Objetos del Negocio::Evaluación de la preparación para la transformación del negocio </h1>
+			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../index.htm">Adaptacion BMM</a> / <a href="../../EA1.htm">ADM_TOGAF</a> / <a href="../EA3.htm">Modelado de elementos del negocio</a> / <a href="EA103.htm">Modelado de Objetos del Negocio</a> / <a href="EA223.htm">Evaluación de la preparación para la transformación del negocio</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA103.htm">Modelado de Objetos del Negocio</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Evaluación de la preparación para la transformación del negocio  : Public  &lt;&lt;recurso: Apoyo en los pasos&gt;&gt; Class</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">19/10/2022 2:17:53</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">19/10/2022 2:18:59</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Wanda Mayrena</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{A9E30588-3BE3-4259-8508-4100BE6A1714}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA4/EA2/EA1/EA1222.htm">Fase A: Visión de la Arquitectura</a>, <a href="EA101.htm">Modelado de Objetos del Negocio</a>, <a href="../EA4/EA1/EA1/EA306.htm">Fase A: Visión de la Arquitectura</a>, <a href="./EA5/EA288.htm">Fase A: Visión de la arquitectura</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;ul&gt;<br />&lt;li&gt;Evaluación de la preparación para la transformación del negocio (&lt;i&gt;Parte III: Guías y técnicas de ADM, 26. Evaluación de la preparación para la transformación empresarial&lt;/i&gt;).&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;Se describe una técnica conocida como Evaluación de Preparación para la Transformación del Negocio, utilizada para evaluar y cuantificar la preparación de una organización para sufrir cambios.&lt;br/&gt;&lt;br/&gt;Este capítulo se basa en el trabajo del Gobierno canadiense y su Programa de Habilitación de Transformación Empresarial (BTEP).&lt;br/&gt;&lt;br/&gt;&lt;b&gt;26.1 Introducción&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;La arquitectura empresarial es un esfuerzo importante dentro de una organización y, con mayor frecuencia, una visión de arquitectura innovadora (Fase A) y la definición de arquitectura de soporte (Fases B a D) implicará un cambio considerable. Hay muchas dimensiones que cambiar, pero la más importante es el elemento humano. Por ejemplo, si la empresa prevé una consolidación de las existencias de información y un cambio a un nuevo paradigma, como la orientación a los servicios para la prestación integrada de servicios, entonces las implicaciones para los recursos humanos son importantes. Potencialmente junto con una cultura reacia al cambio y una fuerza laboral estrechamente calificada, la arquitectura más sólida e innovadora podría no ir a ninguna parte.&lt;br/&gt;&lt;br/&gt;Comprender la preparación de la organización para aceptar el cambio, identificar los problemas y luego tratarlos en los Planes de Implementación y Migración es clave para una transformación exitosa de la arquitectura en las Fases E y F. Este será un esfuerzo conjunto entre el personal corporativo (especialmente de recursos humanos), las líneas de negocio y los planificadores de TI.&lt;br/&gt;&lt;br/&gt;Las actividades recomendadas en una evaluación de la preparación de una organización para abordar la transformación del negocio son:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Determinar los factores de preparación que afectarán a la organización&lt;/li&gt;&lt;li&gt;Presentar los factores de preparación utilizando modelos de madurez&lt;/li&gt;&lt;li&gt;Evaluar los factores de preparación, incluida la determinación de las calificaciones de los factores de preparación&lt;/li&gt;&lt;li&gt;Evaluar los riesgos para cada factor de preparación e identificar acciones de mejora para mitigar el riesgo&lt;/li&gt;&lt;li&gt;Trabajar estas acciones en la Fase E y F de Implementación y Plan de Migración&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;b&gt;&lt;i&gt;26.1.1 Programa de Habilitación para la Transformación Empresarial (BTEP)&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;El Programa de Habilitación para la Transformación Empresarial del Gobierno Canadiense (BTEP) proporciona orientación sobre cómo identificar los problemas relacionados con la transformación empresarial.&lt;br/&gt;&lt;br/&gt;El BTEP recomienda que todos los proyectos realicen una evaluación de preparación para la transformación para al menos descubrir los problemas de transformación del negocio. Esta evaluación se basa en la determinación y el análisis/calificación de una serie de factores de preparación. El resultado es una comprensión más profunda de los desafíos y oportunidades que podrían presentarse en el curso del esfuerzo. Muchos de los desafíos se traducen directamente en riesgos que deben abordarse, monitorearse y, si es posible, mitigarse.&lt;br/&gt;&lt;br/&gt;En las siguientes secciones se describe la evaluación de la preparación para la transformación empresarial mediante el método BTEP, incluidas algunas lecciones aprendidas. Los lectores deben tener en cuenta que la mayoría de las organizaciones tendrán su propio conjunto único de factores y criterios, pero la mayoría son similares.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;26.2 Determinar los factores de preparación&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;El primer paso es determinar qué factores tendrán un impacto en la transformación del negocio asociada con la migración de las arquitecturas de línea base a destino.&lt;br/&gt;&lt;br/&gt;Esto se puede lograr mejor mediante la realización de un taller facilitado con personas de diferentes partes de la organización. Es importante que se busquen todas las perspectivas, ya que los temas serán variados. En este taller es muy útil comenzar con una lista tentativa de factores que los participantes pueden reutilizar, rechazar, aumentar o reemplazar.&lt;br/&gt;&lt;br/&gt;A continuación se muestra un ejemplo de conjunto de factores extraídos del BTEP:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;La visión&lt;/b&gt; es la capacidad de definir y comunicar claramente lo que se debe lograr.&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Aquí es donde la gerencia es capaz de definir claramente los objetivos, tanto en términos estratégicos como específicos. El liderazgo en la definición de la visión y las necesidades proviene del lado del negocio con la entrada de TI. Existen procesos predecibles y probados para pasar de la visión a la declaración de requisitos. Los principales impulsores de la iniciativa son claros. El alcance y el enfoque de la iniciativa de transformación se han definido claramente en toda la organización.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Deseo, voluntad y resolución&lt;/b&gt; es la presencia de un deseo de lograr los resultados, la voluntad de aceptar el impacto de hacer el trabajo y la determinación de seguir adelante y completar el esfuerzo.&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Existe una discusión activa sobre el impacto que la ejecución del proyecto puede tener en la organización, con una clara indicación de la intención de aceptar los impactos. Los recursos clave (por ejemplo, financieros, humanos, etc.) se asignan para el esfuerzo y los altos ejecutivos proyectan el mensaje claro de que la organización seguirá adelante; un mensaje que identifica el esfuerzo así como los beneficios. Organizacionalmente hay una historia de terminar lo que se inicia y de llegar a un cierre en los temas en los plazos necesarios y hay acuerdo en toda la organización de que la iniciativa de transformación es lo &quot;correcto&quot; que se debe hacer.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Necesidad&lt;/b&gt;, en el sentido de que existe una necesidad imperiosa de ejecutar el esfuerzo.&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Hay declaraciones claras con respecto a lo que la organización no podrá hacer si el proyecto no continúa, e declaraciones igualmente claras de lo que el proyecto permitirá a la organización hacer. Hay consecuencias visibles y ampliamente entendidas del fracaso del esfuerzo y los criterios de éxito se han identificado y comunicado claramente.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Existe un caso de negocio&lt;/b&gt; que crea un fuerte enfoque para el proyecto, identificando los beneficios que deben lograrse y, por lo tanto, creando un imperativo para tener éxito.&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;El documento de caso de negocio identifica beneficios concretos (ingresos o ahorros) que la organización se compromete a entregar y señala clara e incuestionablemente los objetivos que la organización está comprometida a lograr.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Existe financiamiento&lt;/b&gt;, en forma de una fuente clara de recursos fiscales, que satisface los gastos potenciales del esfuerzo.&lt;/li&gt;&lt;li&gt;&lt;b&gt;El patrocinio y el liderazgo&lt;/b&gt; existen y se comparten ampliamente, pero no tan amplios como para difundir la rendición de cuentas.&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;El liderazgo mantiene a todos &quot;a bordo&quot; y mantiene a todos enfocados en los objetivos estratégicos. El esfuerzo es patrocinado por un ejecutivo que está alineado adecuadamente para proporcionar el liderazgo que el esfuerzo necesita y capaz de articular y defender las necesidades del esfuerzo a nivel de alta gerencia. Estos patrocinadores ejecutivos están y seguirán participando en todo momento.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;La gobernanza&lt;/b&gt; es la capacidad de involucrar y apoyar a todas las partes con interés o responsabilidad en el esfuerzo con el objetivo de garantizar que se cumplan los intereses corporativos y se alcancen los objetivos.&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Hay partes interesadas claramente identificadas y un claro sentido de su interés y responsabilidad hacia el proyecto; una cultura que fomente la participación hacia objetivos corporativos en lugar de locales; una historia de ser capaz de gestionar con éxito las actividades que cruzan áreas de interés; una cultura que fomente una participación significativa, en lugar de simbólica, en los procesos de gestión; y el compromiso con el examen y el desafío continuos de los proyectos y la apertura al asesoramiento externo.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;La rendición de cuentas&lt;/b&gt; es la asignación de responsabilidades específicas y apropiadas, el reconocimiento de expectativas mensurables por todas las partes interesadas y la alineación de la toma de decisiones con las áreas de responsabilidad y con el lugar donde se sentirá el impacto de las decisiones.&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;La rendición de cuentas está alineada con el área donde se sentirán los beneficios del éxito o las consecuencias del fracaso del esfuerzo, así como con las áreas de responsabilidad.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;El enfoque viable y el modelo de ejecución&lt;/b&gt; es un enfoque que tiene sentido en relación con la tarea, con un entorno de apoyo, modelado según un enfoque probado.&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Hay nociones claras del cliente y el papel del cliente en relación con el constructor o contratista principal y la organización tiene experiencia con esfuerzos de este tipo para que los procesos, disciplinas, experiencia y gobierno ya estén en su lugar, probados y disponibles para aplicar al esfuerzo de transformación. Todos los jugadores conocen sus roles porque los han jugado antes con éxito. En particular, los roles de &quot;cliente&quot; y &quot;constructor de sistemas&quot; son maduros y estables. Existe un plan de comunicación que cubre todos los niveles de la organización y satisface las necesidades que van desde la conciencia hasta la disponibilidad de detalles técnicos. Existe un plan de recompensa y reconocimiento para reconocer a los equipos e individuos que utilizan buenas prácticas de gestión del cambio, planificación y prevención de comportamientos de crisis, y que refuerzan comportamientos apropiados para la nueva forma de hacer negocios. Es claro para todos cómo ocurrirá la implementación, cómo se monitoreará y cómo se realizarán las acciones de realineación y hay recursos adecuados dedicados para la vida de la transformación.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Capacidad de ejecución de TI&lt;/b&gt; es la capacidad de realizar todas las tareas de TI requeridas por el proyecto, incluidas las habilidades, herramientas, procesos y capacidad de administración.&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Recientemente ha habido una ejecución exitosa de un esfuerzo similar de tamaño y complejidad similares y existen procesos apropiados, disciplina, habilidades y un modelo racional para decidir qué habilidades y actividades obtener externamente.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;La capacidad empresarial para ejecutar&lt;/b&gt; es la capacidad de la empresa para realizar todas las tareas requeridas por el esfuerzo, en áreas fuera de TI, incluida la capacidad de tomar decisiones dentro de las estrictas limitaciones de tiempo típicas de los entornos de proyectos en función de la reciente ejecución exitosa de un esfuerzo similar de al menos la mitad del tamaño y la complejidad.&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;Existen procesos, disciplina y habilidades no específicos de TI para hacer frente a este tipo de esfuerzo. La empresa tiene una capacidad demostrada para lidiar con el tipo de problemas y requisitos continuos de gestión de proyectos / carteras. Existe un reconocimiento de la necesidad de conocimiento y desarrollo de habilidades para la nueva forma de trabajar, así como el valor de un análisis formal de brechas para las habilidades y el comportamiento.&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Capacidad de la empresa para implementar y operar&lt;/b&gt; los elementos de transformación y sus procesos de negocio relacionados, absorber los cambios derivados de la implementación y capacidad continua para operar en el nuevo entorno&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;La empresa tiene una capacidad comprobada reciente para lidiar con los problemas de gestión del cambio que surgen de los nuevos procesos y sistemas y cuenta con un sólido programa de gestión de servicios disciplinado y basado en procesos que proporciona operaciones, mantenimiento y soporte para los sistemas existentes.&lt;br/&gt;&lt;br/&gt;Una vez que se han identificado y definido los factores, es útil convocar un taller de seguimiento en el que los factores se evaluarán con cierto detalle en términos de su impacto/riesgo. La siguiente sección se ocupará de la preparación para una evaluación eficaz de estos factores.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;26.3 Factores de preparación actuales&lt;/b&gt;&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;Una vez determinados los factores, es necesario presentarlos de tal manera que la valoración sea clara y el valor máximo se derive de los participantes.&lt;br/&gt;&lt;br/&gt;Una de esas presentaciones es a través del uso de modelos de madurez. Si cada factor se convierte en un modelo de vencimiento (también un activo de gobierno reutilizable) acompañado de una plantilla de hoja de trabajo estándar que contiene toda la información y las deducciones que deben recopilarse, puede ser una herramienta muy útil.&lt;br/&gt;&lt;br/&gt;El modelo de madurez debe permitir a los participantes:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Evaluar su nivel de madurez actual (arquitectura de línea base)&lt;/li&gt;&lt;li&gt;Determinar el nivel de madurez objetivo que habría que alcanzar para realizar la arquitectura de destino&lt;/li&gt;&lt;li&gt;Determinar un objetivo intermedio que sería alcanzable en un período de tiempo menor&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;El cuidado dedicado a la preparación de los modelos (que no es insignificante) será recuperado por un taller enfocado que pasará rápidamente por un número significativo de factores.&lt;br/&gt;&lt;br/&gt;Es importante que cada factor esté bien definido y que el alcance del esfuerzo de Arquitectura Empresarial (planificación preliminar) se refleje en los modelos para mantener a los participantes del taller enfocados y productivos.&lt;br/&gt;&lt;br/&gt;Sería útil distribuir los modelos antes del taller para que formulen observaciones, aunque sólo sea para asegurarse de que estén completos y permitir que los participantes se preparen para el taller. Tenga en cuenta que el modelo que se muestra a continuación también tiene un estado de destino recomendado por el arquitecto empresarial; esto nuevamente actúa como gobernanza.&lt;br/&gt;&lt;br/&gt;Un ejemplo de un modelo de madurez se muestra en la &lt;i&gt;Figura 26-1 de TOGA&lt;/i&gt;F para uno de los factores BTEP.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;26.4 Evaluar los factores de preparación&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Idealmente, los factores deberían evaluarse en un taller multidisciplinario. Utilizando un mecanismo como los modelos de madurez, los arquitectos empresariales normalmente tendrán que cubrir una gran cantidad de terreno en poco tiempo.&lt;br/&gt;&lt;br/&gt;El uso de una serie de plantillas para cada factor aceleraría la evaluación y garantizaría la coherencia en toda la amplia gama de factores.&lt;br/&gt;&lt;br/&gt;La evaluación debe abordar tres cosas, a saber:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Visión del factor de preparación&lt;/li&gt;&lt;li&gt;Calificación del factor de preparación&lt;/li&gt;&lt;li&gt;Riesgos y acciones del factor de preparación&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;26.4.1 Factor de preparación Visión&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;La visión de un factor de preparación es la determinación de dónde tiene que evolucionar la empresa para abordar el factor. Primero, el factor debe evaluarse con respecto a su estado base y luego a su estado objetivo.&lt;br/&gt;&lt;br/&gt;Por ejemplo, si el factor &quot;capacidad de ejecución de TI&quot; se califica como bajo, el factor idealmente debería estar en &quot;alto&quot; para realizar la Visión de Arquitectura objetivo. Un objetivo intermedio podría ser útil para dirigir la implementación. Los modelos de madurez son excelentes vehículos para guiar esta determinación.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;26.4.2 Calificación del factor de preparación&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Una vez que se establecen las visiones de los factores, es útil determinar qué tan importante es cada factor para el logro de la Arquitectura objetivo, así como cuán desafiante será migrar el factor a un estado visionario aceptable.&lt;br/&gt;&lt;br/&gt;El BTEP utiliza un esquema de calificación de preparación que se puede utilizar como punto de partida para cualquier organización en cualquier vertical. Cada uno de los factores de preparación se califica con respecto a:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Urgencia&lt;/b&gt;, por lo que si un factor de preparación es urgente, significa que se necesita acción antes de que pueda comenzar una iniciativa de transformación.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Estado de preparación&lt;/b&gt;, que se clasifica como Bajo (necesita trabajo sustancial antes de continuar), Justo (necesita algo de trabajo antes de continuar), Aceptable (existen algunos problemas de preparación; no hay impedimentos), Bueno (existen problemas relativamente menores) o Alto (no hay problemas de preparación)&lt;/li&gt;&lt;li&gt;&lt;b&gt;Grado de dificultad para corregir&lt;/b&gt; califica el esfuerzo requerido para superar cualquier problema identificado como No se necesita ninguna acción, fácil, moderado o difícil&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;Aunque se puede utilizar una plantilla más extensa en el taller, es útil crear una tabla resumida de los hallazgos para consolidar los factores y proporcionar una visión general de la gestión. Un resumen similar se muestra en la &lt;i&gt;Figura 26-2 de TOGAF&lt;/i&gt;.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;26.4.3 Riesgos y acciones del factor de preparación&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Una vez que los factores han sido calificados y evaluados, derivar una serie de acciones que permitirán que los factores cambien a un estado favorable.&lt;br/&gt;&lt;br/&gt;Cada factor debe evaluarse con respecto al riesgo utilizando el proceso destacado en la &lt;i&gt;Parte III, 27. Gestión de riesgos&lt;/i&gt;, incluyendo una estimación de impacto y frecuencia.&lt;br/&gt;&lt;br/&gt;Cada factor debe ser evaluado discretamente y una serie de acciones de mejora esbozadas. Antes de comenzar de nuevo, las acciones existentes descritas en las arquitecturas deben verificarse primero antes de crear otras nuevas.&lt;br/&gt;&lt;br/&gt;Estas acciones recientemente identificadas deben incorporarse formalmente en el plan de implementación y migración emergente.&lt;br/&gt;&lt;br/&gt;Desde una perspectiva de riesgo, estas acciones están diseñadas para mitigar los riesgos y producir un riesgo residual aceptable. Como riesgos, deben ser parte del proceso de gestión de riesgos y monitoreados de cerca a medida que se implementa la Arquitectura Empresarial.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;26.5 Preparación y planificación de la migración&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;El ejercicio de evaluación proporcionará una evaluación realista de la organización y será una aportación clave a la planificación estratégica de la migración que se iniciará en la Fase E y se completará en la Fase F. Es importante tener en cuenta si las acciones de transformación del negocio estarán en el camino crítico de la visión y, de ser así, determinar cómo afectarán la implementación. No tiene sentido implementar una nueva capacidad de TI sin empleados capacitados para usarla y personal de soporte listo para mantenerla.&lt;br/&gt;&lt;br/&gt;Los factores de preparación, como parte de un Plan general de Implementación y Migración, deberán ser monitoreados continuamente (Fase G) y se tomarán medidas correctivas rápidas a través del marco de gobierno de TI para garantizar que se puedan implementar las arquitecturas definidas.&lt;br/&gt;&lt;br/&gt;La evaluación de los factores de preparación será un documento vivo y durante la planificación de la migración y la ejecución de las Arquitecturas de Transición, las actividades de transformación del negocio jugarán un papel clave.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;26.6 Comercialización del Plan de Implementación&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;La Definición de Arquitectura no debe circular ampliamente hasta que se identifiquen y mitiguen los problemas de transformación del negocio, y las acciones asociadas formen parte de un plan general de &quot;marketing&quot; para la visión y el Plan de Implementación y Migración.&lt;br/&gt;&lt;br/&gt;Por ejemplo, la consolidación de las existencias de información podría resultar en cientos de empleos perdidos y esta visión no debe anunciarse antes de que se formule un plan de apoyo a la transformación empresarial / recursos humanos para volver a capacitar o apoyar la búsqueda de nuevos empleos por parte de los trabajadores.&lt;br/&gt;&lt;br/&gt;Los talleres de transformación empresarial son una parte crítica del Plan de Comunicaciones mediante el cual las personas clave de la organización se reúnen para evaluar las implicaciones de la transformación de la empresa. Para ello, tomarán conciencia de la Visión de Arquitectura y la definición de arquitectura (si no estaban ya involucrados a través de los escenarios de negocio y Arquitectura de Negocios). Este grupo se sentirá dueño de la Arquitectura Empresarial, reconociendo al Arquitecto Empresarial como un valioso administrador.&lt;br/&gt;Su determinación de los factores creará nuevamente una cultura de comprensión en toda la empresa y proporcionará información útil para el Plan de Implementación y Migración.&lt;br/&gt;&lt;br/&gt;Este último plan debe incluir un Plan de Comunicaciones, especialmente para mantener informado al personal afectado. En muchos casos, la colaboración con los sindicatos y los delegados sindicales ayudará aún más a una transición humana (y pacífica) al estado objetivo.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;26.7 Conclusión&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;En resumen, la implementación de la Arquitectura Empresarial requerirá un profundo conocimiento y conciencia de todos los factores de transformación empresarial que afectan la transición al estado visionario. Con la evolución de ti, la tecnología real ya no es el problema real en la arquitectura empresarial, pero los factores críticos son más a menudo los culturales. Cualquier Plan de Implementación y Migración debe tener en cuenta ambos. Descuidar estos y centrarse en los aspectos técnicos invariablemente resultará en una implementación&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA247.htm">Objetos del negocios de la Fase A: Visión de la Arquitectura</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink206" /></button>Details:
+							<div id="detailsDIVLink206" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA252.htm">«recurso» Otros Recursos</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA1/EA364.htm">«Activity» 5. Evaluar la preparación para la transformación del negocio</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2/EA1/EA1232.htm">«Fase ADM» A: Visión de la Arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

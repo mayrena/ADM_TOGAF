@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Fase Prelimilar</title>
+<link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Fase Prelimilar </h1>
+			<!-- <img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../../../index.htm">Adaptacion BMM</a> / <a href="../../../../EA1.htm">ADM_TOGAF</a> / <a href="../../../EA3.htm">Modelado de elementos del negocio</a> / <a href="../../EA295.htm">Modelado de Procesos del Negocio</a> / <a href="../EA299.htm">Diagrama de Actividades</a> / <a href="EA1135.htm">Fase Prelimilar</a> / <a href="EA1133.htm">Fase Prelimilar</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../../../../images/4.png" alt="Package"/> <a href="./EA1/EA1163.htm">Sub-proceso "1. Alcance de las organizaciones empresariales afectadas"</a></li>
+<li><img src="../../../../../../images/4.png" alt="Package"/> <a href="./EA2/EA1173.htm">Sub-proceso "3. Definir y establecer el equipo y la organización de la arquitectura empresarial"</a></li>
+<li><img src="../../../../../../images/4.png" alt="Package"/> <a href="./EA3/EA1199.htm">Sub-proceso "5. Adaptar el marco TOGAF y, si lo hubiera, otros marcos de arquitectura seleccionados"</a></li>
+<li><img src="../../../../../../images/189.png" alt="Diagram"/> <a href="EA1133.htm">Fase Prelimilar</a></li>
+<li><img src="../../../../../../images/25.png" alt="Object"/> <a href="EA1137.htm">:Marco de arquitectura a medida</a></li>
+<li><img src="../../../../../../images/25.png" alt="Object"/> <a href="EA1143.htm">:Marco de arquitectura a medida</a></li>
+<li><img src="../../../../../../images/25.png" alt="Object"/> <a href="EA1136.htm">:Modelo organizativo para la arquitectura empresarial</a></li>
+<li><img src="../../../../../../images/25.png" alt="Object"/> <a href="EA1142.htm">:Modelo organizativo para la arquitectura empresarial</a></li>
+<li><img src="../../../../../../images/25.png" alt="Object"/> <a href="EA1138.htm">:Principios de Arquitectura</a></li>
+<li><img src="../../../../../../images/25.png" alt="Object"/> <a href="EA1141.htm">:Principios de Arquitectura</a></li>
+<li><img src="../../../../../../images/25.png" alt="Object"/> <a href="EA1144.htm">:Principios de Arquitectura</a></li>
+<li><img src="../../../../../../images/25.png" alt="Object"/> <a href="EA1145.htm">:Repositorio de arquitectura</a></li>
+<li><img src="../../../../../../images/21.png" alt="Activity"/> <a href="EA1146.htm">1. Alcance de las organizaciones empresariales afectadas</a></li>
+<li><img src="../../../../../../images/21.png" alt="Activity"/> <a href="EA1147.htm">2. Confirmar los marcos de gobernanza y apoyo</a></li>
+<li><img src="../../../../../../images/21.png" alt="Activity"/> <a href="EA1148.htm">3. Definir y establecer el equipo y la organización de la arquitectura empresarial</a></li>
+<li><img src="../../../../../../images/21.png" alt="Activity"/> <a href="EA1149.htm">4. Identificar y establecer principios de arquitectura</a></li>
+<li><img src="../../../../../../images/21.png" alt="Activity"/> <a href="EA1150.htm">5. Adaptar el marco TOGAF y, si lo hubiera, otros marcos de arquitectura seleccionados</a></li>
+<li><img src="../../../../../../images/21.png" alt="Activity"/> <a href="EA1151.htm">6. Desarrollar una estrategia y un plan de implementación de herramientas y técnicas</a></li>
+<li><img src="../../../../../../images/24.png" alt="Event"/> <a href="EA1152.htm">fin</a></li>
+<li><img src="../../../../../../images/24.png" alt="Event"/> <a href="EA1153.htm">inicio</a></li>
+<li><img src="../../../../../../images/82.png" alt="Artifact"/> <a href="EA1157.htm">Repositorio de Arquiectura inicial</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class=diagram_image> 
+<img src="EA1134.png" usemap="#EA1134" border="0" />
+
+<MAP NAME="EA1134">
+<area shape="rect" coords="1031,246,1128,299" href="EA1157.htm" target="_self">
+<area shape="rect" coords="680,352,752,412" href="../../../EA3/EA212.htm" target="_self">
+<area shape="rect" coords="410,352,628,412" href="../../../EA3/EA260.htm" target="_self">
+<area shape="rect" coords="590,423,722,492" href="../../../EA3/EA263.htm" target="_self">
+<area shape="rect" coords="1004,333,1080,400" href="EA1145.htm" target="_self">
+<area shape="rect" coords="636,265,707,333" href="EA1144.htm" target="_self">
+<area shape="rect" coords="817,266,892,333" href="EA1143.htm" target="_self">
+<area shape="rect" coords="375,266,469,341" href="EA1142.htm" target="_self">
+<area shape="rect" coords="477,266,578,342" href="../../../EA3/EA258.htm" target="_self">
+<area shape="rect" coords="721,263,795,336" href="../../../EA3/EA213.htm" target="_self">
+<area shape="rect" coords="911,266,976,333" href="../../../EA3/EA264.htm" target="_self">
+<area shape="rect" coords="284,268,368,339" href="../../../EA3/EA236.htm" target="_self">
+<area shape="rect" coords="972,39,1075,102" href="../../../EA3/EA231.htm" target="_self">
+<area shape="rect" coords="672,38,734,103" href="../../../EA3/EA202.htm" target="_self">
+<area shape="rect" coords="536,38,597,104" href="../../../EA3/EA211.htm" target="_self">
+<area shape="rect" coords="168,35,229,105" href="../../../EA3/EA230.htm" target="_self">
+<area shape="rect" coords="237,35,317,107" href="../../../EA3/EA256.htm" target="_self">
+<area shape="rect" coords="323,35,406,107" href="../../../EA3/EA221.htm" target="_self">
+<area shape="rect" coords="92,35,161,105" href="../../../EA3/EA251.htm" target="_self">
+<area shape="rect" coords="27,35,85,105" href="../../../EA3/EA234.htm" target="_self">
+<area shape="rect" coords="886,38,959,102" href="../../../EA3/EA262.htm" target="_self">
+<area shape="rect" coords="605,38,663,104" href="../../../EA3/EA257.htm" target="_self">
+<area shape="rect" coords="779,38,861,103" href="../../../EA3/EA235.htm" target="_self">
+<area shape="rect" coords="413,37,529,105" href="../../../EA3/EA240.htm" target="_self">
+<area shape="rect" coords="1091,162,1121,192" href="EA1152.htm" target="_self">
+<area shape="rect" coords="921,139,1064,222" href="EA1151.htm" target="_self">
+<area shape="rect" coords="755,139,892,222" href="./EA3/EA1197.htm" target="_self">
+<area shape="rect" coords="615,141,725,224" href="EA1149.htm" target="_self">
+<area shape="rect" coords="431,141,572,224" href="./EA2/EA1171.htm" target="_self">
+<area shape="rect" coords="240,141,350,224" href="EA1147.htm" target="_self">
+<area shape="rect" coords="72,142,189,225" href="./EA1/EA1161.htm" target="_self">
+<area shape="rect" coords="10,169,40,199" href="EA1153.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">Fase Prelimilar : Business Process diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">02/08/2022 0:00:00</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">11/11/2022 14:15:25</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">Wanda Mayrena</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{509F61B0-502D-47bf-B39B-F212DBAE2A78}</td>
+		</tr>
+	</table>
+	
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

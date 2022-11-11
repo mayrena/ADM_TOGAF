@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Fase Preliminar</title>
+<link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Fase Preliminar </h1>
+			<!-- <img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../../../index.htm">Adaptacion BMM</a> / <a href="../../../../EA1.htm">ADM_TOGAF</a> / <a href="../../../EA3.htm">Modelado de elementos del negocio</a> / <a href="../../EA295.htm">Modelado de Procesos del Negocio</a> / <a href="../EA1215.htm">Diagrama de Procesos</a> / <a href="EA1286.htm">Fase Preliminar</a> / <a href="EA1284.htm">Fase Preliminar</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../../../../images/189.png" alt="Diagram"/> <a href="EA1284.htm">Fase Preliminar</a></li>
+<li><img src="../../../../../../images/25.png" alt="Object"/> <a href="EA1288.htm">:Marco de arquitectura a medida</a></li>
+<li><img src="../../../../../../images/25.png" alt="Object"/> <a href="EA1287.htm">:Modelo organizativo para la arquitectura empresarial</a></li>
+<li><img src="../../../../../../images/25.png" alt="Object"/> <a href="EA1289.htm">:Principios de Arquitectura</a></li>
+<li><img src="../../../../../../images/25.png" alt="Object"/> <a href="EA1290.htm">:Repositorio de arquitectura</a></li>
+<li><img src="../../../../../../images/25.png" alt="Object"/> <a href="EA1291.htm">:Repositorio de arquitectura</a></li>
+<li><img src="../../../../../../images/25.png" alt="Object"/> <a href="EA1292.htm">Determinar la capacidad de arquitectura deseada por la organización y establecer la capacidad de arquitectura</a></li>
+<li><img src="../../../../../../images/21.png" alt="Activity"/> <a href="EA1293.htm">Preliminar</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class=diagram_image> 
+<img src="EA1285.png" usemap="#EA1285" border="0" />
+
+<MAP NAME="EA1285">
+<area shape="rect" coords="298,5,343,95" href="../../../EA1/EA25.htm" target="_self">
+<area shape="rect" coords="63,325,108,415" href="../../../EA1/EA16.htm" target="_self">
+<area shape="rect" coords="379,420,528,470" href="../../../EA3/EA231.htm" target="_self">
+<area shape="rect" coords="690,237,857,284" href="../../../EA3/EA213.htm" target="_self">
+<area shape="rect" coords="690,179,856,226" href="../../../EA3/EA236.htm" target="_self">
+<area shape="rect" coords="506,264,661,302" href="EA1291.htm" target="_self">
+<area shape="rect" coords="506,220,660,257" href="EA1289.htm" target="_self">
+<area shape="rect" coords="506,176,661,213" href="EA1288.htm" target="_self">
+<area shape="rect" coords="506,118,661,169" href="EA1287.htm" target="_self">
+<area shape="rect" coords="686,127,853,163" href="../../../EA3/EA264.htm" target="_self">
+<area shape="rect" coords="686,63,854,111" href="../../../EA3/EA258.htm" target="_self">
+<area shape="rect" coords="12,263,156,298" href="../../../EA3/EA262.htm" target="_self">
+<area shape="rect" coords="12,221,157,257" href="../../../EA3/EA257.htm" target="_self">
+<area shape="rect" coords="10,178,158,214" href="../../../EA3/EA235.htm" target="_self">
+<area shape="rect" coords="11,121,158,171" href="../../../EA3/EA240.htm" target="_self">
+<area shape="rect" coords="270,421,371,470" href="../../../EA3/EA202.htm" target="_self">
+<area shape="rect" coords="187,421,263,469" href="../../../EA3/EA211.htm" target="_self">
+<area shape="rect" coords="489,333,548,393" href="../../../EA3/EA230.htm" target="_self">
+<area shape="rect" coords="385,333,482,393" href="../../../EA3/EA256.htm" target="_self">
+<area shape="rect" coords="252,332,378,393" href="../../../EA3/EA221.htm" target="_self">
+<area shape="rect" coords="183,332,246,393" href="../../../EA3/EA251.htm" target="_self">
+<area shape="rect" coords="117,332,176,394" href="../../../EA3/EA234.htm" target="_self">
+<area shape="rect" coords="158,38,230,82" href="../../../EA3/EA204.htm" target="_self">
+<area shape="rect" coords="200,155,454,288" href="../../EA1/EA6/EA1133.htm" target="_self">
+<area shape="rect" coords="380,22,515,98" href="EA1292.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">Fase Preliminar : Eriksson-Penker diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">01/06/2022 0:00:00</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">11/11/2022 17:01:09</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">Jhanca</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{4E481684-AD64-43d1-9F72-0E8C693D9967}</td>
+		</tr>
+	</table>
+	
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

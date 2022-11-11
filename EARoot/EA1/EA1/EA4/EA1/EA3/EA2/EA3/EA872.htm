@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Sub-proceso "8. Finalizar la arquitectura de datos"</title>
+<link href="../../../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Sub-proceso "8. Finalizar la arquitectura de datos" </h1>
+			<!-- <img class="header_image" src="../../../../../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../../../../../index.htm">Adaptacion BMM</a> / <a href="../../../../../../EA1.htm">ADM_TOGAF</a> / <a href="../../../../../EA3.htm">Modelado de elementos del negocio</a> / <a href="../../../../EA295.htm">Modelado de Procesos del Negocio</a> / <a href="../../../EA299.htm">Diagrama de Actividades</a> / <a href="../../EA608.htm">Fase C: Arquitectura de Sistema de Información</a> / <a href="../EA761.htm">Fase C: Arquitecturas de Sistemas de Información - Arquitectura de Datos</a> / <a href="EA874.htm">Sub-proceso "8. Finalizar la arquitectura de datos"</a> / <a href="EA872.htm">Sub-proceso "8. Finalizar la arquitectura de datos"</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../../../../../../../images/189.png" alt="Diagram"/> <a href="EA872.htm">Sub-proceso "8. Finalizar la arquitectura de datos"</a></li>
+<li><img src="../../../../../../../../images/21.png" alt="Activity"/> <a href="EA877.htm">Documentar completamente cada bloque de construcción</a></li>
+<li><img src="../../../../../../../../images/21.png" alt="Activity"/> <a href="EA878.htm">Documentar el informe final de trazabilidad de requisitos</a></li>
+<li><img src="../../../../../../../../images/21.png" alt="Activity"/> <a href="EA879.htm">Documentar el mapeo final de la arquitectura dentro del Repositorio de Arquitectura; a partir de los bloques de creación seleccionados, identifique aquellos que podrían reutilizarse y publíquelos a través del repositorio de arquitectura</a></li>
+<li><img src="../../../../../../../../images/21.png" alt="Activity"/> <a href="EA881.htm">Finalizar todos los productos de trabajo, como el análisis de brechas</a></li>
+<li><img src="../../../../../../../../images/21.png" alt="Activity"/> <a href="EA888.htm">Realizar una verificación cruzada final de la arquitectura general con respecto a los requisitos del negocio; Documentar la justificación de las decisiones de bloques de creación en el documento Arquitectura</a></li>
+<li><img src="../../../../../../../../images/21.png" alt="Activity"/> <a href="EA889.htm">Seleccionar estándares para cada uno de los bloques de construcción, reutilizando tanto como sea posible de los modelos de referencia seleccionados del Repositorio de arquitectura</a></li>
+<li><img src="../../../../../../../../images/24.png" alt="Event"/> <a href="EA880.htm">fin</a></li>
+<li><img src="../../../../../../../../images/24.png" alt="Event"/> <a href="EA882.htm">inicio</a></li>
+<li><img src="../../../../../../../../images/82.png" alt="Artifact"/> <a href="EA875.htm">:Bloques de construcción de arquitectura -ABBs-</a></li>
+<li><img src="../../../../../../../../images/82.png" alt="Artifact"/> <a href="EA876.htm">Bloques de construcción de arquitectura -ABBs-</a></li>
+<li><img src="../../../../../../../../images/82.png" alt="Artifact"/> <a href="EA887.htm">Proyecto de Documento de definición de arquitectura</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class=diagram_image> 
+<img src="EA873.png" usemap="#EA873" border="0" />
+
+<MAP NAME="EA873">
+<area shape="rect" coords="887,266,969,326" href="../../../../EA2/EA3/EA2/EA1263.htm" target="_self">
+<area shape="rect" coords="604,235,704,298" href="EA875.htm" target="_self">
+<area shape="rect" coords="316,235,414,298" href="EA887.htm" target="_self">
+<area shape="rect" coords="142,235,247,298" href="EA876.htm" target="_self">
+<area shape="rect" coords="789,254,879,326" href="../../../../EA2/EA3/EA2/EA1262.htm" target="_self">
+<area shape="rect" coords="18,10,146,72" href="../../../../../EA3/EA259.htm" target="_self">
+<area shape="rect" coords="154,10,256,72" href="../../../../../EA3/EA210.htm" target="_self">
+<area shape="rect" coords="328,327,480,377" href="../../../../../EA3/EA263.htm" target="_self">
+<area shape="rect" coords="887,106,964,215" href="EA881.htm" target="_self">
+<area shape="rect" coords="660,106,839,215" href="EA879.htm" target="_self">
+<area shape="rect" coords="539,106,628,214" href="EA878.htm" target="_self">
+<area shape="rect" coords="360,106,510,214" href="EA888.htm" target="_self">
+<area shape="rect" coords="240,110,328,219" href="EA877.htm" target="_self">
+<area shape="rect" coords="71,110,206,219" href="EA889.htm" target="_self">
+<area shape="rect" coords="990,145,1020,175" href="EA880.htm" target="_self">
+<area shape="rect" coords="10,150,40,180" href="EA882.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">Sub-proceso "8. Finalizar la arquitectura de datos" : BPMN 1.1 diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">01/11/2022 23:33:58</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">11/11/2022 12:53:42</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">Wanda Mayrena</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{92BE3279-62C0-4c1d-A00E-2A6B3885B5D2}</td>
+		</tr>
+	</table>
+	
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

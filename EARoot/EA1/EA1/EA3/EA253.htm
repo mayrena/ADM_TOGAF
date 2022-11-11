@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Modelado de Objetos del Negocio::Partición de arquitectura</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Modelado de Objetos del Negocio::Partición de arquitectura </h1>
+			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../index.htm">Adaptacion BMM</a> / <a href="../../EA1.htm">ADM_TOGAF</a> / <a href="../EA3.htm">Modelado de elementos del negocio</a> / <a href="EA103.htm">Modelado de Objetos del Negocio</a> / <a href="EA253.htm">Partición de arquitectura</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA103.htm">Modelado de Objetos del Negocio</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Partición de arquitectura  : Public  &lt;&lt;recurso: Apoyo en los pasos&gt;&gt; Class</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">17/10/2022 19:10:47</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">19/10/2022 2:25:05</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Wanda Mayrena</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{9676DE30-0568-4cd2-A9DC-35F3CD39C1D4}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA4/EA2/EA1/EA1222.htm">Fase A: Visión de la Arquitectura</a>, <a href="EA101.htm">Modelado de Objetos del Negocio</a>, <a href="../EA4/EA1/EA1/EA3/EA403.htm">Sub-proceso 6."Definir el alcance"</a>, <a href="../EA4/EA1/EA1/EA306.htm">Fase A: Visión de la Arquitectura</a>, <a href="./EA5/EA288.htm">Fase A: Visión de la arquitectura</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;ul&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Partición de arquitectura (Parte V&lt;i&gt;: Continuun empresarial y herramientas, 36. Partición de arquitectura&lt;/i&gt;).&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Las particiones se utilizan para simplificar el desarrollo y la gestión de la arquitectura empresarial.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Las particiones se encuentran en la base de gobernaza de la arquitectura y son distintas de los niveles y los conceptos organizativos del Continuum de Arquitectura (&lt;i&gt;35. Continuidad empresarial&lt;/i&gt;).&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Las arquitecturas se particionan porque:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Las arquitecturas de las unidades organizativas entran en conflicto entre sí&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Diferentes equipos necesitan trabajar en diferentes elementos de la arquitectura al mismo tiempo y las particiones permiten que grupos específicos de arquitectos posean y desarrollen elementos específicos de la arquitectura.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;La reutilización efectiva de la arquitectura requiere segmentos de arquitectura modular que se puedan tomar e incorporar en arquitecturas y soluciones más amplias.&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;No es práctico presentar un modelo de partición definitivo para la arquitectura. Cada empresa necesita adoptar un modelo de partición que refleje su propio modelo operativo.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;En el particionamiento de arquitectura se analizan los criterios de clasificación que generalmente se aplican a las arquitecturas y cómo se pueden aprovechar para dividir la empresa en un conjunto de arquitecturas con complejidad manejable y gobernanza efectiva.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;36.2 Aplicación de la clasificación para crear arquitecturas particionadas&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Por las razones descritas en la sección anterior, es valioso particionar y organizar continuum empresarial en un conjunto de soluciones y arquitecturas relacionadas con:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Complejidad manejable para cada arquitectura o solución individual&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Agrupaciones definidas&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Jerarquías y estructuras de navegación definidas&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Procesos, roles y responsabilidades apropiados asociados a cada agrupación&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;En la sección 36.2 de TOGAF se ofrece una la tabla donde se muestra cómo se pueden utilizar los criterios de clasificación adecuados para admitir la partición de soluciones y una tabla donde se muestra cómo se pueden utilizar cada criterio de clasificación para admitir la partición de arquitecturas&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;En términos prácticos, la disciplina de la arquitectura se utiliza para apoyar una serie de diferentes tipos de arquitectura que se utilizan para diferentes objetivos. Los criterios de clasificación descritos anteriormente se pueden utilizar de diferentes maneras para apoyar el logro de cada objetivo.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Las siguientes características generalmente no se utilizan para particionar un paisaje de arquitectura:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Las arquitecturas utilizadas para describir el paisaje arquitectónico generalmente no son abstractas.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;La volatilidad de la solución generalmente impide que se definan arquitecturas que están lejos en el futuro; La volatilidad también reduce la precisión de las arquitecturas históricas a lo largo del tiempo, a medida que la organización cambia y se adapta a las nuevas circunstancias.&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Utilizando los criterios anteriores, las arquitecturas se pueden agrupar en particiones.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;&lt;i&gt;36.2.1 Actividades dentro de la Fase Preliminar&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;El objetivo clave de la Fase Preliminar es establecer la Capacidad de Arquitectura para la empresa. En términos prácticos, esta actividad requerirá el establecimiento de una serie de particiones de arquitectura, proporcionando límites definidos, gobernanza y propiedad.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;En términos generales, cada equipo que lleve a cabo una actividad de arquitectura dentro de la empresa poseerá una o más particiones de arquitectura y ejecutará el ADM para definir, gobernar y realizar sus arquitecturas.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Si se espera que más de un equipo trabaje en una sola arquitectura, esto puede llegar a ser problemático, ya que las responsabilidades precisas de cada equipo son difíciles de establecer. Por esta razón, es preferible aplicar particiones a la arquitectura hasta que cada arquitectura tenga un equipo propio.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Por último, vale la pena considerar la distinción entre las capacidades permanentes de la empresa y los equipos temporales movilizados para apoyar una iniciativa de cambio en particular. Aunque el mandato de los equipos permanentes dentro de la empresa se puede definir con precisión, es más difícil anticipar y especificar las responsabilidades de los equipos de arquitectura temporal (posiblemente desconocidos). En los casos de estos equipos temporales, cada equipo debe estar bajo el gobierno de un equipo de arquitectura permanente y debe haber un proceso dentro del ciclo ADM de estos equipos para establecer la partición de arquitectura adecuada.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Los pasos dentro de la fase preliminar para admitir la partición de la arquitectura son los siguientes:&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;Determinar la estructura organizativa para la arquitectura dentro de la empresa: &lt;/b&gt;se deben identificar los diversos equipos permanentes que crearán la arquitectura.&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Para cada uno de estos equipos, se deben establecer límites apropiados, que incluyen:&lt;/font&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Órganos de gobierno aplicables al equipo&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Membresía del equipo&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Líneas de reporte de equipos&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;b&gt;Determinar las responsabilidades de cada equipo de arquitectura permanente:&lt;/b&gt; para cada equipo de arquitectura, se deben identificar las responsabilidades&lt;/li&gt;&lt;/ul&gt;<br />Este paso aplica la lógica de partición a la arquitectura empresarial para, en primer lugar, identificar el alcance de cada equipo y, en segundo lugar, para particionar la arquitectura bajo el mandato de un solo equipo. Una vez completado, este paso debe haber particionado todo el alcance de la empresa y debe haber asignado la responsabilidad de cada arquitectura particionada a un solo equipo. El particionamiento debe crear una definición de cada arquitectura que incluya:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Áreas temáticas que se están cubriendo&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Nivel de detalle en el que trabajará el equipo&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Períodos de tiempo a cubrir&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Participantes&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;Determinar las relaciones entre arquitecturas:&lt;/b&gt; una vez que se ha creado un conjunto de arquitecturas particionadas, se deben desarrollar las relaciones entre arquitecturas.&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;font color=&quot;#333333&quot;&gt;Este paso permite formalizar las relaciones de gobierno y también muestra dónde se espera que los artefactos de una arquitectura se reutilicen dentro de otras arquitecturas. Las áreas de consideración incluyen:&lt;/font&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;¿Dónde hacer las diferentes arquitecturas superposición/encajar/profundizar?&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;¿Cuáles son los requisitos de cumplimiento entre arquitecturas?&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;Una vez que se completa la Fase Preliminar, se deben comprender los equipos que realizan la arquitectura. Cada equipo debe tener un alcance definido y las relaciones entre los equipos y la arquitectura deben ser entendidas.&#160;&#160;La asignación de equipos al alcance de la arquitectura se ilustra en la &lt;i&gt;Figura 36-1 de TOGAF&lt;/i&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;36.3 Integración&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;La creación de arquitecturas particionadas corre el riesgo de producir una colección fragmentada e inconexa de arquitecturas que no se pueden integrar para formar un panorama general (&lt;i&gt;ver Parte II, 4.6 Integración de arquitectura&lt;/i&gt;).&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Para las grandes empresas complejas, las arquitecturas federadas, arquitecturas desarrolladas, mantenidas y administradas de forma independiente que posteriormente se integran dentro de un marco de integración, son típicas. Las arquitecturas federadas generalmente se usan en gobiernos y conglomerados, donde las unidades organizativas separadas necesitan arquitecturas separadas. Dicho marco especifica los principios de interoperabilidad, migración y conformidad. Esto permite que unidades de negocio específicas tengan arquitecturas desarrolladas y gobernadas como proyectos de arquitectura independientes. En la &lt;i&gt;parte III, 25&lt;/i&gt;, se pueden encontrar más detalles y orientaciones sobre la especificación de los requisitos de interoperabilidad para las diferentes soluciones. &lt;i&gt;Requisitos de interoperabilidad&lt;/i&gt; .&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Para mitigar este riesgo, se deben definir estándares para la integración de contenido y Gobernanza de Arquitectura debe abordar la integración de contenido como una condición para el cumplimiento de la arquitectura. Los marcos de contenido, como el marco de contenido TOGAF (&lt;i&gt;Parte IV: Marco de contenido de arquitectura&lt;/i&gt;) se pueden usar para especificar bloques de creación y artefactos estándar que son objeto de estándares de integración de contenido.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;Por ejemplo, se puede acordar un catálogo estándar de procesos de negocio para una empresa. Las arquitecturas posteriores pueden facilitar la integración utilizando la misma lista de procesos y haciendo referencias cruzadas a otros aspectos de la arquitectura con esos procesos estándar.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;La integración se puede abordar desde varias dimensiones:&lt;/font&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;La integración entre los dominios arquitectónicos proporciona una vista entre dominios del estado de un segmento de la empresa durante un momento dado.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;La integración en todo el ámbito organizativo del negocio proporciona una visión transversal de la empresa&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;La Visión de Arquitectura proporciona un resumen integrado de definiciones de arquitectura, que proporcionan un resumen integrado de arquitecturas de transición&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;b&gt;&lt;i&gt;Fase preliminar&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;Recurso de Apoyo, requerido en los pasos de la documentación&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;Dependiendo de la escala de la empresa y el nivel de compromiso presupuestario con la disciplina de arquitectura empresarial, se pueden adoptar una serie de enfoques para subdividir o dividir los equipos, procesos y entregables de arquitectura. Los enfoques para la partición de la arquitectura se analizan en&lt;i&gt; la Parte V, 36. Particionamiento de arquitectura&lt;/i&gt;. La fase preliminar debe utilizarse para determinar el enfoque deseado de la partición y para establecer las bases para que el enfoque seleccionado se ponga en práctica.&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;-Este recurso forma parte del estándar TOGAF 9.2 y es requerido en los pasos de la fase ADM, sin embargo no pertenece a formalmente a las entradas y/o salidas de la fase actual.-&lt;br/&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;b&gt;&lt;i&gt;Fase A: Visión de la arquitectura&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;Recurso de Apoyo, requerido en los pasos de la documentación&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;font color=&quot;#333333&quot;&gt;Particionamiento de arquitectura (consulte &lt;/font&gt;&lt;a href=&quot;file://file:///E:\Documents\MEGAsync\Debian_Archivos_2020\UE-2021\PreProyecto\Proyecto%20de%20Trabado%20de%20Grado\Togaf%209-2%20inicio\togaf92e-doc_1_paquete%20HTML\togaf92e-doc\arch\pt5.html&quot;&gt;&lt;font color=&quot;#00a6de&quot;&gt;&lt;u&gt;la Parte V&lt;/u&gt;&lt;/font&gt;&lt;/a&gt;&lt;font color=&quot;#333333&quot;&gt;, &lt;/font&gt;&lt;a href=&quot;file://file:///E:\Documents\MEGAsync\Debian_Archivos_2020\UE-2021\PreProyecto\Proyecto%20de%20Trabado%20de%20Grado\Togaf%209-2%20inicio\togaf92e-doc_1_paquete%20HTML\togaf92e-doc\arch\chap36.html \l tag_36&quot;&gt;&lt;font color=&quot;#00a6de&quot;&gt;&lt;i&gt;&lt;u&gt;36. Particionamiento de arquitectura&lt;/u&gt;&lt;/i&gt;&lt;/font&gt;&lt;/a&gt;&lt;font color=&quot;#333333&quot;&gt;).&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;-Este recurso forma parte del estándar TOGAF 9.2 y es requerido en los pasos de la fase ADM, sin embargo no pertenece a formalmente a las entradas y/o salidas de la fase actual.-&lt;br/&gt;&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA247.htm">Objetos del negocios de la Fase A: Visión de la Arquitectura</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink357" /></button>Details:
+							<div id="detailsDIVLink357" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA252.htm">«recurso» Otros Recursos</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2/EA6/EA1293.htm">«Fase ADM» Preliminar</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA1/EA365.htm">«Activity» 6. Definir el alcance</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA1/EA3/EA409.htm">«Activity» Definir las características de partición de la arquitectura  </a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2/EA1/EA1232.htm">«Fase ADM» A: Visión de la Arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+

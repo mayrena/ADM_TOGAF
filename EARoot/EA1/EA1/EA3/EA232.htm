@@ -1,0 +1,367 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Modelado de Objetos del Negocio::Hoja de ruta de arquitectura</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Modelado de Objetos del Negocio::Hoja de ruta de arquitectura </h1>
+			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../../../../index.htm">Adaptacion BMM</a> / <a href="../../EA1.htm">ADM_TOGAF</a> / <a href="../EA3.htm">Modelado de elementos del negocio</a> / <a href="EA103.htm">Modelado de Objetos del Negocio</a> / <a href="EA232.htm">Hoja de ruta de arquitectura</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<a href="EA103.htm">Modelado de Objetos del Negocio</a></ul>
+
+					</td>
+					<td class="contentcell"><div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Hoja de ruta de arquitectura  : Public  &lt;&lt;recurso&gt;&gt; Class</span>
+	<table border="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">19/10/2022 23:47:42</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">10/11/2022 15:35:25</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Wanda Mayrena</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" >Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{CC2BBC31-BD24-4ec9-92A2-2C4110CFECD8}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA4/EA2/EA1/EA1222.htm">Fase A: Visión de la Arquitectura</a>, <a href="../EA4/EA2/EA2/EA1234.htm">Fase B: Arquitectura de Negocios</a>, <a href="../EA4/EA2/EA3/EA2/EA1257.htm">Fase C: Arquitecturas de Sistemas de Información - Arquitectura de Datos</a>, <a href="../EA4/EA2/EA3/EA1/EA1247.htm">Fase C: Arquitecturas de Sistemas de Información - Arquitectura de Aplicaciones</a>, <a href="../EA4/EA2/EA4/EA1267.htm">Fase D: Arquitectura Tecnológica</a>, <a href="../EA4/EA1/EA1/EA1/EA376.htm">Sub-proceso "11. Desarrollar la Declaración de Trabajo de Arquitectura"</a>, <a href="EA101.htm">Modelado de Objetos del Negocio</a>, <a href="../EA4/EA1/EA2/EA462.htm">Fase B: Arquitectura de Negocios</a>, <a href="../EA4/EA1/EA3/EA1/EA611.htm">Fase C: Arquitecturas de Sistemas de Información - Arquitectura de Aplicaciones</a>, <a href="./EA5/EA288.htm">Fase A: Visión de la arquitectura</a>, <a href="./EA1/EA266.htm">Fase B: Arquitectura del negocio</a>, <a href="./EA2/EA1/EA273.htm">Fase C: Arquitectura SI - Arquitectura de Aplicaciones</a>, <a href="./EA2/EA2/EA277.htm">Fase C: Arquitectura SI - Arquitectura de Datos</a>, <a href="./EA3/EA281.htm">Fase D: Arquitectura tecnológica</a>, <a href="../EA4/EA1/EA3/EA2/EA759.htm">Fase C: Arquitecturas de Sistemas de Información - Arquitectura de Datos</a>, <a href="../EA4/EA1/EA4/EA890.htm">Fase D: Arquitectura Tecnológica</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;ul&gt;<br />&lt;li&gt;Hoja de ruta de arquitectura (&lt;i&gt;Parte IV: Marco de contenido de arquitectura, 32.2.7 Hoja de ruta de arquitectura&lt;/i&gt;)&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;La Hoja de ruta de arquitectura enumera los paquetes de trabajo individuales que realizar&#225;n la arquitectura de destino y los presenta en una l&#237;nea de tiempo para mostrar la progresi&#243;n de la arquitectura de l&#237;nea base a la arquitectura de destino. La Hoja de ruta de la arquitectura destaca el valor comercial de los paquetes de trabajo individuales en cada etapa. Las arquitecturas de transici&#243;n necesarias para realizar eficazmente la arquitectura de destino se identifican como pasos intermedios. La hoja de ruta de la arquitectura se desarrolla de forma incremental a lo largo de las fases E y F, y se basa en componentes de la hoja de ruta f&#225;cilmente identificables de las fases B, C y D dentro del ADM.&lt;br/&gt;&lt;br/&gt;Los contenidos t&#237;picos de una hoja de ruta de arquitectura son:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Portafolio de paquetes de trabajo:&lt;/li&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Descripci&#243;n del paquete de trabajo (nombre, descripci&#243;n, objetivos, entregables)&lt;/li&gt;&lt;li&gt;Requisitos funcionales&lt;/li&gt;&lt;li&gt;Dependencias&lt;/li&gt;&lt;li&gt;Relaci&#243;n con la oportunidad&lt;/li&gt;&lt;li&gt;Relaci&#243;n con la definici&#243;n de la arquitectura Documento y especificaci&#243;n de los requisitos de arquitectura&lt;/li&gt;&lt;li&gt;Valor para el negocio&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Matriz de Evaluaci&#243;n y Deducci&#243;n de Factores de Implementaci&#243;n, que incluye:&lt;/li&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Riesgos&lt;/li&gt;&lt;li&gt;Cuestiones&lt;/li&gt;&lt;li&gt;Suposiciones&lt;/li&gt;&lt;li&gt;Dependencias&lt;/li&gt;&lt;li&gt;Acciones&lt;/li&gt;&lt;li&gt;Entradas&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Matriz consolidada de brechas, soluciones y dependencias, que incluye:&lt;/li&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Dominio de arquitectura&lt;/li&gt;&lt;li&gt;Hueco&lt;/li&gt;&lt;li&gt;Posibles soluciones&lt;/li&gt;&lt;li&gt;Dependencias&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Cualquier arquitectura de transici&#243;n&lt;/li&gt;&lt;li&gt;Recomendaciones de aplicaci&#243;n:&lt;/li&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;Criterios de medidas de eficacia de los proyectos&lt;/li&gt;&lt;li&gt;Riesgos y problemas&lt;/li&gt;&lt;li&gt;Bloques de construcci&#243;n de soluciones (SBBs)&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;b&gt;&lt;i&gt;Fase A: Visi&#243;n de la arquitectura&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Recurso encontrado como inconsistencias de TOGAF, &lt;b&gt;&lt;i&gt;Fase A (Entrada):&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;-Este recurso forma parte del est&#225;ndar TOGAF 9.2 y ejerce apoyo en los pasos de la fase ADM, sin embargo no pertenece a formalmente a las entradas y/o salidas de la fase actual.-&lt;br/&gt;&lt;b&gt;&lt;i&gt;&lt;br/&gt;&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;Fase B: Arquitectura de Negocios&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;Recurso de entrada a la fase en Entregables de arquitectura (&lt;i&gt;Parte IV: Marco de contenido de arquitectura,32 de TOGAF&lt;/i&gt;)&lt;br/&gt;&lt;b&gt;&lt;i&gt;&lt;br/&gt;&lt;/i&gt;&lt;/b&gt;Este es un recurso que se consume durante la fase actual, pertenece a los entregables de arquitectura. Se encuentra establecido como Entrada en la secci&#243;n 32. Entregables de arquitectura de la Parte IV: Marco de contenido de arquitectura, sin embargo no se establece como recurso de entrada en la documentaci&#243;n del ADM.-&lt;br/&gt;&lt;br/&gt;Recurso obtenido de la &lt;b&gt;&lt;i&gt;Fase B (Salida):&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Los resultados de la Fase B pueden incluir, pero no se limitan a:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Componentes de arquitectura de negocios de una hoja de ruta de arquitectura (&lt;i&gt;Parte IV, 32.2.7 Hoja de ruta de arquitectura&lt;/i&gt;)&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;-Este es un documento que se produce o actualiza durante la fase actual, pertenece a los entregables de arquitectura, y se apoyan con las plantillas del Set 2 ofrecidas en la librer&#237;a de la pagina oficial de TOGAF, ademas se encuentra establecido como Salida en la documentaci&#243;n de la fase ADM y en la secci&#243;n 32. Entregables de arquitectura de la Parte IV: Marco de contenido de arquitectura.-&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;Fase C: Arquitecturas de Sistemas de Informaci&#243;n&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;Fase C: Arquitecturas de Sistemas de Informaci&#243;n - Arquitectura de Datos&lt;/i&gt;&lt;/b&gt;&lt;b&gt;:&lt;/b&gt;&lt;br/&gt;Es recurso: &lt;b&gt;Entradas arquitect&#243;nicas:&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Componentes de arquitectura de negocios de una hoja de ruta de arquitectura (&lt;i&gt;Parte IV, 32.2.7 Hoja de ruta de arquitectura&lt;/i&gt;)&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;b&gt;&lt;i&gt;Fase C: Arquitecturas de Sistemas de Informaci&#243;n - Arquitectura de Aplicaciones:&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;Es recurso: &lt;b&gt;Entradas arquitect&#243;nicas:&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Componentes de arquitectura de negocios y de datos de una hoja de ruta de arquitectura, si est&#225;n disponibles (&lt;i&gt;Parte IV, 32.2.7 Hoja de ruta de arquitectura&lt;/i&gt;)&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;Recurso obtenido de la &lt;b&gt;&lt;i&gt;Fase C -&lt;/i&gt;&lt;/b&gt;&lt;b&gt;Arquitectura de Datos&lt;/b&gt;&lt;b&gt;&lt;i&gt; (Salida):&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Los resultados de la Fase C (Arquitectura de Datos) pueden incluir, pero no se limitan a:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Componentes de arquitectura de datos de una hoja de ruta de arquitectura (&lt;i&gt;Parte IV, 32.2.7 Hoja de ruta de arquitectura&lt;/i&gt;)&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;Recurso obtenido de la &lt;b&gt;&lt;i&gt;Fase C&lt;/i&gt;&lt;/b&gt;&lt;b&gt; -Arquitectura de Aplicaciones&lt;/b&gt;&lt;b&gt;&lt;i&gt; (Salida):&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Los resultados de la Fase C (Arquitectura de aplicaciones) pueden incluir, pero no se limitan a:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Componentes de arquitectura de aplicaciones de una hoja de ruta de arquitectura (&lt;i&gt;Parte IV, 32.2.7 Hoja de ruta de arquitectura&lt;/i&gt;)&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;-Este es un documento que se produce o actualiza durante la fase actual, pertenece a los entregables de arquitectura, y se apoyan con las plantillas del Set 2 ofrecidas en la librer&#237;a de la pagina oficial de TOGAF, ademas se encuentra establecido como Salida en la documentaci&#243;n de la fase ADM y en la secci&#243;n 32. Entregables de arquitectura de la Parte IV: Marco de contenido de arquitectura.-&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;&lt;i&gt;Fase D: Arquitectura Tecnol&#243;gica&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;es recurso: &lt;b&gt;Entradas arquitect&#243;nicas:&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Componentes de arquitectura de negocios, de datos y de aplicaciones de una hoja de ruta de arquitectura (&lt;i&gt;Parte IV, 32.2.7 Hoja de ruta de arquitectura&lt;/i&gt;)&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;&lt;br/&gt;Recurso obtenido de la &lt;b&gt;&lt;i&gt;Fase D (Salida):&lt;/i&gt;&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Los resultados de la Fase D pueden incluir, pero no se limitan a:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Componentes de la arquitectura tecnol&#243;gica de una hoja de ruta de arquitectura (&lt;i&gt;Parte IV, 32.2.7 Hoja de ruta de arquitectura&lt;/i&gt;)&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;-Este artefacto se encuentra como entrada y/o salida de la documentaci&#243;n de la fase ADM y los Entregables de arquitectura (32 de TOGAF) del Marco de contenido de arquitectura.-&lt;br/&gt;&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="toggleItem('FlowTo');" id="FlowToTitle">Flow To</li>
+			<li onClick="toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA247.htm">Objetos del negocios de la Fase A: Visión de la Arquitectura</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink212" /></button>Details:
+							<div id="detailsDIVLink212" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="FlowToTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="50%" class="TableHeading">Element</td>
+					<td width="50%" class="TableHeading">Name</td>
+				</tr>
+				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="../EA4/EA2/EA3/EA1/EA1255.htm">C: Arquitecturas de Sistemas de Información - Arquitectura de Aplicaciones</a><br />
+						Activity &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow213" /></button>Details:
+							<div id="detailsDIVLinkFlow213" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="../EA4/EA2/EA4/EA1275.htm">D: Arquitectura Tecnológica</a><br />
+						Activity &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow214" /></button>Details:
+							<div id="detailsDIVLinkFlow214" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="../EA4/EA2/EA3/EA2/EA1265.htm">C: Arquitecturas de Sistemas de Información - Arquitectura de Datos</a><br />
+						Activity &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow215" /></button>Details:
+							<div id="detailsDIVLinkFlow215" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2/EA2/EA1242.htm">«Fase ADM» B: Arquitectura de Negocios</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA3/EA2/EA773.htm">«Activity» 5. Definir los componentes de la hoja de ruta candidata</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA1/EA1/EA390.htm">ProxyConnector</a></td>
+					<td width="10%" class="TableRow" valign="top">ProxyConnector</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA218.htm">«entregable» Entregables</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA4/EA907.htm">«Activity» 5. Definir componentes de hoja de ruta candidatos</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2/EA1/EA1232.htm">«Fase ADM» A: Visión de la Arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA1/EA326.htm">ProxyConnector</a></td>
+					<td width="10%" class="TableRow" valign="top">ProxyConnector</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA1/EA1/EA382.htm">«Activity» Estimar los recursos necesarios, desarrollar una hoja de ruta y un cronograma para el desarrollo propuesto, y documentar todo esto en la Declaración de Trabajo de Arquitectura</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA216.htm">Entradas arquitectónicas</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA2/EA481.htm">«Activity» 5. Definir los componentes de la hoja de ruta candidata</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA252.htm">«recurso» Otros Recursos</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA1/EA3/EA1/EA630.htm">«Activity» 5. Definir los componentes de la hoja de ruta candidata</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+ </div>
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+
